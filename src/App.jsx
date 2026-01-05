@@ -5,6 +5,8 @@ import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import Loader from './components/Loader/Loader'
 import LandingPage from './components/LandingPage/LandingPage'
+import HowItWorks from './components/LandingPage/HowItWorks'
+import WhyChooseUs from './components/LandingPage/WhyChooseUs'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <Loader/>
       <NavBar />
       <LandingPage/>
+      <HowItWorks/>
+      <WhyChooseUs/>
       {/* <Footer /> */}
     </>
   )
