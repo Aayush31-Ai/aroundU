@@ -9,7 +9,7 @@ function NavBar() {
             <nav className='flex items-center justify-around '>
                 <div className='flex items-center'>
                     <img className='w-12' src="/assets/Logo.jpeg" alt="" />
-                    <div className='font-bold text-xl text-[#2f5349]'>Around<span className='text-[#ffe174]'>U</span></div>
+                    <div className='font-bold text-xl text-[#2f5349]'>Around<span className='text-[#ffc800]'>U</span></div>
                 </div>
                 <div className="relative w-[320px]">
                     <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
