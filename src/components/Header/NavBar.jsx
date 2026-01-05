@@ -5,13 +5,11 @@ import { Link, NavLink } from 'react-router-dom'
 
 function NavBar() {
     return (
-        <header className='w-full h-auto sticky z-50 top-0 bg-white'>
-            <nav className='flex items-center justify-between p-4'>
-                <div className='w-sm flex justify-around'>
-                    <div className='flex items-center'>
-                        <img className='w-12' src="/assets/Logo.jpeg" alt="" />
-                        <div className='font-bold text-2xl text-[#2f5349]'>Around<span className='text-[#ffe174] text-2xl'>U</span></div>
-                    </div>
+        <header className='sticky z-50 top-0 bg-white'>
+            <nav className='flex items-center justify-around '>
+                <div className='flex items-center'>
+                    <img className='w-12' src="/assets/logo/Logo.jpeg" alt="" />
+                    <div className='font-bold text-xl text-[#2f5349]'>Around<span className='text-[#ffc800]'>U</span></div>
                 </div>
                 <div className='w-2xl hidden md:flex md:justify-around'>
                     <div>
