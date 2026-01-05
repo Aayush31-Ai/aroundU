@@ -3,17 +3,17 @@ import './App.css'
 import NavBar from './components/Header/NavBar'
 import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
-import Loader from './components/Loader/Loader'
-import LandingPage from './components/LandingPage/LandingPage'
+import LandingPage from './pages/LandingPage'
+import Loader from "./components/Loader/Loader"
 
 function App() {
 
   return (
     <>
-    <Loader/>
+      <Loader />
       <NavBar />
-      <LandingPage/>
-      {/* <Footer /> */}
+      <Outlet />
+      <Footer />
     </>
   )
 }

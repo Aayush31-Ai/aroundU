@@ -2,8 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Test from './components/Test'
 import App from './App'
+import Explore from './pages/Explore'
+import Request from './pages/Request'
+import Saved from './pages/Saved'
+import LandingPage from './pages/LandingPage'
 
 const router = createBrowserRouter([
   {
@@ -11,8 +14,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "",
-        element: <Test />
+        path: "/",
+        element: <LandingPage />
+      },
+      {
+        path: "/explore",
+        element: <Explore />
+      },
+      {
+        path: "/request",
+        element: <Request />
+      },
+      {
+        path: "/saved",
+        element: <Saved />
       }
     ]
   },
