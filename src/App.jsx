@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-    <Loader/>
+      <Loader />
       <NavBar />
       <LandingPage/>
       <HowItWorks/>
       <WhyChooseUs/>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
