@@ -70,7 +70,7 @@ export default function PageLoader() {
 
             {/* Optional text */}
            <div className='flex items-center'>
-                    <img className='w-16' src="/assets/Logo.jpeg" alt="" />
+                    <img className='w-16' src="/assets/logo/Logo.jpeg" alt="" />
                     <div className='font-bold text-2xl text-[#2f5349]'>Around<span className='text-[#ffc800]'>U</span></div>
                 </div>
           </div>
