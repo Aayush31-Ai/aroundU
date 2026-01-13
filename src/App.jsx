@@ -7,6 +7,7 @@ import Loader from './components/Loader/Loader'
 import LandingPage from './components/LandingPage/LandingPage'
 import HowItWorks from './components/LandingPage/HowItWorks'
 import WhyChooseUs from './components/LandingPage/WhyChooseUs'
+import MostBookedServices from './components/LandingPage/MostBookedServices'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <LandingPage/>
       <HowItWorks/>
+      <MostBookedServices/>
       <WhyChooseUs/>
       <Footer />
     </>

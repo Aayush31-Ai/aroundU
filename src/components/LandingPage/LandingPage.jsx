@@ -1,158 +1,153 @@
+
+import { Search } from "lucide-react";
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  Sparkles,
-  Lightbulb,
-  Wrench,
-  GraduationCap,
-  Star,
-  ArrowRight,
-  ShieldCheck,
-} from "lucide-react";
 
 const LandingPage = () => {
   return (
-    <section className="relative overflow-hidden bg-white min-h-[80vh] flex items-center font-sans">
-      {/* Background Decorative Blobs (Subtle) */}
-      <div className="absolute top-0 right-0 w-125 h-125 bg-[#2f5349]/5 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/4" />
-      <div className="absolute bottom-0 left-0 w-75 h-75 bg-[#ffc800]/10 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/4" />
+<section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden min-h-[80vh] flex items-center">
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* LEFT CONTENT */}
-          <motion.div
-            className="relative z-10 order-1 lg:order-1 text-center lg:text-left"
+
+  <div className="hidden lg:block absolute right-[-250px] top-[-150px] w-[600px] h-[600px]
+    bg-gradient-to-bl from-[#7bbfae]/15 via-[#5da897]/10 to-transparent
+    rounded-[40%_60%_70%_30%/40%_40%_60%_60%] z-0 blur-3xl
+    animate-[float_20s_ease-in-out_infinite]">
+  </div>
+
+  {/* Medium Blob - Bottom Left with Animation */}
+  <div className="hidden md:block absolute left-[-180px] bottom-[-100px] w-[500px] h-[500px]
+    bg-gradient-to-tr from-[#2f5349]/12 via-[#4a6f60]/8 to-transparent
+    rounded-[55%_45%_35%_65%/60%_30%_70%_40%] z-0 blur-3xl
+    animate-[float_25s_ease-in-out_infinite_reverse]">
+  </div>
+
+  {/* Center Accent Blob */}
+  <div className="hidden lg:block absolute left-[50%] top-[45%] -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px]
+    bg-gradient-to-br from-[#ffc800]/8 via-[#f5c542]/5 to-transparent
+    rounded-[65%_35%_45%_55%/55%_45%_55%_45%] z-0 blur-3xl
+    animate-[pulse_15s_ease-in-out_infinite]">
+  </div>
+
+  {/* Top Left Small Accent Blob */}
+  <div className="hidden sm:block absolute left-[5%] top-[15%] w-[200px] sm:w-[250px] h-[200px] sm:h-[250px]
+    bg-gradient-to-br from-[#7bbfae]/10 to-transparent
+    rounded-[60%_40%_50%_50%/50%_60%_40%_60%] z-0 blur-2xl
+    animate-[float_18s_ease-in-out_infinite_2s]">
+  </div>
+
+  {/* Right Middle Floating Blob */}
+  <div className="hidden md:block absolute right-[8%] top-[60%] w-[300px] h-[300px]
+    bg-gradient-to-tl from-[#ffc800]/10 to-transparent
+    rounded-[50%_50%_60%_40%/60%_40%_50%_50%] z-0 blur-2xl
+    animate-[float_22s_ease-in-out_infinite_4s]">
+  </div>
+
+  {/* Decorative Dots Pattern - Hidden on mobile */}
+  <div className="hidden sm:block absolute left-[10%] bottom-[20%] w-[150px] h-[150px] z-0 opacity-20">
+    <div className="grid grid-cols-6 gap-3">
+      {[...Array(24)].map((_, i) => (
+        <div key={i} className="w-1.5 h-1.5 bg-[#2f5349] rounded-full"></div>
+      ))}
+    </div>
+  </div>
+
+  {/* Floating Circles with Animation - Hidden on mobile */}
+  <div className="hidden lg:block absolute right-[15%] top-[25%] w-[80px] h-[80px] z-0
+    border-4 border-[#7bbfae]/20 rounded-full
+    animate-[spin_30s_linear_infinite]">
+  </div>
+
+  <div className="hidden sm:block absolute left-[20%] top-[35%] w-[50px] h-[50px] z-0
+    border-3 border-[#ffc800]/25 rounded-full
+    animate-[spin_20s_linear_infinite_reverse]">
+  </div>
+
+  {/* Small Accent Dots */}
+  <div className="absolute left-[45%] top-[20%] w-3 h-3 bg-[#7bbfae]/30 rounded-full z-0 animate-pulse"></div>
+  <div className="absolute right-[30%] bottom-[30%] w-2 h-2 bg-[#ffc800]/40 rounded-full z-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
+  <div className="absolute left-[35%] bottom-[25%] w-2.5 h-2.5 bg-[#2f5349]/25 rounded-full z-0 animate-pulse" style={{ animationDelay: '2s' }}></div>
+
+  {/* Gradient Overlay for Depth */}
+  <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent z-[1] pointer-events-none"></div>
+
+  {/* ===== MAIN CONTENT ===== */}
+  <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 sm:py-16 md:py-20 lg:py-24">
+    
+    {/* Main Headline */}
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight mb-6 sm:mb-8">
+      Find Local Services
+      <br />
+      <span className="bg-gradient-to-r from-[#2f5349] via-[#5da897] to-[#7bbfae] bg-clip-text text-transparent
+        animate-[gradient_3s_ease-in-out_infinite]">
+        Around You
+      </span>
+    </h1>
+
+    {/* Subheadline */}
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-2xl mx-auto mb-8 sm:mb-12 font-light px-2">
+      Connect with verified professionals for home services, repairs, learning, 
+      and daily needs.
+    </p>
+
+    {/* Premium Search Bar */}
+  <div className="max-w-3xl mx-automb-8 sm:mb-12 px-4">
+  <div className="flex items-center bg-white justify-between  h-10 md:h-18  border-2 overflow-hidden border-[#0d7a5f]  rounded-full shadow-md hover:shadow-lg focus-within:ring-4 focus-within:ring-[#0d7a5f]/10 transition-all  ">
+    
+
+    <div className="flex-1 flex items-center">
+      <input
+        type="text"
+        placeholder="What do you need help with?"
+        className="w-full pl-5 sm:pl-8 pr-2 py-2 sm:py-3 outline-none text-sm sm:text-base lg:text-lg text-gray-700 bg-transparent placeholder:text-gray-400"
+      />
+    </div>
+
+    <button className="bg-[#0d7a5f]  text-white h-10 md:h-18 flex justify-center items-center  transition-all duration-300   active:bg-[#0f493a]  hover:bg-[#0f493a] w-15 md:w-20  ">
+      <Search className="md:h-7 md:w-7 w-4 h-4" />
+    </button>
+  </div>
+</div>
+
+      {/* Premium Quick Links */}
+      <div className="mt-16 sm:mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3 px-2">
+        <span className="text-gray-700 font-medium text-xs sm:text-sm">Popular services:</span>
+        {['Plumbing', 'Cleaning', 'Electrician', 'Tutor', 'Carpenter'].map((service) => (
+          <button
+            key={service}
+            className="px-3 sm:px-5 py-1.5 sm:py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 text-gray-700 text-xs sm:text-sm font-medium
+              hover:border-[#2f5349] hover:text-[#2f5349] hover:bg-white hover:shadow-md transition-all duration-200"
           >
-            <div className="relative inline-block">
-              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#2f5349]/10 px-4 py-1.5 text-sm font-semibold text-[#2f5349]">
-                <ShieldCheck size={16} /> Verified Professionals
-              </span>
-              <h1 className="mt-4 text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#2f5349]">
-                All Local Services,
-                <br />
-                <span className="relative inline-block mt-2">
-                  <span className="relative z-10 text-black">
-                    One Platform.
-                  </span>
-                  {/* Underline decoration */}
-                  <motion.svg
-                    className="absolute -bottom-2 left-0 w-full h-3 text-[#ffc800] -z-10"
-                    viewBox="0 0 100 10"
-                  >
-                    <path
-                      d="M0 5 Q 50 10 100 5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="8"
-                    />
-                  </motion.svg>
-                  <Sparkles
-                    className="absolute md:-top-8 opacity-0 md:opacity-100 -right-8 text-[#ffc800]"
-                    size={40}
-                    strokeWidth={1.5}
-                  />
-                </span>
-              </h1>
-            </div>
-
-            <p className="mt-6 max-w-xl mx-auto lg:mx-0 text-lg text-gray-600 leading-relaxed">
-              Find verified professionals for home services, repairs, learning,
-              and daily needs. Quality service, guaranteed satisfaction.
-            </p>
-
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
-              <motion.button
-                className="group relative overflow-hidden rounded-full bg-[#2f5349] px-8 py-4 text-white shadow-xl transition-all hover:bg-[#244038] w-full sm:w-auto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="relative z-10 font-semibold text-lg">
-                  Book Now
-                </span>
-              </motion.button>
-
-              <motion.button
-                className="flex items-center gap-3 font-semibold text-[#2f5349] group"
-                whileHover={{ x: 5 }}
-              >
-                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ffc800] text-[#2f5349] transition-transform group-hover:rotate-90">
-                  <ArrowRight size={20} />
-                </span>
-                <span>How it works</span>
-              </motion.button>
-            </div>
-          </motion.div>
-
-          {/* RIGHT CONTENT (Image & Floating Icons) */}
-          <div className="relative order-2 lg:order-2 flex justify-center items-center min-h-112.5">
-            {/* Main Image Wrapper */}
-            <motion.div
-              className="relative z-10 w-[85%] md:w-full max-w-120"
-            >
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%]  bg-[#f2f4f3] rounded-full -z-10" />
-
-              <img
-                src="/assets/land-page/land.jpg"
-                alt="Service Professional"
-                className="w-[100%] h-auto rounded-3xl border-12 border-[#2f5349] object-contain drop-shadow-2xl"
-              />
-
-              <motion.div
-                className="absolute -top-6 left-4 sm:left-10 bg-white p-3 rounded-2xl shadow-lg border border-gray-100"
-                animate={{ y: [0, -15, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                <Lightbulb
-                  size={32}
-                  className="text-[#ffc800] fill-[#ffc800]/20"
-                />
-              </motion.div>
-
-              {/* 2. Wrench (Plumbing/Repair) */}
-              <motion.div
-                className="absolute top-1/3 -right-6 sm:-right-8 bg-white p-3 rounded-2xl shadow-lg border border-gray-100"
-                animate={{ y: [0, 15, 0], rotate: [0, 10, 0] }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 1,
-                }}
-              >
-                <Wrench size={32} className="text-[#2f5349]" />
-              </motion.div>
-
-              {/* 3. Graduation Cap (Learning) */}
-              <motion.div
-                className="absolute bottom-20 -left-4 sm:-left-8 bg-white p-3 rounded-2xl shadow-lg border border-gray-100"
-                animate={{ x: [0, 10, 0] }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 0.5,
-                }}
-              >
-                <GraduationCap size={32} className="text-blue-500" />
-              </motion.div>
-
-              {/* 4. Star (Quality) */}
-              <motion.div
-                className="absolute -bottom-4 right-10 sm:right-20 bg-[#2f5349] p-2 rounded-full shadow-lg"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-              >
-                <Star size={24} className="text-white fill-white" />
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
+            {service}
+          </button>
+        ))}
       </div>
-    </section>
+  </div>
+
+  {/* Custom Keyframes */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      33% {
+        transform: translate(30px, -30px) rotate(5deg);
+      }
+      66% {
+        transform: translate(-20px, 20px) rotate(-5deg);
+      }
+    }
+    
+    @keyframes gradient {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+  `}</style>
+
+</section>
+
   );
 };
 
