@@ -6,7 +6,10 @@ import App from './App'
 import Explore from './pages/Explore'
 import Request from './pages/Request'
 import Saved from './pages/Saved'
-import LandingPage from './pages/LandingPage'
+import LandingPage from './components/LandingPage/LandingPage'
+import Contact from './components/Footer/Contact'
+import Common from './components/Common/Common'
+import About from './components/Footer/About'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <LandingPage />
+        element: <Common />
       },
       {
         path: "/explore",
@@ -28,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "/saved",
         element: <Saved />
+      },
+      {
+        path: "/contact",
+        element: <Contact />
+      },
+      {
+        path: "/about",
+        element: <About />
       }
     ]
   },

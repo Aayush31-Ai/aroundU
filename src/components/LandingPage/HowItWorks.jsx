@@ -22,7 +22,7 @@ const HowItWorks = () => {
   return (
     <section className="relative bg-white py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Heading */}
         <div className="relative text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2f5349]">
