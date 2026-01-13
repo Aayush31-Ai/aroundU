@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <NavBar />
       <Outlet />
       <Footer />
