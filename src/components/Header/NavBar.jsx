@@ -41,12 +41,12 @@ function NavBar() {
     }, [coords])
 
     return (
-        <header className='sticky z-50 top-0 bg-white'>
-            <nav className='flex items-center justify-around md:my-3'>
+        <header className='sticky z-50 top-0 bg-white shadow-sm'>
+            <nav className='flex items-center justify-between md:justify-around px-3 sm:px-6 md:px-8 py-2 md:my-3'>
                 <Link to="/">
-                    <div className='flex items-center'>
-                        <img className='w-12' src="/assets/logo/Logo.jpeg" alt="" />
-                        <div className='font-bold text-xl text-[#2f5349]'>Around<span className='text-[#ffc800]'>U</span></div>
+                    <div className='flex items-center gap-2'>
+                        <img className='w-8 sm:w-10 md:w-12' src="/assets/logo/Logo.jpeg" alt="AroundU Logo" />
+                        <div className='font-bold text-lg sm:text-xl md:text-2xl text-[#2f5349]'>Around<span className='text-[#ffc800]'>U</span></div>
                     </div>
                 </Link>
                 <div className='md:w-2xl hidden md:flex md:justify-around'>
@@ -82,28 +82,8 @@ function NavBar() {
                 </div>
             </nav>
 
-            <div className='md:hidden flex justify-around mb-1'>
-                <div className="relative">
-                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                    <Input
-                        type="text"
-                        placeholder="Search..."
-                        className="h-12 pl-11 text-base"
-                    />
-                </div>
-                <div>
-                    <div className="relative">
-                        <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                        <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                        <Input
-                            placeholder="Connaught Place, New Delhi"
-                            className="pl-9 pr-9 h-12 w-2 rounded-xl"
-                        />
-                    </div>
-                </div>
-            </div>
             <div className='border-b-2 border-b-gray-200'></div>
-        </header >
+        </header>
     )
 }
 
