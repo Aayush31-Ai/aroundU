@@ -10,6 +10,7 @@ import LandingPage from './components/LandingPage/LandingPage'
 import Contact from './components/Footer/Contact'
 import Common from './components/Common/Common'
 import About from './components/Footer/About'
+import FAQs from './components/Footer/FAQs'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/faqs",
+        element: <FAQs />
       }
     ]
   },

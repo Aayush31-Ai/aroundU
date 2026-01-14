@@ -1,48 +1,51 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
         <footer className="bg-[#2f5349] text-gray-200">
-            <div className="max-w-6xl mx-auto px-6 py-14">
+            <div className="max-w-7xl mx-auto px-6 py-16">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-start">
                     <div>
                         <h2 className="text-xl font-semibold text-white">
                             Around<span className="text-[#ffc800]">U</span>
                         </h2>
-                        <p className="text-sm text-gray-300 mt-3 max-w-xs">
+                        <p className="text-sm text-gray-300 mt-3 max-w-sm leading-relaxed">
                             Helping you find trusted local professionals for everyday needs.
                         </p>
                     </div>
-
                     <div>
-                        <h3 className="text-sm font-semibold text-white mb-3">
+                        <h3 className="text-sm font-semibold text-white mb-4 tracking-wide">
                             Quick Links
                         </h3>
-                        <ul className="space-y-2 text-sm text-gray-300">
-                            <li className="hover:text-white cursor-pointer"><Link to="/">Home</Link></li>
-                            <li className="hover:text-white cursor-pointer"><Link>Services</Link></li>
-                            <li className="hover:text-white cursor-pointer"><Link to="/about">About</Link></li>
+                        <ul className="space-y-3 text-sm text-gray-300">
+                            <li>
+                                <Link to="/" className="hover:text-white transition">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="hover:text-white transition">
+                                    Services
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/about" className="hover:text-white transition">
+                                    About
+                                </Link>
+                            </li>
                         </ul>
                     </div>
-
-                    <div>
-                        <h3 className="text-sm font-semibold text-white mb-3">
-                            Support
-                        </h3>
-                        <ul className="space-y-2 text-sm text-gray-300">
-                            <li className="hover:text-white cursor-pointer"><Link>Help Center</Link></li>
-                            <li className="hover:text-white cursor-pointer"><Link>FAQs</Link></li>
-                            <li className="hover:text-white cursor-pointer"><Link to="/contact">Contact</Link></li>
-                        </ul>
+                    <div className="text-sm text-gray-300 md:text-right">
+                        <p className="text-white font-medium mb-2">Serving</p>
+                        <p>India</p>
                     </div>
                 </div>
 
-                <div className="border-t border-white/20 mt-10 pt-6 text-sm text-gray-300 flex flex-col md:flex-row justify-between">
+                <div className="border-t border-white/20 mt-14 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-300">
                     <span>© 2026 AroundU</span>
-                    <span>India</span>
+                    <span className="mt-2 sm:mt-0">All rights reserved</span>
                 </div>
 
             </div>
