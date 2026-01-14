@@ -1,4 +1,3 @@
-
 import Footer from './components/Footer/Footer'
 import NavBar from './components/Header/NavBar'
 import MainRouter from './MainRouter'
@@ -9,8 +8,8 @@ function App() {
     <>
       {/* <Loader /> */}
       <NavBar />
-      <MainRouter/>
-<Footer />
+      <MainRouter />
+      <Footer />
     </>
   )
 }

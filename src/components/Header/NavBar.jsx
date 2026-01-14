@@ -175,16 +175,16 @@ function NavBar() {
                             to="/saved"
                             className={({ isActive }) =>
                                 `
-    px-1
-    transition
-    ${isActive
+                                px-1
+                                transition
+                                ${isActive
                                     ? "font-medium text-black"
                                     : "text-gray-600"
                                 }
-    hover:text-black
-    hover:border-b-2
-    hover:border-black
-    `
+                                        hover:text-black
+                                        hover:border-b-2
+                                        hover:border-black
+                                        `
                             }
                         >
                             Saved
