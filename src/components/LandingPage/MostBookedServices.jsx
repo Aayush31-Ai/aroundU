@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useNavigate } from 'react-router';
 
-const MostBookedServices = () => {
+const MostBookedServices = React.memo(() => {
   const { services, loading } = useServices();
   const navigate = useNavigate();
 
@@ -19,14 +19,15 @@ const MostBookedServices = () => {
     
     // Sort by rating and get top services
     return services
-      .sort((a, b) => b.rating - a.rating)
+      .filter(service => service?.service?.title) // Only include valid services
+      .sort((a, b) => (b.rating || 0) - (a.rating || 0))
       .slice(0, 12)
       .map(service => ({
         providerId: service.providerId,
-        title: service.service.title,
-        image: service.service.serviceImage,
-        domain: service.service.category,
-        rating: service.rating,
+        title: service.service?.title || "Service",
+        image: service.service?.serviceImage || "/assets/default.jpg",
+        domain: service.service?.category || "Service",
+        rating: service.rating || 0,
         bookings: service.reviews?.length || 0
       }));
   }, [services]);
@@ -94,7 +95,7 @@ const MostBookedServices = () => {
               delay: 5000,
               disableOnInteraction: false,
             }}
-            loop={true}
+            loop={data.length > 4}
             className="w-full"
           >
             {data.map((service) => (
@@ -167,7 +168,7 @@ const MostBookedServices = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+});
 
-export default MostBookedServices
+export default MostBookedServices;

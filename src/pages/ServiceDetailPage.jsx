@@ -111,7 +111,7 @@ const ServiceDetailPage = () => {
                 <div className="flex items-center gap-4">
                   <img
                     src={data.profileImage}
-                    className="w-14 h-14 rounded-full"
+                    className="w-14 h-14 rounded-full object-cover"
                   />
                   <div>
                     <p className="font-semibold">{data.name}</p>

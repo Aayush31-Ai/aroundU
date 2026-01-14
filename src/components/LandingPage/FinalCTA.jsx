@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
-const FinalCTA = () => {
+const FinalCTA = React.memo(() => {
   const navigate = useNavigate();
 
   return (
@@ -128,6 +128,6 @@ const FinalCTA = () => {
       </div>
     </section>
   );
-};
+});
 
 export default FinalCTA;
