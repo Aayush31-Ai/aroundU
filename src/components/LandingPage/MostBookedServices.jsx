@@ -21,7 +21,6 @@ const MostBookedServices = () => {
     {
       id: 2,
       title: "Electrical Work",
-      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.9,
@@ -31,7 +30,6 @@ const MostBookedServices = () => {
     {
       id: 3,
       title: "House Cleaning",
-      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.7,
@@ -41,7 +39,6 @@ const MostBookedServices = () => {
     {
       id: 4,
       title: "Carpentry",
-      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.8,
@@ -51,7 +48,6 @@ const MostBookedServices = () => {
     {
       id: 5,
       title: "Tutoring",
-      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Education",
       rating: 4.9,
@@ -61,7 +57,6 @@ const MostBookedServices = () => {
     {
       id: 6,
       title: "Painting",
-      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.6,

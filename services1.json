@@ -1,7 +1,7 @@
 [
   {
     "providerId": "sp_001",
-    "name": "Provider 1",
+    "name": "Mahesh kulkarni",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_001",
@@ -39,7 +39,7 @@
   },
   {
     "providerId": "sp_002",
-    "name": "Provider 2",
+    "name": "Suresh Das",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_002",
@@ -77,7 +77,7 @@
   },
   {
     "providerId": "sp_003",
-    "name": "Provider 3",
+    "name": "Vikram Reddy",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_003",
@@ -115,7 +115,7 @@
   },
   {
     "providerId": "sp_004",
-    "name": "Provider 4",
+    "name": "Gopal Mishra",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_004",
@@ -153,7 +153,7 @@
   },
   {
     "providerId": "sp_005",
-    "name": "Provider 5",
+    "name": "Vikram Singh",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_005",
@@ -191,7 +191,7 @@
   },
   {
     "providerId": "sp_006",
-    "name": "Provider 6",
+    "name": "Aarav Sharma",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_006",
@@ -229,7 +229,7 @@
   },
   {
     "providerId": "sp_007",
-    "name": "Provider 7",
+    "name": "Rohan Gupta",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_007",
@@ -267,7 +267,7 @@
   },
   {
     "providerId": "sp_008",
-    "name": "Provider 8",
+    "name": "Rajesh Kumar",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_008",
@@ -305,7 +305,7 @@
   },
   {
     "providerId": "sp_009",
-    "name": "Provider 9",
+    "name": "Siddharth Reddy",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_009",
@@ -343,7 +343,7 @@
   },
   {
     "providerId": "sp_010",
-    "name": "Provider 10",
+    "name": "Karthik Iyer",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_010",
@@ -381,7 +381,7 @@
   },
   {
     "providerId": "sp_011",
-    "name": "Provider 11",
+    "name": "Vishnu Nair",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_011",
@@ -419,7 +419,7 @@
   },
   {
     "providerId": "sp_012",
-    "name": "Provider 12",
+    "name": "Aryan Mehta",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_012",
@@ -457,7 +457,7 @@
   },
   {
     "providerId": "sp_013",
-    "name": "Provider 13",
+    "name": "Aryan Mehta",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_013",
@@ -495,7 +495,7 @@
   },
   {
     "providerId": "sp_014",
-    "name": "Provider 14",
+    "name": "Kabir Yadav",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_014",
@@ -533,7 +533,7 @@
   },
   {
     "providerId": "sp_015",
-    "name": "Provider 15",
+    "name": "Dev Joshi",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_015",
@@ -571,7 +571,7 @@
   },
   {
     "providerId": "sp_016",
-    "name": "Provider 16",
+    "name": "Sameer Rao",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_016",
@@ -609,7 +609,7 @@
   },
   {
     "providerId": "sp_017",
-    "name": "Provider 17",
+    "name": "Aditya Menon",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_017",
@@ -647,7 +647,7 @@
   },
   {
     "providerId": "sp_018",
-    "name": "Provider 18",
+    "name": "Hari Pillai",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_018",
@@ -685,7 +685,7 @@
   },
   {
     "providerId": "sp_019",
-    "name": "Provider 19",
+    "name": "Mohan Das",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_019",
@@ -723,7 +723,7 @@
   },
   {
     "providerId": "sp_020",
-    "name": "Provider 20",
+    "name": "Prem Choudhary",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_020",
@@ -761,7 +761,7 @@
   },
   {
     "providerId": "sp_21",
-    "name": "Provider 21",
+    "name": "Nikhil Banerjee",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_21",
@@ -799,7 +799,7 @@
   },
   {
     "providerId": "sp_22",
-    "name": "Provider 22",
+    "name": "Tejas Dubey",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_22",

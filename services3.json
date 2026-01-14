@@ -1,7 +1,7 @@
 [
   {
     "providerId": "sp_041",
-    "name": "Provider 41",
+    "name": "Karan Chauhan",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_041",
@@ -39,7 +39,7 @@
   },
   {
     "providerId": "sp_042",
-    "name": "Provider 42",
+    "name": "Manish Saxena",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_042",
@@ -77,7 +77,7 @@
   },
   {
     "providerId": "sp_043",
-    "name": "Provider 43",
+    "name": "Nitin Pandey",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_043",
@@ -115,7 +115,7 @@
   },
   {
     "providerId": "sp_044",
-    "name": "Provider 44",
+    "name": "Uday Bhatt",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_044",
@@ -153,7 +153,7 @@
   },
   {
     "providerId": "sp_045",
-    "name": "Provider 45",
+    "name": "Balaji Krishnan",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_045",
@@ -191,7 +191,7 @@
   },
   {
     "providerId": "sp_046",
-    "name": "Provider 46",
+    "name": "Chetan Gowda",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_046",
@@ -229,7 +229,7 @@
   },
   {
     "providerId": "sp_047",
-    "name": "Provider 47",
+    "name": "Dinesh Acharya",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_047",
@@ -267,7 +267,7 @@
   },
   {
     "providerId": "sp_048",
-    "name": "Provider 48",
+    "name": "Eshwar Saini",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_048",
@@ -305,7 +305,7 @@
   },
   {
     "providerId": "sp_049",
-    "name": "Provider 49",
+    "name": "Farhan Qureshi",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_049",
@@ -343,7 +343,7 @@
   },
   {
     "providerId": "sp_050",
-    "name": "Provider 50",
+    "name": "Girish Borkar",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_050",
@@ -381,7 +381,7 @@
   },
   {
     "providerId": "sp_051",
-    "name": "Provider 51",
+    "name": "Hemanth Gaikwad",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_051",
@@ -419,7 +419,7 @@
   },
   {
     "providerId": "sp_052",
-    "name": "Provider 52",
+    "name": "Jatin Borde",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_052",
@@ -457,7 +457,7 @@
   },
   {
     "providerId": "sp_053",
-    "name": "Provider 53",
+    "name": "Pranav Tyagi",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_053",
@@ -495,7 +495,7 @@
   },
   {
     "providerId": "sp_054",
-    "name": "Provider 54",
+    "name": "Sumanth Sehgal",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_054",
@@ -533,7 +533,7 @@
   },
   {
     "providerId": "sp_055",
-    "name": "Provider 55",
+    "name": "Tarun Nagpal",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_055",
@@ -571,7 +571,7 @@
   },
   {
     "providerId": "sp_056",
-    "name": "Provider 56",
+    "name": "Vivek Oberoi",
     "profileImage": "/assets/people/p-7.jpg",
     "service": {
       "serviceId": "svc_056",
@@ -609,7 +609,7 @@
   },
   {
     "providerId": "sp_057",
-    "name": "Provider 57",
+    "name": "Anand Ravi",
     "profileImage": "/assets/people/p-1.jpg",
     "service": {
       "serviceId": "svc_057",
@@ -647,7 +647,7 @@
   },
   {
     "providerId": "sp_058",
-    "name": "Provider 58",
+    "name": "Bhargav Shekar",
     "profileImage": "/assets/people/p-2.jpg",
     "service": {
       "serviceId": "svc_058",
@@ -685,7 +685,7 @@
   },
   {
     "providerId": "sp_059",
-    "name": "Provider 59",
+    "name": "Chandru Varma",
     "profileImage": "/assets/people/p-3.jpg",
     "service": {
       "serviceId": "svc_059",
@@ -723,7 +723,7 @@
   },
   {
     "providerId": "sp_060",
-    "name": "Provider 60",
+    "name": "Deepak Kamath",
     "profileImage": "/assets/people/p-4.jpg",
     "service": {
       "serviceId": "svc_060",
@@ -761,7 +761,7 @@
   },
   {
     "providerId": "sp_61",
-    "name": "Provider 61",
+    "name": "Eknath Salvi",
     "profileImage": "/assets/people/p-5.jpg",
     "service": {
       "serviceId": "svc_61",
@@ -799,7 +799,7 @@
   },
   {
     "providerId": "sp_62",
-    "name": "Provider 62",
+    "name": "Gaurav Dalvi",
     "profileImage": "/assets/people/p-6.jpg",
     "service": {
       "serviceId": "svc_62",
