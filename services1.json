@@ -760,11 +760,11 @@
     }
   },
   {
-    "providerId": "sp_21",
+    "providerId": "sp_021",
     "name": "Nikhil Banerjee",
     "profileImage": "/assets/people/p-21.jpg",
     "service": {
-      "serviceId": "svc_21",
+      "serviceId": "svc_021",
       "title": "Kitchen Services",
       "category": "Kitchen",
       "serviceImage": "/assets/home-help/cook.jpg",
@@ -798,11 +798,11 @@
     }
   },
   {
-    "providerId": "sp_22",
+    "providerId": "sp_022",
     "name": "Tejas Dubey",
     "profileImage": "/assets/people/p-22.jpg",
     "service": {
-      "serviceId": "svc_22",
+      "serviceId": "svc_022",
       "title": "Kitchen Services",
       "category": "Kitchen",
       "serviceImage": "/assets/home-help/cook-2.jpg",
