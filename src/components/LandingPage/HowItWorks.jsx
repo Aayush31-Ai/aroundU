@@ -20,7 +20,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="relative bg-white py-12 sm:py-16 md:py-20 lg:py-24">
+    <section className="relative bg-gray-100 py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

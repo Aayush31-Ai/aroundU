@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Star } from "lucide-react";
+import { useNavigate } from "react-router";
 
 
 const ServiceCard = React.memo(({ service }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
-
+const navigate = useNavigate();
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg border border-gray-200 transition-all duration-300 hover:-translate-y-1 group cursor-pointer">
       {/* Image Container */}
@@ -43,8 +44,10 @@ const ServiceCard = React.memo(({ service }) => {
             <Star fill="#2f5349" size={20} className='text-[#2f5349]'/>
             <span className="text-sm font-semibold text-gray-700">{service.rating}</span>
           </div>
-          <button className="bg-[#2f5349] text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-[#244038] transition">
-            Book Now
+          <button
+          onClick={() => navigate(`/services/${service.providerId}`)}
+          className="bg-[#2f5349] text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-[#244038] transition">
+            View Details
           </button>
         </div>
       </div>
