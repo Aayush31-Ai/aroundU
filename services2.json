@@ -2,7 +2,7 @@
   {
     "providerId": "sp_021",
     "name": "Sahil Shetty",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-23.jpg",
     "service": {
       "serviceId": "svc_021",
       "title": "Plumbing Service",
@@ -40,7 +40,7 @@
   {
     "providerId": "sp_022",
     "name": "Omkar Desai",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-24.jpg",
     "service": {
       "serviceId": "svc_022",
       "title": "Plumbing Service",
@@ -78,7 +78,7 @@
   {
     "providerId": "sp_023",
     "name": "Rishi Khanna",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-25.jpg",
     "service": {
       "serviceId": "svc_023",
       "title": "Electrician Service",
@@ -116,7 +116,7 @@
   {
     "providerId": "sp_024",
     "name": "Yashwant Rao",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-26.jpg",
     "service": {
       "serviceId": "svc_024",
       "title": "Plumbing Service",
@@ -154,7 +154,7 @@
   {
     "providerId": "sp_025",
     "name": "Gopal Mishra",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-27.jpg",
     "service": {
       "serviceId": "svc_025",
       "title": "Electrician Service",
@@ -192,7 +192,7 @@
   {
     "providerId": "sp_026",
     "name": "Ishaan Pillai",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-28.jpg",
     "service": {
       "serviceId": "svc_026",
       "title": "Home Cleaning",
@@ -230,7 +230,7 @@
   {
     "providerId": "sp_027",
     "name": "Aryan Verma",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-29.jpg",
     "service": {
       "serviceId": "svc_027",
       "title": "Maths Tutor",
@@ -268,7 +268,7 @@
   {
     "providerId": "sp_028",
     "name": "Kabir Malhotra",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-30.jpg",
     "service": {
       "serviceId": "svc_028",
       "title": "Maths Tutor",
@@ -306,7 +306,7 @@
   {
     "providerId": "sp_029",
     "name": "Devansh Jain",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-31.jpg",
     "service": {
       "serviceId": "svc_029",
       "title": "Plumbing Service",
@@ -344,7 +344,7 @@
   {
     "providerId": "sp_030",
     "name": "Sameer Kapoor",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-32.jpg",
     "service": {
       "serviceId": "svc_030",
       "title": "Home Cleaning",
@@ -382,7 +382,7 @@
   {
     "providerId": "sp_031",
     "name": "Aditya Bhat",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-33.jpg",
     "service": {
       "serviceId": "svc_031",
       "title": "Bathroom Cleaning",
@@ -420,7 +420,7 @@
   {
     "providerId": "sp_032",
     "name": "Hari Shankar",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-34.jpg",
     "service": {
       "serviceId": "svc_032",
       "title": "AC Repair",
@@ -458,7 +458,7 @@
   {
     "providerId": "sp_033",
     "name": "Mohan Gupta",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-35.jpg",
     "service": {
       "serviceId": "svc_033",
       "title": "AC Repair",
@@ -496,7 +496,7 @@
   {
     "providerId": "sp_034",
     "name": "Prem Iyer",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-36.jpg",
     "service": {
       "serviceId": "svc_034",
       "title": "Home Cleaning",
@@ -534,7 +534,7 @@
   {
     "providerId": "sp_035",
     "name": "Kiran Nair",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-37.jpg",
     "service": {
       "serviceId": "svc_035",
       "title": "Home Cleaning",
@@ -572,7 +572,7 @@
   {
     "providerId": "sp_036",
     "name": "Vihaan Trivedi",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-38.jpg",
     "service": {
       "serviceId": "svc_036",
       "title": "Plumbing Service",
@@ -610,7 +610,7 @@
   {
     "providerId": "sp_037",
     "name": "Rishi Agarwal",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-39.jpg",
     "service": {
       "serviceId": "svc_037",
       "title": "Maths Tutor",
@@ -648,7 +648,7 @@
   {
     "providerId": "sp_038",
     "name": "Omkar Solanki",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-40.jpg",
     "service": {
       "serviceId": "svc_038",
       "title": "Electrician Service",
@@ -686,7 +686,7 @@
   {
     "providerId": "sp_039",
     "name": "Sahil Chatterjee",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-41.jpg",
     "service": {
       "serviceId": "svc_039",
       "title": "Home Cleaning",
@@ -724,7 +724,7 @@
   {
     "providerId": "sp_040",
     "name": "Nikhil Pawar",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-42.jpg",
     "service": {
       "serviceId": "svc_040",
       "title": "Science Tutor",
@@ -762,7 +762,7 @@
   {
     "providerId": "sp_41",
     "name": "Ishaan Fernandes",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-43.jpg",
     "service": {
       "serviceId": "svc_41",
       "title": "Kitchen Services",
@@ -800,7 +800,7 @@
   {
     "providerId": "sp_42",
     "name": "Gopal Thakur",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-44.jpg",
     "service": {
       "serviceId": "svc_42",
       "title": "Kitchen Services",

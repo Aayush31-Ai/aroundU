@@ -2,7 +2,7 @@
     {
         "providerId": "sp_63",
         "name": "Rahul Sharma",
-        "profileImage": "/assets/people/p-7.jpg",
+        "profileImage": "/assets/people/p-67.jpg",
         "service": {
             "serviceId": "svc_63",
             "title": "Home Tutoring",
@@ -40,7 +40,7 @@
     {
         "providerId": "sp_64",
         "name": "Vikram Patil",
-        "profileImage": "/assets/people/p-8.jpg",
+        "profileImage": "/assets/people/p-68.jpg",
         "service": {
             "serviceId": "svc_64",
             "title": "Plumbing Services",
@@ -78,7 +78,7 @@
     {
         "providerId": "sp_65",
         "name": "Arjun Desai",
-        "profileImage": "/assets/people/p-9.jpg",
+        "profileImage": "/assets/people/p-69.jpg",
         "service": {
             "serviceId": "svc_65",
             "title": "Electrical Repair",
@@ -116,7 +116,7 @@
     {
         "providerId": "sp_66",
         "name": "Sanjay Nair",
-        "profileImage": "/assets/people/p-10.jpg",
+        "profileImage": "/assets/people/p-70.jpg",
         "service": {
             "serviceId": "svc_66",
             "title": "Home Cleaning",
@@ -154,7 +154,7 @@
     {
         "providerId": "sp_67",
         "name": "Rohan Joshi",
-        "profileImage": "/assets/people/p-11.jpg",
+        "profileImage": "/assets/people/p-71.jpg",
         "service": {
             "serviceId": "svc_67",
             "title": "Painting Services",
@@ -192,7 +192,7 @@
     {
         "providerId": "sp_68",
         "name": "Karan Shetty",
-        "profileImage": "/assets/people/p-12.jpg",
+        "profileImage": "/assets/people/p-72.jpg",
         "service": {
             "serviceId": "svc_68",
             "title": "Car Washing",
@@ -230,7 +230,7 @@
     {
         "providerId": "sp_69",
         "name": "Amit Gavaskar",
-        "profileImage": "/assets/people/p-13.jpg",
+        "profileImage": "/assets/people/p-73.jpg",
         "service": {
             "serviceId": "svc_69",
             "title": "Gardening",
@@ -268,7 +268,7 @@
     {
         "providerId": "sp_70",
         "name": "Nilesh Pawar",
-        "profileImage": "/assets/people/p-14.jpg",
+        "profileImage": "/assets/people/p-74.jpg",
         "service": {
             "serviceId": "svc_70",
             "title": "Laundry Services",
@@ -306,7 +306,7 @@
     {
         "providerId": "sp_71",
         "name": "Prakash More",
-        "profileImage": "/assets/people/p-15.jpg",
+        "profileImage": "/assets/people/p-75.jpg",
         "service": {
             "serviceId": "svc_71",
             "title": "AC Repair",
@@ -344,7 +344,7 @@
     {
         "providerId": "sp_72",
         "name": "Sunil Kadam",
-        "profileImage": "/assets/people/p-16.jpg",
+        "profileImage": "/assets/people/p-76.jpg",
         "service": {
             "serviceId": "svc_72",
             "title": "Pest Control",
@@ -382,7 +382,7 @@
     {
         "providerId": "sp_73",
         "name": "Mahesh Sawant",
-        "profileImage": "/assets/people/p-17.jpg",
+        "profileImage": "/assets/people/p-77.jpg",
         "service": {
             "serviceId": "svc_73",
             "title": "Water Tank Cleaning",
@@ -420,7 +420,7 @@
     {
         "providerId": "sp_74",
         "name": "Nitin Khare",
-        "profileImage": "/assets/people/p-18-new.jpg",
+        "profileImage": "/assets/people/p-78.jpg",
         "service": {
             "serviceId": "svc_74",
             "title": "Carpentry Services",
@@ -458,7 +458,7 @@
     {
         "providerId": "sp_75",
         "name": "Rajesh Bhosale",
-        "profileImage": "/assets/people/p-19.jpg",
+        "profileImage": "/assets/people/p-79.jpg",
         "service": {
             "serviceId": "svc_75",
             "title": "Massage Therapy",
@@ -496,7 +496,7 @@
     {
         "providerId": "sp_76",
         "name": "Vijay Gaikwad",
-        "profileImage": "/assets/people/p-20.jpg",
+        "profileImage": "/assets/people/p-80.jpg",
         "service": {
             "serviceId": "svc_76",
             "title": "Coding Tutor",
@@ -534,7 +534,7 @@
     {
         "providerId": "sp_77",
         "name": "Pravin Kulkarni",
-        "profileImage": "/assets/people/p-21.jpg",
+        "profileImage": "/assets/people/p-81.jpg",
         "service": {
             "serviceId": "svc_77",
             "title": "Computer Repair",
@@ -572,7 +572,7 @@
     {
         "providerId": "sp_78",
         "name": "Anil Jadhav",
-        "profileImage": "/assets/people/p-22.jpg",
+        "profileImage": "/assets/people/p-82.jpg",
         "service": {
             "serviceId": "svc_78",
             "title": "Salon at Home",
@@ -610,7 +610,7 @@
     {
         "providerId": "sp_79",
         "name": "Ramesh Thakur",
-        "profileImage": "/assets/people/p-23.jpg",
+        "profileImage": "/assets/people/p-83.jpg",
         "service": {
             "serviceId": "svc_79",
             "title": "CCTV Installation",
@@ -648,7 +648,7 @@
     {
         "providerId": "sp_80",
         "name": "Govind Mhatre",
-        "profileImage": "/assets/people/p-24.jpg",
+        "profileImage": "/assets/people/p-84.jpg",
         "service": {
             "serviceId": "svc_80",
             "title": "Fire Safety Equipment",
@@ -686,7 +686,7 @@
     {
         "providerId": "sp_81",
         "name": "Santosh Rane",
-        "profileImage": "/assets/people/p-25.jpg",
+        "profileImage": "/assets/people/p-85.jpg",
         "service": {
             "serviceId": "svc_81",
             "title": "Babysitter",
@@ -724,7 +724,7 @@
     {
         "providerId": "sp_82",
         "name": "Ashok Salvi",
-        "profileImage": "/assets/people/p-26.jpg",
+        "profileImage": "/assets/people/p-86.jpg",
         "service": {
             "serviceId": "svc_82",
             "title": "Deep Home Cleaning",
