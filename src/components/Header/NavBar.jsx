@@ -111,84 +111,95 @@ function NavBar() {
     return (
         <>
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
-                <nav className="flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 py-3">
-                    <Link to="/">
-                        <div className="flex items-center gap-2">
-                            <img className="w-9" src="/assets/logo/Logo.jpeg" alt="AroundU Logo" />
-                            <div className="font-semibold text-xl text-[#2f5349]">
-                                Around<span className="text-[#ffc800]">U</span>
+                <nav className=" items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 py-3">
+                    <div className='flex items-center justify-around mb-4 md:mb-0'>
+                        <Link to="/">
+                            <div className="flex items-center gap-2">
+                                <img className="w-9" src="/assets/logo/Logo.jpeg" alt="AroundU Logo" />
+                                <div className="font-semibold text-xl text-[#2f5349]">
+                                    Around<span className="text-[#ffc800]">U</span>
+                                </div>
                             </div>
+                        </Link>
+
+                        <div
+                            onClick={() => setLocationInput(prev => !prev)}
+                            className="md:flex hidden items-center gap-2 px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-gray-50 cursor-pointer hover:bg-gray-100 transition"
+                        >
+                            <MapPin size={16} />
+                            <span className="max-w-45 truncate">
+                                {address || "Detecting location..."}
+                            </span>
+                            <ChevronDown size={16} />
                         </div>
-                    </Link>
 
-                    <div
-                        onClick={() => setLocationInput(prev => !prev)}
-                        className="flex items-center gap-2 px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-gray-50 cursor-pointer hover:bg-gray-100 transition"
-                    >
-                        <MapPin size={16} />
-                        <span className="max-w-45 truncate">
-                            {address || "Detecting location..."}
-                        </span>
-                        <ChevronDown size={16} />
-                    </div>
+                        <div className='w-52 md:w-sm flex justify-around text-sm'>
 
-                    <div className='w-52 md:w-sm flex justify-around text-sm'>
-
-                        <NavLink
-                            to="/explore"
-                            className={({ isActive }) =>
-                                `
+                            <NavLink
+                                to="/explore"
+                                className={({ isActive }) =>
+                                    `
     px-1
     transition
     ${isActive
-                                    ? "font-medium text-black"
-                                    : "text-gray-600"
-                                }
+                                        ? "font-medium text-black"
+                                        : "text-gray-600"
+                                    }
     hover:text-black
     hover:border-b-2
     hover:border-black
     `
-                            }
-                        >
-                            Explore
-                        </NavLink>
-
-                        <NavLink
-                            to="/request"
-                            className={({ isActive }) =>
-                                `
-    px-1
-    transition
-    ${isActive
-                                    ? "font-medium text-black"
-                                    : "text-gray-600"
                                 }
-    hover:text-black
-    hover:border-b-2
-    hover:border-black
-    `
-                            }
-                        >
-                            Request
-                        </NavLink>
-                        <NavLink
-                            to="/saved"
-                            className={({ isActive }) =>
-                                `
+                            >
+                                Explore
+                            </NavLink>
+
+                            <NavLink
+                                to="/request"
+                                className={({ isActive }) =>
+                                    `px-1
+                                transition
+                                ${isActive
+                                        ? "font-medium text-black"
+                                        : "text-gray-600"
+                                    }
+                                hover:text-black
+                                hover:border-b-2
+                                hover:border-black`
+                                }
+                            >
+                                Request
+                            </NavLink>
+                            <NavLink
+                                to="/saved"
+                                className={({ isActive }) =>
+                                    `
                                 px-1
                                 transition
                                 ${isActive
-                                    ? "font-medium text-black"
-                                    : "text-gray-600"
-                                }
+                                        ? "font-medium text-black"
+                                        : "text-gray-600"
+                                    }
                                         hover:text-black
                                         hover:border-b-2
                                         hover:border-black
                                         `
-                            }
-                        >
-                            Saved
-                        </NavLink>
+                                }
+                            >
+                                Saved
+                            </NavLink>
+                        </div>
+                    </div>
+
+                    <div
+                        onClick={() => setLocationInput(prev => !prev)}
+                        className="flex md:hidden items-center justify-around gap-2 px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-gray-50 cursor-pointer hover:bg-gray-100 transition"
+                    >
+                        <MapPin size={18} />
+                        <span className="max-w-45 truncate">
+                            {address || "Detecting location..."}
+                        </span>
+                        <ChevronDown size={16} className='' />
                     </div>
                 </nav>
 
