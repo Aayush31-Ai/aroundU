@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -13,7 +12,7 @@ const MostBookedServices = () => {
     {
       id: 1,
       title: "Plumbing",
-     image: "/choose.jpg",
+      image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.8,
       bookings: 2340,
@@ -22,8 +21,8 @@ const MostBookedServices = () => {
     {
       id: 2,
       title: "Electrical Work",
-    title: "Plumbing",
-    image: "/choose.jpg",
+      title: "Plumbing",
+      image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.9,
       bookings: 2100,
@@ -32,7 +31,7 @@ const MostBookedServices = () => {
     {
       id: 3,
       title: "House Cleaning",
-title: "Plumbing",
+      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.7,
@@ -42,7 +41,7 @@ title: "Plumbing",
     {
       id: 4,
       title: "Carpentry",
-title: "Plumbing",
+      title: "Plumbing",
       image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.8,
@@ -52,8 +51,8 @@ title: "Plumbing",
     {
       id: 5,
       title: "Tutoring",
-  title: "Plumbing",
-    image: "/choose.jpg",
+      title: "Plumbing",
+      image: "/choose.jpg",
       domain: "Education",
       rating: 4.9,
       bookings: 2560,
@@ -62,8 +61,8 @@ title: "Plumbing",
     {
       id: 6,
       title: "Painting",
-    title: "Plumbing",
-     image: "/choose.jpg",
+      title: "Plumbing",
+      image: "/choose.jpg",
       domain: "Home Services",
       rating: 4.6,
       bookings: 1720,
@@ -72,7 +71,7 @@ title: "Plumbing",
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-slate-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -128,9 +127,9 @@ title: "Plumbing",
               <SwiperSlide key={service.id}>
                 <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer h-full">
                   {/* Image Container */}
-               <div>
-                   <img src={service.image} alt={service.title}       />
-               </div>
+                  <div>
+                    <img src={service.image} alt={service.title} />
+                  </div>
                   {/* Content */}
                   <div className="p-4 sm:p-5 md:p-6">
                     <div className="mb-2 sm:mb-3">
@@ -153,8 +152,8 @@ title: "Plumbing",
                     </div>
 
                     {/*  Button */}
-                    <button className="relative group w-full overflow-hidden rounded-xl bg-gradient-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30">
-                      <div className="relative bg-gradient-to-r from-[#2f5349] to-[#468275] px-6 sm:px-8 py-3 rounded-[11px] transition-all duration-300 group-hover:bg-opacity-90 flex items-center justify-center gap-2">
+                    <button className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30">
+                      <div className="relative bg-linear-to-r from-[#2f5349] to-[#468275] px-6 sm:px-8 py-3 rounded-[11px] transition-all duration-300 group-hover:bg-opacity-90 flex items-center justify-center gap-2">
                         <span className="text-white font-bold tracking-wide text-xs sm:text-sm uppercase">
                           Book Now
                         </span>
