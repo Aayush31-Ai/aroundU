@@ -1,0 +1,838 @@
+[
+  {
+    "providerId": "sp_041",
+    "name": "Provider 41",
+    "profileImage": "/assets/people/p-6.jpg",
+    "service": {
+      "serviceId": "svc_041",
+      "title": "Maths Tutor",
+      "category": "Tutor",
+      "serviceImage": "/assets/tutor/math.jpg",
+      "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 966,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.5,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_042",
+    "name": "Provider 42",
+    "profileImage": "/assets/people/p-7.jpg",
+    "service": {
+      "serviceId": "svc_042",
+      "title": "AC Repair",
+      "category": "Appliance Repair",
+      "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
+      "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1982,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.5,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_043",
+    "name": "Provider 43",
+    "profileImage": "/assets/people/p-1.jpg",
+    "service": {
+      "serviceId": "svc_043",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/fan.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1564,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.8,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_044",
+    "name": "Provider 44",
+    "profileImage": "/assets/people/p-2.jpg",
+    "service": {
+      "serviceId": "svc_044",
+      "title": "Home Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/home-cleaning.jpg",
+      "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1724,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.8,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_045",
+    "name": "Provider 45",
+    "profileImage": "/assets/people/p-3.jpg",
+    "service": {
+      "serviceId": "svc_045",
+      "title": "bed Repair",
+      "category": "Appliance Repair",
+      "serviceImage": "/assets/Repair-maintain/app-repair/bed.jpg",
+      "about": "Bed inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 544,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.0,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_046",
+    "name": "Provider 46",
+    "profileImage": "/assets/people/p-4.jpg",
+    "service": {
+      "serviceId": "svc_046",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/light.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 778,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.8,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_047",
+    "name": "Provider 47",
+    "profileImage": "/assets/people/p-5.jpg",
+    "service": {
+      "serviceId": "svc_047",
+      "title": "Home Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+      "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 489,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.0,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_048",
+    "name": "Provider 48",
+    "profileImage": "/assets/people/p-6.jpg",
+    "service": {
+      "serviceId": "svc_048",
+      "title": "Home Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+      "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 768,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.4,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_049",
+    "name": "Provider 49",
+    "profileImage": "/assets/people/p-7.jpg",
+    "service": {
+      "serviceId": "svc_049",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/switch.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1089,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.9,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_050",
+    "name": "Provider 50",
+    "profileImage": "/assets/people/p-1.jpg",
+    "service": {
+      "serviceId": "svc_050",
+      "title": "Bathroom Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
+      "about": "Deep bathroom cleaning of tiles, fixtures, mirrors and grout using safe disinfectants for a fresh, hygienic finish.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 315,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 5.0,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_051",
+    "name": "Provider 51",
+    "profileImage": "/assets/people/p-2.jpg",
+    "service": {
+      "serviceId": "svc_051",
+      "title": "Science Tutor",
+      "category": "Tutor",
+      "serviceImage": "/assets/tutor/science.jpg",
+      "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1939,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.8,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_052",
+    "name": "Provider 52",
+    "profileImage": "/assets/people/p-3.jpg",
+    "service": {
+      "serviceId": "svc_052",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/wire.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 555,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.9,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_053",
+    "name": "Provider 53",
+    "profileImage": "/assets/people/p-4.jpg",
+    "service": {
+      "serviceId": "svc_053",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/fan.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1816,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.6,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_054",
+    "name": "Provider 54",
+    "profileImage": "/assets/people/p-5.jpg",
+    "service": {
+      "serviceId": "svc_054",
+      "title": "Bathroom Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
+      "about": "Deep bathroom cleaning of tiles, fixtures, mirrors and grout using safe disinfectants for a fresh, hygienic finish.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 516,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.3,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_055",
+    "name": "Provider 55",
+    "profileImage": "/assets/people/p-6.jpg",
+    "service": {
+      "serviceId": "svc_055",
+      "title": "English Tutor",
+      "category": "Tutor",
+      "serviceImage": "/assets/tutor/english.jpg",
+      "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 602,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.4,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_056",
+    "name": "Provider 56",
+    "profileImage": "/assets/people/p-7.jpg",
+    "service": {
+      "serviceId": "svc_056",
+      "title": "Home Cleaning",
+      "category": "Cleaning",
+      "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+      "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 788,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 5.0,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_057",
+    "name": "Provider 57",
+    "profileImage": "/assets/people/p-1.jpg",
+    "service": {
+      "serviceId": "svc_057",
+      "title": "English Tutor",
+      "category": "Tutor",
+      "serviceImage": "/assets/tutor/english.jpg",
+      "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 1233,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.6,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_058",
+    "name": "Provider 58",
+    "profileImage": "/assets/people/p-2.jpg",
+    "service": {
+      "serviceId": "svc_058",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/light.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 302,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.6,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_059",
+    "name": "Provider 59",
+    "profileImage": "/assets/people/p-3.jpg",
+    "service": {
+      "serviceId": "svc_059",
+      "title": "Electrician Service",
+      "category": "Electrical",
+      "serviceImage": "/assets/Repair-maintain/Electrical/switch.jpg",
+      "about": "Certified electrician for installation and repair of lights, fans, switches and wiring with safety-first diagnostics.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 684,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.1,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_060",
+    "name": "Provider 60",
+    "profileImage": "/assets/people/p-4.jpg",
+    "service": {
+      "serviceId": "svc_060",
+      "title": "Fridge Repair",
+      "category": "Appliance Repair",
+      "serviceImage": "/assets/Repair-maintain/app-repair/fridge.jpg",
+      "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 887,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.7,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_61",
+    "name": "Provider 61",
+    "profileImage": "/assets/people/p-5.jpg",
+    "service": {
+      "serviceId": "svc_61",
+      "title": "Kitchen Services",
+      "category": "Kitchen",
+      "serviceImage": "/assets/home-help/cook.jpg",
+      "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 4200,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.5,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  },
+  {
+    "providerId": "sp_62",
+    "name": "Provider 62",
+    "profileImage": "/assets/people/p-6.jpg",
+    "service": {
+      "serviceId": "svc_62",
+      "title": "Kitchen Services",
+      "category": "Kitchen",
+      "serviceImage": "/assets/home-help/cook-2.jpg",
+      "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
+      "whatIncluded": [
+        {
+          "title": "Basic Service",
+          "description": "Standard service included",
+          "icon": "<Sparkles className='w-5 h-5' />"
+        }
+      ]
+    },
+    "price": 4950,
+    "availability": {
+      "dailyWorkingHours": {
+        "from": "09:00",
+        "to": "21:00",
+        "totalHours": 12
+      },
+      "status": "Available"
+    },
+    "rating": 4.7,
+    "reviews": [],
+    "location": {
+      "ipAddress": "152.58.43.129",
+      "country": "India",
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "latitude": 19.0748,
+      "longitude": 72.8856
+    }
+  }
+]

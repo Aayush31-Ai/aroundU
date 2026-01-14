@@ -1,7 +1,7 @@
 import { Search } from "lucide-react";
 import React from "react";
 
-const LandingPage = () => {
+const Hero = () => {
   return (
 <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden min-h-[80vh] flex items-center">
 
@@ -150,4 +150,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Hero;
