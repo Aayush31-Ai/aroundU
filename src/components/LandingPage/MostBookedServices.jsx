@@ -1,69 +1,48 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Star, MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
+import useServices from '@/hooks/useServices';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useNavigate } from 'react-router';
 
 const MostBookedServices = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Plumbing",
-      image: "/choose.jpg",
-      domain: "Home Services",
-      rating: 4.8,
-      bookings: 2340,
-      icon: "🔧"
-    },
-    {
-      id: 2,
-      title: "Electrical Work",
-      image: "/choose.jpg",
-      domain: "Home Services",
-      rating: 4.9,
-      bookings: 2100,
-      icon: "⚡"
-    },
-    {
-      id: 3,
-      title: "House Cleaning",
-      image: "/choose.jpg",
-      domain: "Home Services",
-      rating: 4.7,
-      bookings: 3450,
-      icon: "🧹"
-    },
-    {
-      id: 4,
-      title: "Carpentry",
-      image: "/choose.jpg",
-      domain: "Home Services",
-      rating: 4.8,
-      bookings: 1890,
-      icon: "🪛"
-    },
-    {
-      id: 5,
-      title: "Tutoring",
-      image: "/choose.jpg",
-      domain: "Education",
-      rating: 4.9,
-      bookings: 2560,
-      icon: "📚"
-    },
-    {
-      id: 6,
-      title: "Painting",
-      image: "/choose.jpg",
-      domain: "Home Services",
-      rating: 4.6,
-      bookings: 1720,
-      icon: "🎨"
-    },
-  ];
+  const { services, loading } = useServices();
+  const navigate = useNavigate();
+
+  // Get top rated services
+  const data = useMemo(() => {
+    if (!services || services.length === 0) return [];
+    
+    // Sort by rating and get top services
+    return services
+      .sort((a, b) => b.rating - a.rating)
+      .slice(0, 12)
+      .map(service => ({
+        providerId: service.providerId,
+        title: service.service.title,
+        image: service.service.serviceImage,
+        domain: service.service.category,
+        rating: service.rating,
+        bookings: service.reviews?.length || 0
+      }));
+  }, [services]);
+
+  if (loading) {
+    return (
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-slate-50">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-gray-600">Loading services...</p>
+        </div>
+      </section>
+    );
+  }
+
+
+
 
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-slate-50">
@@ -119,14 +98,21 @@ const MostBookedServices = () => {
             className="w-full"
           >
             {data.map((service) => (
-              <SwiperSlide key={service.id}>
-                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer h-full">
+              <SwiperSlide key={service.providerId} className="h-auto">
+                <div 
+                  className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col h-full"
+                  onClick={() => navigate(`/service/${service.providerId}`)}  
+                >
                   {/* Image Container */}
-                  <div>
-                    <img src={service.image} alt={service.title} />
+                  <div className="relative w-full h-48 sm:h-52 md:h-56 overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
                   {/* Content */}
-                  <div className="p-4 sm:p-5 md:p-6">
+                  <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
                     <div className="mb-2 sm:mb-3">
                       <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2 sm:px-3 py-1 rounded-full">
                         {service.domain}
@@ -143,18 +129,24 @@ const MostBookedServices = () => {
                         <Star size={14} className="fill-[#2f5349] sm:w-4 sm:h-4" />
                         <span className="font-semibold text-gray-900">{service.rating}</span>
                       </div>
-                      <span className="text-gray-500">({service.bookings})</span>
                     </div>
 
                     {/*  Button */}
-                    <button className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30">
-                      <div className="relative bg-linear-to-r from-[#2f5349] to-[#468275] px-6 sm:px-8 py-3 rounded-[11px] transition-all duration-300 group-hover:bg-opacity-90 flex items-center justify-center gap-2">
-                        <span className="text-white font-bold tracking-wide text-xs sm:text-sm uppercase">
-                          Book Now
-                        </span>
-                      </div>
-                    </button>
-
+                    <div className="mt-auto">
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          navigate(`/service/${service.providerId}`);
+                        }}
+                        className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30"
+                      >
+                        <div className="relative bg-linear-to-r from-[#2f5349] to-[#468275] px-6 sm:px-8 py-3 rounded-[11px] transition-all duration-300 group-hover:bg-opacity-90 flex items-center justify-center gap-2">
+                          <span className="text-white font-bold tracking-wide text-xs sm:text-sm uppercase">
+                          View Details
+                          </span>
+                        </div>
+                      </button>
+                    </div>
 
                   </div>
                 </div>

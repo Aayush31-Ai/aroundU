@@ -35,7 +35,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_022",
@@ -73,7 +74,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_023",
@@ -111,7 +113,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_024",
@@ -149,7 +152,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_025",
@@ -187,7 +191,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_026",
@@ -225,7 +230,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_027",
@@ -263,7 +269,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_028",
@@ -301,7 +308,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_029",
@@ -330,7 +338,7 @@
       },
       "status": "Available"
     },
-    "rating": 4.0,
+    "rating": 4,
     "reviews": [],
     "location": {
       "ipAddress": "152.58.43.129",
@@ -339,7 +347,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_030",
@@ -377,7 +386,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_031",
@@ -415,7 +425,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_032",
@@ -453,7 +464,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_033",
@@ -491,7 +503,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_034",
@@ -529,7 +542,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_035",
@@ -567,7 +581,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_036",
@@ -605,7 +620,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_037",
@@ -643,7 +659,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_038",
@@ -681,7 +698,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_039",
@@ -710,7 +728,7 @@
       },
       "status": "Available"
     },
-    "rating": 4.0,
+    "rating": 4,
     "reviews": [],
     "location": {
       "ipAddress": "152.58.43.129",
@@ -719,7 +737,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_040",
@@ -757,7 +776,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_41",
@@ -795,7 +815,8 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   },
   {
     "providerId": "sp_42",
@@ -833,6 +854,7 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    }
+    },
+    "saved": false
   }
 ]
