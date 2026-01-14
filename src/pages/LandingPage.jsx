@@ -12,7 +12,6 @@ const LandingPage = () => {
       <HowItWorks />
       <MostBookedServices />
       <WhyChooseUs />
-      <Footer />
     </div>
   );
 };
