@@ -1,10 +1,10 @@
 [
   {
-    "providerId": "sp_021",
+    "providerId": "sp_023",
     "name": "Sahil Shetty",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-23.jpg",
     "service": {
-      "serviceId": "svc_021",
+      "serviceId": "svc_023",
       "title": "Plumbing Service",
       "category": "Plumbing",
       "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
@@ -35,15 +35,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_022",
+    "providerId": "sp_024",
     "name": "Omkar Desai",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-24.jpg",
     "service": {
-      "serviceId": "svc_022",
+      "serviceId": "svc_024",
       "title": "Plumbing Service",
       "category": "Plumbing",
       "serviceImage": "/assets/Repair-maintain/plumbing/p-2.jpg",
@@ -74,15 +73,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_023",
+    "providerId": "sp_025",
     "name": "Rishi Khanna",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-25.jpg",
     "service": {
-      "serviceId": "svc_023",
+      "serviceId": "svc_025",
       "title": "Electrician Service",
       "category": "Electrical",
       "serviceImage": "/assets/Repair-maintain/Electrical/fan.jpg",
@@ -113,15 +111,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_024",
+    "providerId": "sp_026",
     "name": "Yashwant Rao",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-26.jpg",
     "service": {
-      "serviceId": "svc_024",
+      "serviceId": "svc_026",
       "title": "Plumbing Service",
       "category": "Plumbing",
       "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
@@ -152,15 +149,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_025",
+    "providerId": "sp_027",
     "name": "Gopal Mishra",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-27.jpg",
     "service": {
-      "serviceId": "svc_025",
+      "serviceId": "svc_027",
       "title": "Electrician Service",
       "category": "Electrical",
       "serviceImage": "/assets/Repair-maintain/Electrical/light.jpg",
@@ -191,15 +187,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_026",
+    "providerId": "sp_028",
     "name": "Ishaan Pillai",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-28.jpg",
     "service": {
-      "serviceId": "svc_026",
+      "serviceId": "svc_028",
       "title": "Home Cleaning",
       "category": "Cleaning",
       "serviceImage": "/assets/clean/home-cleaning.jpg",
@@ -230,15 +225,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_027",
+    "providerId": "sp_029",
     "name": "Aryan Verma",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-29.jpg",
     "service": {
-      "serviceId": "svc_027",
+      "serviceId": "svc_029",
       "title": "Maths Tutor",
       "category": "Tutor",
       "serviceImage": "/assets/tutor/math.jpg",
@@ -269,15 +263,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_028",
+    "providerId": "sp_030",
     "name": "Kabir Malhotra",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-30.jpg",
     "service": {
-      "serviceId": "svc_028",
+      "serviceId": "svc_030",
       "title": "Maths Tutor",
       "category": "Tutor",
       "serviceImage": "/assets/tutor/math.jpg",
@@ -308,15 +301,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_029",
+    "providerId": "sp_031",
     "name": "Devansh Jain",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-31.jpg",
     "service": {
-      "serviceId": "svc_029",
+      "serviceId": "svc_031",
       "title": "Plumbing Service",
       "category": "Plumbing",
       "serviceImage": "/assets/Repair-maintain/plumbing/p-2.jpg",
@@ -347,15 +339,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_030",
+    "providerId": "sp_032",
     "name": "Sameer Kapoor",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-32.jpg",
     "service": {
-      "serviceId": "svc_030",
+      "serviceId": "svc_032",
       "title": "Home Cleaning",
       "category": "Cleaning",
       "serviceImage": "/assets/clean/home-cleaning-2.jpg",
@@ -386,15 +377,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_031",
+    "providerId": "sp_033",
     "name": "Aditya Bhat",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-33.jpg",
     "service": {
-      "serviceId": "svc_031",
+      "serviceId": "svc_033",
       "title": "Bathroom Cleaning",
       "category": "Cleaning",
       "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
@@ -425,15 +415,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_032",
+    "providerId": "sp_034",
     "name": "Hari Shankar",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-34.jpg",
     "service": {
-      "serviceId": "svc_032",
+      "serviceId": "svc_034",
       "title": "AC Repair",
       "category": "Appliance Repair",
       "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
@@ -464,15 +453,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_033",
+    "providerId": "sp_035",
     "name": "Mohan Gupta",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-35.jpg",
     "service": {
-      "serviceId": "svc_033",
+      "serviceId": "svc_035",
       "title": "AC Repair",
       "category": "Appliance Repair",
       "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
@@ -503,15 +491,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_034",
+    "providerId": "sp_036",
     "name": "Prem Iyer",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-36.jpg",
     "service": {
-      "serviceId": "svc_034",
+      "serviceId": "svc_036",
       "title": "Home Cleaning",
       "category": "Cleaning",
       "serviceImage": "/assets/clean/home-cleaning-2.jpg",
@@ -542,15 +529,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_035",
+    "providerId": "sp_037",
     "name": "Kiran Nair",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-37.jpg",
     "service": {
-      "serviceId": "svc_035",
+      "serviceId": "svc_037",
       "title": "Home Cleaning",
       "category": "Cleaning",
       "serviceImage": "/assets/clean/home-cleaning-2.jpg",
@@ -581,15 +567,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_036",
+    "providerId": "sp_038",
     "name": "Vihaan Trivedi",
-    "profileImage": "/assets/people/p-1.jpg",
+    "profileImage": "/assets/people/p-38.jpg",
     "service": {
-      "serviceId": "svc_036",
+      "serviceId": "svc_038",
       "title": "Plumbing Service",
       "category": "Plumbing",
       "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
@@ -620,15 +605,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_037",
+    "providerId": "sp_039",
     "name": "Rishi Agarwal",
-    "profileImage": "/assets/people/p-2.jpg",
+    "profileImage": "/assets/people/p-39.jpg",
     "service": {
-      "serviceId": "svc_037",
+      "serviceId": "svc_039",
       "title": "Maths Tutor",
       "category": "Tutor",
       "serviceImage": "/assets/tutor/math.jpg",
@@ -659,15 +643,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_038",
+    "providerId": "sp_040",
     "name": "Omkar Solanki",
-    "profileImage": "/assets/people/p-3.jpg",
+    "profileImage": "/assets/people/p-40.jpg",
     "service": {
-      "serviceId": "svc_038",
+      "serviceId": "svc_040",
       "title": "Electrician Service",
       "category": "Electrical",
       "serviceImage": "/assets/Repair-maintain/Electrical/switch.jpg",
@@ -698,15 +681,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_039",
+    "providerId": "sp_041",
     "name": "Sahil Chatterjee",
-    "profileImage": "/assets/people/p-4.jpg",
+    "profileImage": "/assets/people/p-41.jpg",
     "service": {
-      "serviceId": "svc_039",
+      "serviceId": "svc_041",
       "title": "Home Cleaning",
       "category": "Tutor",
       "serviceImage": "/assets/tutor/home.jpg",
@@ -737,15 +719,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_040",
+    "providerId": "sp_042",
     "name": "Nikhil Pawar",
-    "profileImage": "/assets/people/p-5.jpg",
+    "profileImage": "/assets/people/p-42.jpg",
     "service": {
-      "serviceId": "svc_040",
+      "serviceId": "svc_042",
       "title": "Science Tutor",
       "category": "Tutor",
       "serviceImage": "/assets/tutor/science.jpg",
@@ -776,15 +757,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_41",
+    "providerId": "sp_43",
     "name": "Ishaan Fernandes",
-    "profileImage": "/assets/people/p-6.jpg",
+    "profileImage": "/assets/people/p-43.jpg",
     "service": {
-      "serviceId": "svc_41",
+      "serviceId": "svc_43",
       "title": "Kitchen Services",
       "category": "Kitchen",
       "serviceImage": "/assets/home-help/cook.jpg",
@@ -815,15 +795,14 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   },
   {
-    "providerId": "sp_42",
+    "providerId": "sp_44",
     "name": "Gopal Thakur",
-    "profileImage": "/assets/people/p-7.jpg",
+    "profileImage": "/assets/people/p-44.jpg",
     "service": {
-      "serviceId": "svc_42",
+      "serviceId": "svc_44",
       "title": "Kitchen Services",
       "category": "Kitchen",
       "serviceImage": "/assets/home-help/cook-2.jpg",
@@ -854,7 +833,6 @@
       "city": "Mumbai",
       "latitude": 19.0748,
       "longitude": 72.8856
-    },
-    "saved": false
+    }
   }
 ]
