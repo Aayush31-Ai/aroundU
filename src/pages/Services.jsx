@@ -1,4 +1,4 @@
-import React, { useState, useMemo, Suspense, useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Sliders } from "lucide-react";
 import useServices from "@/hooks/useServices";
 import { LazyServiceCard } from "@/components/service/LazyServiceCard";
@@ -206,14 +206,12 @@ useEffect(() => {
             ) : filteredServices.length > 0 ? (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <Suspense fallback={<ServiceCardSkeleton />}>
-                    {paginatedServices.map((service) => (
-                      <LazyServiceCard
-                        key={service.providerId}
-                        service={service}
-                      />
-                    ))}
-                  </Suspense>
+                  {paginatedServices.map((service) => (
+                    <LazyServiceCard
+                      key={service.providerId}
+                      service={service}
+                    />
+                  ))}
                 </div>
 
                 <Pagination

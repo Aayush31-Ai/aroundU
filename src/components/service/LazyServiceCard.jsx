@@ -1,7 +1,6 @@
-import { lazy } from "react";
 import ServiceCard from "./ServiceCard";
 
-export const LazyServiceCard = lazy(() => Promise.resolve({ default: ServiceCard }));
+export const LazyServiceCard = ServiceCard;
 
 // Skeleton loading component with shimmer effect
 const ServiceCardSkeleton = () => (

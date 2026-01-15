@@ -6,8 +6,8 @@ import SmoothScroll from "./components/SmoothScroll";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    {/* <SmoothScroll> */}
+    <SmoothScroll>
       <App />
-    {/* </SmoothScroll> */}
+    </SmoothScroll>
   </BrowserRouter>
 );
