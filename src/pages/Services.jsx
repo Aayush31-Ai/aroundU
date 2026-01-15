@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { Sliders } from "lucide-react";
+import { useLocation } from "react-router";
 import useServices from "@/hooks/useServices";
 import { LazyServiceCard } from "@/components/service/LazyServiceCard";
 import ServiceCardSkeleton from "@/components/service/LazyServiceCard";
@@ -11,6 +12,7 @@ import SEO from "@/components/Common/SEO";
 
 const Services = () => {
   const { services: allServices, loading } = useServices();
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("popular");
@@ -21,7 +23,11 @@ const Services = () => {
 
 useEffect(() => {
   window.scrollTo({ top: 0, behavior: "auto" });
-}, []);
+  // Set category from navigation state if provided
+  if (location.state?.category) {
+    setSelectedCategory(location.state.category);
+  }
+}, [location.state?.category]);
 
   // Get unique categories
   const categories = useMemo(() => {
