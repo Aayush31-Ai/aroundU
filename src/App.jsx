@@ -1,4 +1,3 @@
-
 import { ToastContainer } from 'react-toastify'
 import Footer from './components/Footer/Footer'
 import NavBar from './components/Header/NavBar'
@@ -10,9 +9,9 @@ function App() {
     <div className='overflow-x-hidden'>
       {/* <Loader /> */}
       <NavBar />
-      <MainRouter/>
-<Footer />
-<ToastContainer 
+      <MainRouter />
+      <Footer />
+      <ToastContainer
         position="bottom-right"
         autoClose={3000}
         theme="colored"

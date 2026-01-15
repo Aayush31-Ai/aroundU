@@ -112,7 +112,7 @@ function NavBar() {
         <>
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
                 <nav className=" items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 py-3">
-                    <div className='flex items-center justify-around mb-4 md:mb-0'>
+                    <div className='flex items-center justify-between mb-4 md:mb-0'>
                         <Link to="/">
                             <div className="flex items-center gap-2">
                                 <img className="w-9" src="/assets/logo/Logo.jpeg" alt="AroundU Logo" />
@@ -134,41 +134,24 @@ function NavBar() {
                         </div>
 
                         <div className='w-52 md:w-sm flex justify-around text-sm'>
-
                             <NavLink
-                                to="/explore"
+                                to="/services"
                                 className={({ isActive }) =>
                                     `
-    px-1
-    transition
-    ${isActive
+                                        px-1
+                                        transition
+                                         text-[19px]
+                                        ${isActive
                                         ? "font-medium text-black"
                                         : "text-gray-600"
                                     }
-    hover:text-black
-    hover:border-b-2
-    hover:border-black
+                                        hover:text-black
+                                        hover:border-b-2
+                                        hover:border-black
     `
                                 }
                             >
-                                Explore
-                            </NavLink>
-
-                            <NavLink
-                                to="/request"
-                                className={({ isActive }) =>
-                                    `px-1
-                                transition
-                                ${isActive
-                                        ? "font-medium text-black"
-                                        : "text-gray-600"
-                                    }
-                                hover:text-black
-                                hover:border-b-2
-                                hover:border-black`
-                                }
-                            >
-                                Request
+                                Services
                             </NavLink>
                             <NavLink
                                 to="/saved"
@@ -176,6 +159,7 @@ function NavBar() {
                                     `
                                 px-1
                                 transition
+                                text-[19px]
                                 ${isActive
                                         ? "font-medium text-black"
                                         : "text-gray-600"
