@@ -1,43 +1,65 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 const SEO = ({ title, description, keywords, image, url }) => {
   const siteTitle = "AroundU";
-  const defaultDescription = "Detailed description of AroundU services.";
+  const defaultDescription = "Find trusted local professionals for cleaning, repairs, and home services. Connect with verified experts near you instantly.";
   const defaultImage = "/assets/logo/Logo.jpeg";
-  const defaultUrl = window.location.href;
+  const defaultUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   const metaTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const metaDescription = description || defaultDescription;
-  const metaKeywords = keywords || "local services, home services, professionals, cleaners, plumbers";
+  const metaKeywords = keywords || "local services, home services, professionals, cleaners, plumbers, electricians";
   const metaImage = image || defaultImage;
   const metaUrl = url || defaultUrl;
 
-  return (
-    <Helmet>
-      {/* Standard Metadata */}
-      <title>{metaTitle}</title>
-      <meta name="description" content={metaDescription} />
-      <meta name="keywords" content={metaKeywords} />
+  useEffect(() => {
+    // Update document title
+    document.title = metaTitle;
 
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={metaUrl} />
-      <meta property="og:title" content={metaTitle} />
-      <meta property="og:description" content={metaDescription} />
-      <meta property="og:image" content={metaImage} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={metaUrl} />
-      <meta name="twitter:title" content={metaTitle} />
-      <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={metaImage} />
+    // Helper function to update or create meta tags
+    const updateMetaTag = (name, content, isProperty = false) => {
+      const attribute = isProperty ? 'property' : 'name';
+      let tag = document.querySelector(`meta[${attribute}="${name}"]`);
       
-      {/* Canonical Link */}
-      <link rel="canonical" href={metaUrl} />
-    </Helmet>
-  );
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.setAttribute(attribute, name);
+        document.head.appendChild(tag);
+      }
+      
+      tag.setAttribute('content', content);
+    };
+
+    // Standard meta tags
+    updateMetaTag('description', metaDescription);
+    updateMetaTag('keywords', metaKeywords);
+
+    // Open Graph meta tags
+    updateMetaTag('og:type', 'website', true);
+    updateMetaTag('og:url', metaUrl, true);
+    updateMetaTag('og:title', metaTitle, true);
+    updateMetaTag('og:description', metaDescription, true);
+    updateMetaTag('og:image', metaImage, true);
+
+    // Twitter Card meta tags
+    updateMetaTag('twitter:card', 'summary_large_image');
+    updateMetaTag('twitter:url', metaUrl);
+    updateMetaTag('twitter:title', metaTitle);
+    updateMetaTag('twitter:description', metaDescription);
+    updateMetaTag('twitter:image', metaImage);
+
+    // Update canonical link
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = metaUrl;
+
+  }, [metaTitle, metaDescription, metaKeywords, metaImage, metaUrl]);
+
+  return null;
 };
 
 export default SEO;
