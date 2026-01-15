@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useNavigate } from 'react-router';
 
-const MostBookedServices = () => {
+const MostBookedServices = React.memo(() => {
   const { services, loading } = useServices();
   const navigate = useNavigate();
 
@@ -19,24 +19,63 @@ const MostBookedServices = () => {
     
     // Sort by rating and get top services
     return services
-      .sort((a, b) => b.rating - a.rating)
+      .filter(service => service?.service?.title) // Only include valid services
+      .sort((a, b) => (b.rating || 0) - (a.rating || 0))
       .slice(0, 12)
       .map(service => ({
         providerId: service.providerId,
-        title: service.service.title,
-        image: service.service.serviceImage,
-        domain: service.service.category,
-        rating: service.rating,
+        title: service.service?.title || "Service",
+        image: service.service?.serviceImage || "/assets/default.jpg",
+        domain: service.service?.category || "Service",
+        rating: service.rating || 0,
         bookings: service.reviews?.length || 0
       }));
   }, [services]);
 
+  // Shimmer Skeleton Card
+  const ShimmerCard = () => (
+    <div className="bg-white rounded-xl shadow-md overflow-hidden animate-pulse">
+      <div className="h-48 sm:h-52 md:h-56 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 bg-[length:200%_100%] animate-shimmer" />
+      <div className="p-4 sm:p-5 md:p-6">
+        <div className="h-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-20 mb-3" />
+        <div className="h-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-3/4 mb-3" />
+        <div className="h-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-16 mb-4" />
+        <div className="h-10 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-xl w-full" />
+      </div>
+    </div>
+  );
+
   if (loading) {
     return (
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-slate-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-600">Loading services...</p>
+        <div className="max-w-7xl mx-auto">
+          {/* Header Skeleton */}
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <div className="h-10 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-64 mx-auto mb-3" />
+            <div className="h-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-96 mx-auto" />
+          </div>
+
+          {/* Cards Grid Skeleton */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+              <ShimmerCard key={i} />
+            ))}
+          </div>
         </div>
+
+        <style jsx>{`
+          @keyframes shimmer {
+            0% {
+              background-position: -200% 0;
+            }
+            100% {
+              background-position: 200% 0;
+            }
+          }
+          .animate-shimmer {
+            animation: shimmer 2s infinite;
+          }
+        `}</style>
       </section>
     );
   }
@@ -94,14 +133,14 @@ const MostBookedServices = () => {
               delay: 5000,
               disableOnInteraction: false,
             }}
-            loop={true}
+            loop={data.length > 4}
             className="w-full"
           >
             {data.map((service) => (
               <SwiperSlide key={service.providerId} className="h-auto">
                 <div 
                   className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col h-full"
-                  onClick={() => navigate(`/service/${service.providerId}`)}  
+                  onClick={() => navigate(`/services/${service.providerId}`)}  
                 >
                   {/* Image Container */}
                   <div className="relative w-full h-48 sm:h-52 md:h-56 overflow-hidden">
@@ -136,7 +175,7 @@ const MostBookedServices = () => {
                       <button 
                         onClick={(e) => {
                           e.stopPropagation();
-                          navigate(`/service/${service.providerId}`);
+                          navigate(`/services/${service.providerId}`);
                         }}
                         className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30"
                       >
@@ -167,7 +206,7 @@ const MostBookedServices = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+});
 
-export default MostBookedServices
+export default MostBookedServices;

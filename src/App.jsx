@@ -9,10 +9,10 @@ function App() {
     <div className='overflow-x-hidden'>
       {/* <Loader /> */}
       <NavBar />
-      <MainRouter />
-      <Footer />
-      <ToastContainer
-        position="bottom-right"
+      <MainRouter/>
+<Footer />
+<ToastContainer 
+        position="top-right"
         autoClose={3000}
         theme="colored"
       />

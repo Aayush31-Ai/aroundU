@@ -1,16 +1,125 @@
-# React + Vite
+AroundU — Local Services Discovery & Booking Platform
+Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AroundU is a modern web platform that helps users discover, compare, and book trusted local service professionals such as appliance repair, cleaning, tutoring, and home maintenance. The platform focuses on usability, performance, and mobile-first design while ensuring a smooth booking experience for both users and service providers.
 
-Currently, two official plugins are available:
+The project was built as part of a hackathon with emphasis on real-world UX problems like service discovery, location awareness, responsive layouts, and scalable front-end architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Problem Statement
 
-## React Compiler
+Finding reliable local service professionals is often time-consuming and unstructured. Users struggle with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lack of trust and verification
 
-## Expanding the ESLint configuration
+Unclear pricing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Poor mobile experience
+
+No centralized platform for multiple service categories
+
+AroundU solves this by offering a clean, transparent, and location-aware service booking experience.
+
+Key Features
+
+Service discovery by category
+
+Detailed service pages with pricing and inclusions
+
+Verified service providers
+
+Responsive mobile-first UI
+
+Sticky desktop booking panel
+
+Mobile bottom booking bar with modal
+
+Similar services recommendation
+
+Clean and consistent UX across devices
+
+Tech Stack
+
+Frontend
+
+React
+
+React Router
+
+Tailwind CSS
+
+Lucide Icons
+
+State & Utilities
+
+React Hooks
+
+Custom data hooks
+
+Toast notifications
+
+Design Principles
+
+Mobile-first layout
+
+Clean component separation
+
+Performance-friendly rendering
+
+Accessibility-aware UI structure
+
+
+Service Detail Page Highlights
+
+Responsive hero image using aspect-ratio based layout
+
+Clear provider information with trust indicators
+
+Structured “What’s Included” section
+
+Desktop sticky booking sidebar
+
+Mobile booking modal to avoid layout clutter
+
+Horizontal scroll based similar services section
+
+Responsiveness Strategy
+
+CSS Grid for layout stability
+
+Aspect-ratio containers for images
+
+Conditional rendering for desktop vs mobile booking flows
+
+Fixed bottom booking bar only on mobile devices
+
+No hover-dependent UX on mobile
+
+
+How to Run Locally
+git clone https://github.com/your-repo/aroundu.git
+cd aroundu
+npm install
+npm run dev
+
+Future Enhancements
+
+User authentication
+
+Reviews and ratings submission
+
+Payment gateway integration
+
+Provider onboarding dashboard
+
+Real-time availability slots
+
+Location-based service filtering
+
+
+Team
+
+Built by a single developer focusing on frontend architecture, UI/UX design, and performance optimization.
+
+License
+
+This project was created for hackathon and educational purposes.

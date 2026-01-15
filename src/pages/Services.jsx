@@ -1,15 +1,16 @@
-import React, { useState, useMemo, Suspense, useEffect } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { Sliders } from "lucide-react";
+import useServices from "@/hooks/useServices";
 import { LazyServiceCard } from "@/components/service/LazyServiceCard";
 import ServiceCardSkeleton from "@/components/service/LazyServiceCard";
 import FilterSidebar from "@/components/service/FilterSidebar";
 import MobileFilters from "@/components/service/MobileFilters";
 import Pagination from "@/components/service/Pagination";
 import EmptyState from "@/components/service/EmptyState";
+import SEO from "@/components/Common/SEO"; 
 
 const Services = () => {
-  const [allServices, setAllServices] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { services: allServices, loading } = useServices();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState("popular");
@@ -21,27 +22,6 @@ const Services = () => {
 useEffect(() => {
   window.scrollTo({ top: 0, behavior: "auto" });
 }, []);
-
-  // Load services
-  useEffect(() => {
-    const loadServices = async () => {
-      try {
-        const [s1, s2, s3, s4] = await Promise.all([
-          import("../../services1.json"),
-          import("../../services2.json"),
-          import ("../../services4.json"),
-          import("../../services3.json"),
-        ]);
-        const combined = [...s1.default, ...s4.default, ...s3.default, ...s2.default];
-        setAllServices(combined);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error loading services:", error);
-        setLoading(false);
-      }
-    };
-    loadServices();
-  }, []);
 
   // Get unique categories
   const categories = useMemo(() => {
@@ -164,6 +144,10 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 sm:py-12">
+      <SEO 
+        title="Explore Services" 
+        description="Browse our wide range of professional services including cleaning, plumbing, electrical, and more. Compare prices and book instantly."
+      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8 text-center sm:text-left">
@@ -222,14 +206,12 @@ useEffect(() => {
             ) : filteredServices.length > 0 ? (
               <>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <Suspense fallback={<ServiceCardSkeleton />}>
-                    {paginatedServices.map((service) => (
-                      <LazyServiceCard
-                        key={service.providerId}
-                        service={service}
-                      />
-                    ))}
-                  </Suspense>
+                  {paginatedServices.map((service) => (
+                    <LazyServiceCard
+                      key={service.providerId}
+                      service={service}
+                    />
+                  ))}
                 </div>
 
                 <Pagination

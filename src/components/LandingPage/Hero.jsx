@@ -1,10 +1,10 @@
 import { Search, X } from "lucide-react";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router";
 import Fuse from "fuse.js";
 import useServices from "@/hooks/useServices";
 
-const Hero = () => {
+const Hero = React.memo(() => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
@@ -12,8 +12,8 @@ const Hero = () => {
   const navigate = useNavigate();
   const { services, loading } = useServices();
 
-  // Fuse.js configuration
-  const fuseOptions = {
+  // Memoize fuse instance and options
+  const fuseOptions = useMemo(() => ({
     keys: [
       { name: "service.title", weight: 0.4 },
       { name: "service.category", weight: 0.3 },
@@ -23,9 +23,9 @@ const Hero = () => {
     threshold: 0.4,
     includeScore: true,
     minMatchCharLength: 2,
-  };
+  }), []);
 
-  const fuse = new Fuse(services, fuseOptions);
+  const fuse = useMemo(() => new Fuse(services, fuseOptions), [services, fuseOptions]);
 
   // Handle search
   useEffect(() => {
@@ -50,15 +50,16 @@ const Hero = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleServiceClick = (providerId) => {
+  // Memoize callbacks
+  const handleServiceClick = useCallback((providerId) => {
     navigate(`/services/${providerId}`);
     setSearchQuery("");
     setShowResults(false);
-  };
+  }, [navigate]);
 
-  const handleQuickSearch = (category) => {
+  const handleQuickSearch = useCallback((category) => {
     navigate("/services", { state: { category } });
-  };
+  }, [navigate]);
 
   return (
 <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-y-visible min-h-[80vh] flex items-center">
@@ -66,40 +67,40 @@ const Hero = () => {
 
   <div className="hidden lg:block absolute right-[-250px] top-[-150px] w-[600px] h-[600px]
     bg-gradient-to-bl from-[#7bbfae]/15 via-[#5da897]/10 to-transparent
-    rounded-[40%_60%_70%_30%/40%_40%_60%_60%] z-0 blur-3xl
-    animate-[float_20s_ease-in-out_infinite]">
+    rounded-[40%_60%_70%_30%/40%_40%_60%_60%] z-0 blur-3xl"
+    style={{ animation: "float 20s ease-in-out infinite" }}>
   </div>
 
   {/* Medium Blob - Bottom Left with Animation */}
-  <div className="hidden md:block absolute left-[-180px] bottom-[-100px] w-[500px] h-[500px]
+  <div className="hidden lg:block absolute left-[-180px] bottom-[-100px] w-[500px] h-[500px]
     bg-gradient-to-tr from-[#2f5349]/12 via-[#4a6f60]/8 to-transparent
-    rounded-[55%_45%_35%_65%/60%_30%_70%_40%] z-0 blur-3xl
-    animate-[float_25s_ease-in-out_infinite_reverse]">
+    rounded-[55%_45%_35%_65%/60%_30%_70%_40%] z-0 blur-3xl"
+    style={{ animation: "float 25s ease-in-out infinite reverse" }}>
   </div>
 
   {/* Center Accent Blob */}
   <div className="hidden lg:block absolute left-[50%] top-[45%] -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px]
     bg-gradient-to-br from-[#ffc800]/8 via-[#f5c542]/5 to-transparent
-    rounded-[65%_35%_45%_55%/55%_45%_55%_45%] z-0 blur-3xl
-    animate-[pulse_15s_ease-in-out_infinite]">
+    rounded-[65%_35%_45%_55%/55%_45%_55%_45%] z-0 blur-3xl"
+    style={{ animation: "pulse 15s ease-in-out infinite" }}>
   </div>
 
   {/* Top Left Small Accent Blob */}
-  <div className="hidden sm:block absolute left-[5%] top-[15%] w-[200px] sm:w-[250px] h-[200px] sm:h-[250px]
+  <div className="hidden lg:block absolute left-[5%] top-[15%] w-[250px] h-[250px]
     bg-gradient-to-br from-[#7bbfae]/10 to-transparent
-    rounded-[60%_40%_50%_50%/50%_60%_40%_60%] z-0 blur-2xl
-    animate-[float_18s_ease-in-out_infinite_2s]">
+    rounded-[60%_40%_50%_50%/50%_60%_40%_60%] z-0 blur-2xl"
+    style={{ animation: "float 18s ease-in-out infinite 2s" }}>
   </div>
 
   {/* Right Middle Floating Blob */}
-  <div className="hidden md:block absolute right-[8%] top-[60%] w-[300px] h-[300px]
+  <div className="hidden lg:block absolute right-[8%] top-[60%] w-[300px] h-[300px]
     bg-gradient-to-tl from-[#ffc800]/10 to-transparent
-    rounded-[50%_50%_60%_40%/60%_40%_50%_50%] z-0 blur-2xl
-    animate-[float_22s_ease-in-out_infinite_4s]">
+    rounded-[50%_50%_60%_40%/60%_40%_50%_50%] z-0 blur-2xl"
+    style={{ animation: "float 22s ease-in-out infinite 4s" }}>
   </div>
 
   {/* Decorative Dots Pattern - Hidden on mobile */}
-  <div className="hidden sm:block absolute left-[10%] bottom-[20%] w-[150px] h-[150px] z-0 opacity-20">
+  <div className="hidden lg:block absolute left-[10%] bottom-[20%] w-[150px] h-[150px] z-0 opacity-20">
     <div className="grid grid-cols-6 gap-3">
       {[...Array(24)].map((_, i) => (
         <div key={i} className="w-1.5 h-1.5 bg-[#2f5349] rounded-full"></div>
@@ -109,19 +110,19 @@ const Hero = () => {
 
   {/* Floating Circles with Animation - Hidden on mobile */}
   <div className="hidden lg:block absolute right-[15%] top-[25%] w-[80px] h-[80px] z-0
-    border-4 border-[#7bbfae]/20 rounded-full
-    animate-[spin_30s_linear_infinite]">
+    border-4 border-[#7bbfae]/20 rounded-full"
+    style={{ animation: "spin 30s linear infinite" }}>
   </div>
 
-  <div className="hidden sm:block absolute left-[20%] top-[35%] w-[50px] h-[50px] z-0
-    border-3 border-[#ffc800]/25 rounded-full
-    animate-[spin_20s_linear_infinite_reverse]">
+  <div className="hidden lg:block absolute left-[20%] top-[35%] w-[50px] h-[50px] z-0
+    border-3 border-[#ffc800]/25 rounded-full"
+    style={{ animation: "spin 20s linear infinite reverse" }}>
   </div>
 
   {/* Small Accent Dots */}
-  <div className="absolute left-[45%] top-[20%] w-3 h-3 bg-[#7bbfae]/30 rounded-full z-0 animate-pulse"></div>
-  <div className="absolute right-[30%] bottom-[30%] w-2 h-2 bg-[#ffc800]/40 rounded-full z-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
-  <div className="absolute left-[35%] bottom-[25%] w-2.5 h-2.5 bg-[#2f5349]/25 rounded-full z-0 animate-pulse" style={{ animationDelay: '2s' }}></div>
+  <div className="hidden md:block absolute left-[45%] top-[20%] w-3 h-3 bg-[#7bbfae]/30 rounded-full z-0 animate-pulse"></div>
+  <div className="hidden md:block absolute right-[30%] bottom-[30%] w-2 h-2 bg-[#ffc800]/40 rounded-full z-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
+  <div className="hidden md:block absolute left-[35%] bottom-[25%] w-2.5 h-2.5 bg-[#2f5349]/25 rounded-full z-0 animate-pulse" style={{ animationDelay: '2s' }}></div>
 
   {/* Gradient Overlay for Depth */}
   <div className="absolute inset-0 bg-gradient-to-t from-white/50 via-transparent to-transparent z-[1] pointer-events-none"></div>
@@ -192,6 +193,7 @@ const Hero = () => {
             src={item.service.serviceImage}
             alt={item.service.title}
             className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg object-cover"
+            loading="lazy"
           />
           <div className="flex-1 text-left">
             <h4 className="font-semibold text-gray-900 text-sm sm:text-base">{item.service.title}</h4>
@@ -242,7 +244,7 @@ const Hero = () => {
   </div>
 
   {/* Custom Keyframes */}
-  <style jsx>{`
+  <style>{`
     @keyframes float {
       0%, 100% {
         transform: translate(0, 0) rotate(0deg);
@@ -263,11 +265,19 @@ const Hero = () => {
         background-position: 100% 50%;
       }
     }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
   `}</style>
 
 </section>
 
   );
-};
+});
 
 export default Hero;

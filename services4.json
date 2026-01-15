@@ -1,782 +1,762 @@
 [
-  {
-    "providerId": "sp_63",
-    "name": "Rahul Sharma",
-    "profileImage": "/assets/people/p-7.jpg",
-    "service": {
-      "serviceId": "svc_63",
-      "title": "Home Tutoring",
-      "category": "tutor",
-      "serviceImage": "/assets/home-help/home.jpg",
-      "about": "Personalized home tutoring services covering math, science, languages, and exam preparation to help students excel academically.",
-      "whatIncluded": [
-        {
-          "title": "Basic Tutoring",
-          "description": "One-on-one sessions with customized study plans",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_067",
+        "name": "Rahul Sharma",
+        "profileImage": "/assets/people/p-67.jpg",
+        "service": {
+            "serviceId": "svc_067",
+            "title": "Home Tutoring",
+            "category": "tutor",
+            "serviceImage": "/assets/home-help/home.jpg",
+            "about": "Personalized home tutoring services covering math, science, languages, and exam preparation to help students excel academically.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Tutoring",
+                    "description": "One-on-one sessions with customized study plans",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4200,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.130",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2101,
+            "longitude": 72.8439
         }
-      ]
     },
-    "price": 4200,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.130",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.2101,
-      "longitude": 72.8439
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_64",
-    "name": "Vikram Patil",
-    "profileImage": "/assets/people/p-8.jpg",
-    "service": {
-      "serviceId": "svc_64",
-      "title": "Plumbing Services",
-      "category": "Plumbing",
-      "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
-      "about": "Expert plumbing solutions including repairs, installations, leak detection, and pipe maintenance for residential properties.",
-      "whatIncluded": [
-        {
-          "title": "Basic Plumbing",
-          "description": "Leak fixes, unclogging, and minor repairs included",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_068",
+        "name": "Vikram Patil",
+        "profileImage": "/assets/people/p-68.jpg",
+        "service": {
+            "serviceId": "svc_068",
+            "title": "Plumbing Services",
+            "category": "Plumbing",
+            "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
+            "about": "Expert plumbing solutions including repairs, installations, leak detection, and pipe maintenance for residential properties.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Plumbing",
+                    "description": "Leak fixes, unclogging, and minor repairs included",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3800,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "19:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.6,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.131",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2050,
+            "longitude": 72.8500
         }
-      ]
     },
-    "price": 3800,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "19:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.6,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.131",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.205,
-      "longitude": 72.85
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_65",
-    "name": "Arjun Desai",
-    "profileImage": "/assets/people/p-9.jpg",
-    "service": {
-      "serviceId": "svc_65",
-      "title": "Electrical Repair",
-      "category": "Electrical",
-      "serviceImage": "/assets/Repair-maintain/Electrical/light.jpg",
-      "about": "Professional electrical services covering wiring, repairs, installations, and safety inspections for homes and apartments.",
-      "whatIncluded": [
-        {
-          "title": "Basic Electrical",
-          "description": "Wiring checks, socket repairs, and lighting fixes",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_069",
+        "name": "Arjun Desai",
+        "profileImage": "/assets/people/p-69.jpg",
+        "service": {
+            "serviceId": "svc_069",
+            "title": "Electrical Repair",
+            "category": "Electrical",
+            "serviceImage": "/assets/Repair-maintain/Electrical/light.jpg",
+            "about": "Professional electrical services covering wiring, repairs, installations, and safety inspections for homes and apartments.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Electrical",
+                    "description": "Wiring checks, socket repairs, and lighting fixes",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4500,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.9,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.132",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2150,
+            "longitude": 72.8400
         }
-      ]
     },
-    "price": 4500,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.9,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.132",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.215,
-      "longitude": 72.84
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_66",
-    "name": "Sanjay Nair",
-    "profileImage": "/assets/people/p-10.jpg",
-    "service": {
-      "serviceId": "svc_66",
-      "title": "Home Cleaning",
-      "category": "Cleaning",
-      "serviceImage": "/assets/clean/home-cleaning.jpg",
-      "about": "Thorough home cleaning including deep cleaning, dusting, floor mopping, and bathroom sanitation for spotless living spaces.",
-      "whatIncluded": [
-        {
-          "title": "Basic Cleaning",
-          "description": "Full home dusting, sweeping, and surface cleaning",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_070",
+        "name": "Sanjay Nair",
+        "profileImage": "/assets/people/p-70.jpg",
+        "service": {
+            "serviceId": "svc_070",
+            "title": "Home Cleaning",
+            "category": "Cleaning",
+            "serviceImage": "/assets/clean/home-cleaning.jpg",
+            "about": "Thorough home cleaning including deep cleaning, dusting, floor mopping, and bathroom sanitation for spotless living spaces.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Cleaning",
+                    "description": "Full home dusting, sweeping, and surface cleaning",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3200,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "09:00",
+                "to": "21:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.5,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.133",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2000,
+            "longitude": 72.8550
         }
-      ]
     },
-    "price": 3200,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "09:00",
-        "to": "21:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.5,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.133",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.2,
-      "longitude": 72.855
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_67",
-    "name": "Rohan Joshi",
-    "profileImage": "/assets/people/p-11.jpg",
-    "service": {
-      "serviceId": "svc_67",
-      "title": "Painting Services",
-      "category": "Painting & Decor",
-      "serviceImage": "/assets/Repair-maintain/renovation/r-2.jpg",
-      "about": "Professional interior and exterior painting services including wall preparation, priming, and high-quality finishing.",
-      "whatIncluded": [
-        {
-          "title": "Basic Painting",
-          "description": "Wall prep, priming, and two coats of paint",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_071",
+        "name": "Rohan Joshi",
+        "profileImage": "/assets/people/p-71.jpg",
+        "service": {
+            "serviceId": "svc_071",
+            "title": "Painting Services",
+            "category": "Painting & Decor",
+            "serviceImage": "/assets/Repair-maintain/renovation/r-2.jpg",
+            "about": "Professional interior and exterior painting services including wall preparation, priming, and high-quality finishing.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Painting",
+                    "description": "Wall prep, priming, and two coats of paint",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4100,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.7,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.134",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2080,
+            "longitude": 72.8450
         }
-      ]
     },
-    "price": 4100,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.7,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.134",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.208,
-      "longitude": 72.845
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_68",
-    "name": "Karan Shetty",
-    "profileImage": "/assets/people/p-12.jpg",
-    "service": {
-      "serviceId": "svc_68",
-      "title": "Car Washing",
-      "category": "Four-Wheeler",
-      "serviceImage": "/assets/Four_wheeler/c-1.jpg",
-      "about": "Complete car washing and detailing services including exterior wash, interior vacuuming, and polishing.",
-      "whatIncluded": [
-        {
-          "title": "Basic Car Wash",
-          "description": "Exterior wash, interior vacuum, and tire shine",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_072",
+        "name": "Karan Shetty",
+        "profileImage": "/assets/people/p-72.jpg",
+        "service": {
+            "serviceId": "svc_072",
+            "title": "Car Washing",
+            "category": "Four-Wheeler",
+            "serviceImage": "/assets/Four_wheeler/c-1.jpg",
+            "about": "Complete car washing and detailing services including exterior wash, interior vacuuming, and polishing.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Car Wash",
+                    "description": "Exterior wash, interior vacuum, and tire shine",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 2900,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "19:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.6,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.135",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2120,
+            "longitude": 72.8480
         }
-      ]
     },
-    "price": 2900,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "19:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.6,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.135",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.212,
-      "longitude": 72.848
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_69",
-    "name": "Amit Gavaskar",
-    "profileImage": "/assets/people/p-13.jpg",
-    "service": {
-      "serviceId": "svc_69",
-      "title": "Gardening",
-      "category": "Outdoor & Misc Services",
-      "serviceImage": "/assets/outdoor-service/g-1.jpg",
-      "about": "Professional gardening including lawn mowing, plant care, pruning, and landscape maintenance.",
-      "whatIncluded": [
-        {
-          "title": "Basic Gardening",
-          "description": "Lawn mowing, watering, and plant trimming",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_073",
+        "name": "Amit Gavaskar",
+        "profileImage": "/assets/people/p-73.jpg",
+        "service": {
+            "serviceId": "svc_073",
+            "title": "Gardening",
+            "category": "Outdoor & Misc Services",
+            "serviceImage": "/assets/outdoor-service/g-1.jpg",
+            "about": "Professional gardening including lawn mowing, plant care, pruning, and landscape maintenance.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Gardening",
+                    "description": "Lawn mowing, watering, and plant trimming",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3500,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "06:00",
+                "to": "18:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.136",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2070,
+            "longitude": 72.8470
         }
-      ]
     },
-    "price": 3500,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "06:00",
-        "to": "18:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.136",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.207,
-      "longitude": 72.847
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_70",
-    "name": "Nilesh Pawar",
-    "profileImage": "/assets/people/p-14.jpg",
-    "service": {
-      "serviceId": "svc_70",
-      "title": "Laundry Services",
-      "category": "Laundry",
-      "serviceImage": "/assets/home-help/laundry.jpg",
-      "about": "Professional laundry services including washing, ironing, dry cleaning, and garment care.",
-      "whatIncluded": [
-        {
-          "title": "Basic Laundry",
-          "description": "Washing, drying, folding, and ironing clothes",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_074",
+        "name": "Nilesh Pawar",
+        "profileImage": "/assets/people/p-74.jpg",
+        "service": {
+            "serviceId": "svc_074",
+            "title": "Laundry Services",
+            "category": "Laundry",
+            "serviceImage": "/assets/home-help/laundry.jpg",
+            "about": "Professional laundry services including washing, ironing, dry cleaning, and garment care.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Laundry",
+                    "description": "Washing, drying, folding, and ironing clothes",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 2800,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.5,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.137",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2110,
+            "longitude": 72.8460
         }
-      ]
     },
-    "price": 2800,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.5,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.137",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.211,
-      "longitude": 72.846
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_71",
-    "name": "Prakash More",
-    "profileImage": "/assets/people/p-15.jpg",
-    "service": {
-      "serviceId": "svc_71",
-      "title": "AC Repair",
-      "category": "Appliance Repair",
-      "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
-      "about": "Expert AC servicing, repair, installation, and maintenance including gas refilling and cleaning.",
-      "whatIncluded": [
-        {
-          "title": "Basic AC Servic",
-          "description": "Cleaning, gas check, and performance testing",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_075",
+        "name": "Prakash More",
+        "profileImage": "/assets/people/p-75.jpg",
+        "service": {
+            "serviceId": "svc_075",
+            "title": "AC Repair",
+            "category": "Appliance Repair",
+            "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
+            "about": "Expert AC servicing, repair, installation, and maintenance including gas refilling and cleaning.",
+            "whatIncluded": [
+                {
+                    "title": "Basic AC Servic",
+                    "description": "Cleaning, gas check, and performance testing",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4800,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "09:00",
+                "to": "21:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.7,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.138",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.0760,
+            "longitude": 72.8777
         }
-      ]
     },
-    "price": 4800,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "09:00",
-        "to": "21:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.7,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.138",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.076,
-      "longitude": 72.8777
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_72",
-    "name": "Sunil Kadam",
-    "profileImage": "/assets/people/p-16.jpg",
-    "service": {
-      "serviceId": "svc_72",
-      "title": "Pest Control",
-      "category": "Outdoor & Misc Services",
-      "serviceImage": "/assets/outdoor-service/pest-1.jpg",
-      "about": "Professional pest control services for cockroaches, ants, termites, and rodents with safe chemical treatments.",
-      "whatIncluded": [
-        {
-          "title": "Basic Pest Control",
-          "description": "Complete home treatment and 3-month warranty",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_076",
+        "name": "Sunil Kadam",
+        "profileImage": "/assets/people/p-76.jpg",
+        "service": {
+            "serviceId": "svc_076",
+            "title": "Pest Control",
+            "category": "Outdoor & Misc Services",
+            "serviceImage": "/assets/outdoor-service/pest-1.jpg",
+            "about": "Professional pest control services for cockroaches, ants, termites, and rodents with safe chemical treatments.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Pest Control",
+                    "description": "Complete home treatment and 3-month warranty",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3900,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.6,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.139",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2183,
+            "longitude": 72.9781
         }
-      ]
     },
-    "price": 3900,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.6,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.139",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.2183,
-      "longitude": 72.9781
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_73",
-    "name": "Mahesh Sawant",
-    "profileImage": "/assets/people/p-17.jpg",
-    "service": {
-      "serviceId": "svc_73",
-      "title": "Water Tank Cleaning",
-      "category": "Cleaning",
-      "serviceImage": "/assets/clean/tank_clean.jpg",
-      "about": "Complete water tank cleaning and disinfection services for overhead and underground tanks.",
-      "whatIncluded": [
-        {
-          "title": "Basic Tank Cleaning",
-          "description": "Silt removal, scrubbing, and disinfection",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_077",
+        "name": "Mahesh Sawant",
+        "profileImage": "/assets/people/p-77.jpg",
+        "service": {
+            "serviceId": "svc_077",
+            "title": "Water Tank Cleaning",
+            "category": "Cleaning",
+            "serviceImage": "/assets/clean/tank_clean.jpg",
+            "about": "Complete water tank cleaning and disinfection services for overhead and underground tanks.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Tank Cleaning",
+                    "description": "Silt removal, scrubbing, and disinfection",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3600,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "19:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.140",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 18.9667,
+            "longitude": 72.8050
         }
-      ]
     },
-    "price": 3600,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "19:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.140",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 18.9667,
-      "longitude": 72.805
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_74",
-    "name": "Nitin Khare",
-    "profileImage": "/assets/people/p-18-new.jpg",
-    "service": {
-      "serviceId": "svc_74",
-      "title": "Carpentry Services",
-      "category": "Carpentry",
-      "serviceImage": "/assets/Repair-maintain/renovation/r-1.jpg",
-      "about": "Professional carpentry services including furniture repair, custom woodworking, door/window fitting, and wooden fixture installation.",
-      "whatIncluded": [
-        {
-          "title": "Basic Carpentry",
-          "description": "Furniture repairs, measurements, cutting, and assembly work",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_078",
+        "name": "Nitin Khare",
+        "profileImage": "/assets/people/p-78.jpg",
+        "service": {
+            "serviceId": "svc_078",
+            "title": "Carpentry Services",
+            "category": "Carpentry",
+            "serviceImage": "/assets/Repair-maintain/renovation/r-1.jpg",
+            "about": "Professional carpentry services including furniture repair, custom woodworking, door/window fitting, and wooden fixture installation.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Carpentry",
+                    "description": "Furniture repairs, measurements, cutting, and assembly work",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4400,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "19:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.7,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.141",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.0750,
+            "longitude": 72.8750
         }
-      ]
     },
-    "price": 4400,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "19:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.7,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.141",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.075,
-      "longitude": 72.875
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_75",
-    "name": "Rajesh Bhosale",
-    "profileImage": "/assets/people/p-19.jpg",
-    "service": {
-      "serviceId": "svc_75",
-      "title": "Massage Therapy",
-      "category": "Personal & Lifestyle",
-      "serviceImage": "/assets/lifestyle&personal/massage.jpg",
-      "about": "Professional therapeutic massage services at home including deep tissue, Swedish, and relaxation massage.",
-      "whatIncluded": [
-        {
-          "title": "Basic Massage",
-          "description": "60-minute full body massage session",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_079",
+        "name": "Rajesh Bhosale",
+        "profileImage": "/assets/people/p-79.jpg",
+        "service": {
+            "serviceId": "svc_079",
+            "title": "Massage Therapy",
+            "category": "Personal & Lifestyle",
+            "serviceImage": "/assets/lifestyle&personal/massage.jpg",
+            "about": "Professional therapeutic massage services at home including deep tissue, Swedish, and relaxation massage.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Massage",
+                    "description": "60-minute full body massage session",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 5200,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "10:00",
+                "to": "22:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.9,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.142",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.0500,
+            "longitude": 72.9000
         }
-      ]
     },
-    "price": 5200,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "10:00",
-        "to": "22:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.9,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.142",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.05,
-      "longitude": 72.9
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_76",
-    "name": "Vijay Gaikwad",
-    "profileImage": "/assets/people/p-20.jpg",
-    "service": {
-      "serviceId": "svc_76",
-      "title": "Coding Tutor",
-      "category": "Skill Tutor",
-      "serviceImage": "/assets/tutor/home.jpg",
-      "about": "Personalized skill development tutoring covering computer skills, digital marketing, graphic design, coding basics, and professional development training.",
-      "whatIncluded": [
-        {
-          "title": "Basic Skill Session",
-          "description": "Hands-on training with practical projects and skill certification guidance",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_080",
+        "name": "Vijay Gaikwad",
+        "profileImage": "/assets/people/p-80.jpg",
+        "service": {
+            "serviceId": "svc_080",
+            "title": "Coding Tutor",
+            "category": "Skill Tutor",
+            "serviceImage": "/assets/tutor/home.jpg",
+            "about": "Personalized skill development tutoring covering computer skills, digital marketing, graphic design, coding basics, and professional development training.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Skill Session",
+                    "description": "Hands-on training with practical projects and skill certification guidance",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4800,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "09:00",
+                "to": "21:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.143",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2200,
+            "longitude": 72.8300
         }
-      ]
     },
-    "price": 4800,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "09:00",
-        "to": "21:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.143",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.22,
-      "longitude": 72.83
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_77",
-    "name": "Pravin Kulkarni",
-    "profileImage": "/assets/people/p-21.jpg",
-    "service": {
-      "serviceId": "svc_77",
-      "title": "Computer Repair",
-      "category": "Tech Support",
-      "serviceImage": "/assets/Repair-maintain/app-repair/computer_repair.jpg",
-      "about": "Laptop and desktop repair services including hardware fixes, software installation, and virus removal.",
-      "whatIncluded": [
-        {
-          "title": "Basic Computer Repair",
-          "description": "Hardware diagnostics and software troubleshooting",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_081",
+        "name": "Pravin Kulkarni",
+        "profileImage": "/assets/people/p-81.jpg",
+        "service": {
+            "serviceId": "svc_081",
+            "title": "Computer Repair",
+            "category": "Tech Support",
+            "serviceImage": "/assets/Repair-maintain/app-repair/computer_repair.jpg",
+            "about": "Laptop and desktop repair services including hardware fixes, software installation, and virus removal.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Computer Repair",
+                    "description": "Hardware diagnostics and software troubleshooting",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4600,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "09:00",
+                "to": "21:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.6,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.144",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.1000,
+            "longitude": 72.8600
         }
-      ]
     },
-    "price": 4600,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "09:00",
-        "to": "21:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.6,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.144",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.1,
-      "longitude": 72.86
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_78",
-    "name": "Anil Jadhav",
-    "profileImage": "/assets/people/p-22.jpg",
-    "service": {
-      "serviceId": "svc_78",
-      "title": "Salon at Home",
-      "category": "Personal & Lifestyle",
-      "serviceImage": "/assets/lifestyle&personal/makeUp.jpg",
-      "about": "Complete salon services at home including haircuts, styling, makeup, and grooming for men and women.",
-      "whatIncluded": [
-        {
-          "title": "Basic Grooming",
-          "description": "Haircut, shave, and basic styling services",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_082",
+        "name": "Anil Jadhav",
+        "profileImage": "/assets/people/p-82.jpg",
+        "service": {
+            "serviceId": "svc_082",
+            "title": "Salon at Home",
+            "category": "Personal & Lifestyle",
+            "serviceImage": "/assets/lifestyle&personal/makeUp.jpg",
+            "about": "Complete salon services at home including haircuts, styling, makeup, and grooming for men and women.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Grooming",
+                    "description": "Haircut, shave, and basic styling services",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 3700,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "09:00",
+                "to": "21:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.145",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.1700,
+            "longitude": 72.9500
         }
-      ]
     },
-    "price": 3700,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "09:00",
-        "to": "21:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.145",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.17,
-      "longitude": 72.95
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_79",
-    "name": "Ramesh Thakur",
-    "profileImage": "/assets/people/p-23.jpg",
-    "service": {
-      "serviceId": "svc_79",
-      "title": "CCTV Installation",
-      "category": "Security & Safety",
-      "serviceImage": "/assets/Repair-maintain/Electrical/CCTV.jpg",
-      "about": "Professional security system installation including CCTV cameras, burglar alarms, smart locks, and home surveillance setup.",
-      "whatIncluded": [
-        {
-          "title": "Basic Security Setup",
-          "description": "CCTV installation, alarm wiring, and system testing",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_083",
+        "name": "Ramesh Thakur",
+        "profileImage": "/assets/people/p-83.jpg",
+        "service": {
+            "serviceId": "svc_083",
+            "title": "CCTV Installation",
+            "category": "Security & Safety",
+            "serviceImage": "/assets/Repair-maintain/Electrical/CCTV.jpg",
+            "about": "Professional security system installation including CCTV cameras, burglar alarms, smart locks, and home surveillance setup.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Security Setup",
+                    "description": "CCTV installation, alarm wiring, and system testing",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 5800,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.146",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.3000,
+            "longitude": 72.8500
         }
-      ]
     },
-    "price": 5800,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.146",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.3,
-      "longitude": 72.85
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_80",
-    "name": "Govind Mhatre",
-    "profileImage": "/assets/people/p-24.jpg",
-    "service": {
-      "serviceId": "svc_80",
-      "title": "Fire Safety Equipment",
-      "category": "Security & Safety",
-      "serviceImage": "/assets/Repair-maintain/Electrical/fire_equipment.jpg",
-      "about": "Professional fire safety equipment installation and maintenance including smoke detectors, fire extinguishers, emergency lights, and safety audits.",
-      "whatIncluded": [
-        {
-          "title": "Basic Fire Safety",
-          "description": "Smoke detector installation, extinguisher servicing, and safety inspection",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_084",
+        "name": "Govind Mhatre",
+        "profileImage": "/assets/people/p-84.jpg",
+        "service": {
+            "serviceId": "svc_084",
+            "title": "Fire Safety Equipment",
+            "category": "Security & Safety",
+            "serviceImage": "/assets/Repair-maintain/Electrical/fire_equipment.jpg",
+            "about": "Professional fire safety equipment installation and maintenance including smoke detectors, fire extinguishers, emergency lights, and safety audits.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Fire Safety",
+                    "description": "Smoke detector installation, extinguisher servicing, and safety inspection",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 4900,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "08:00",
+                "to": "20:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.7,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.147",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.1200,
+            "longitude": 72.8600
         }
-      ]
     },
-    "price": 4900,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "08:00",
-        "to": "20:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.7,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.147",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.12,
-      "longitude": 72.86
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_81",
-    "name": "Santosh Rane",
-    "profileImage": "/assets/people/p-25.jpg",
-    "service": {
-      "serviceId": "svc_81",
-      "title": "Babysitter",
-      "category": "Home Help",
-      "serviceImage": "/assets/home-help/baby-sitting-2.jpg",
-      "about": "Professional baby care services including feeding, bathing, diaper changing, playtime activities, and newborn care assistance.",
-      "whatIncluded": [
-        {
-          "title": "Basic Baby Care",
-          "description": "Daily care routine including feeding, bathing, and nap supervision",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_085",
+        "name": "Santosh Rane",
+        "profileImage": "/assets/people/p-85.jpg",
+        "service": {
+            "serviceId": "svc_085",
+            "title": "Babysitter",
+            "category": "Home Help",
+            "serviceImage": "/assets/home-help/baby-sitting-2.jpg",
+            "about": "Professional baby care services including feeding, bathing, diaper changing, playtime activities, and newborn care assistance.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Baby Care",
+                    "description": "Daily care routine including feeding, bathing, and nap supervision",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 5500,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "22:00",
+                "totalHours": 15
+            },
+            "status": "Available"
+        },
+        "rating": 4.8,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.148",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.2400,
+            "longitude": 72.8700
         }
-      ]
     },
-    "price": 5500,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "22:00",
-        "totalHours": 15
-      },
-      "status": "Available"
-    },
-    "rating": 4.8,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.148",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.24,
-      "longitude": 72.87
-    },
-    "saved": false
-  },
-  {
-    "providerId": "sp_82",
-    "name": "Ashok Salvi",
-    "profileImage": "/assets/people/p-26.jpg",
-    "service": {
-      "serviceId": "svc_82",
-      "title": "Deep Home Cleaning",
-      "category": "Cleaning",
-      "serviceImage": "/assets/clean/home-cleaning.jpg",
-      "about": "Comprehensive deep cleaning services covering kitchen, bathroom, furniture, and entire home sanitization.",
-      "whatIncluded": [
-        {
-          "title": "Basic Deep Clean",
-          "description": "Complete home deep cleaning and disinfection",
-          "icon": "<Sparkles className='w-5 h-5' />"
+    {
+        "providerId": "sp_086",
+        "name": "Ashok Salvi",
+        "profileImage": "/assets/people/p-86.jpg",
+        "service": {
+            "serviceId": "svc_086",
+            "title": "Deep Home Cleaning",
+            "category": "Cleaning",
+            "serviceImage": "/assets/clean/home-cleaning.jpg",
+            "about": "Comprehensive deep cleaning services covering kitchen, bathroom, furniture, and entire home sanitization.",
+            "whatIncluded": [
+                {
+                    "title": "Basic Deep Clean",
+                    "description": "Complete home deep cleaning and disinfection",
+                    "icon": "<Sparkles className='w-5 h-5' />"
+                }
+            ]
+        },
+        "price": 5400,
+        "availability": {
+            "dailyWorkingHours": {
+                "from": "07:00",
+                "to": "19:00",
+                "totalHours": 12
+            },
+            "status": "Available"
+        },
+        "rating": 4.9,
+        "reviews": [],
+        "location": {
+            "ipAddress": "152.58.43.149",
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "latitude": 19.1900,
+            "longitude": 72.8900
         }
-      ]
-    },
-    "price": 5400,
-    "availability": {
-      "dailyWorkingHours": {
-        "from": "07:00",
-        "to": "19:00",
-        "totalHours": 12
-      },
-      "status": "Available"
-    },
-    "rating": 4.9,
-    "reviews": [],
-    "location": {
-      "ipAddress": "152.58.43.149",
-      "country": "India",
-      "state": "Maharashtra",
-      "city": "Mumbai",
-      "latitude": 19.19,
-      "longitude": 72.89
-    },
-    "saved": false
-  }
+    }
 ]

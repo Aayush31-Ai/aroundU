@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.8",
+    "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.1.18",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.24.0",
+    "framer-motion": "^12.26.2",
     "fuse.js": "^7.1.0",
     "i": "^0.3.7",
     "leaflet": "^1.9.4",
