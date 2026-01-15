@@ -1,5 +1,6 @@
 import React from "react";
 import { ShieldCheck, Users, MapPin, Sparkles } from "lucide-react";
+import SEO from "@/components/Common/SEO";
 
 const stats = [
   {
@@ -22,6 +23,10 @@ const stats = [
 const About = () => {
   return (
     <section className="relative bg-white py-16 lg:py-24">
+      <SEO 
+        title="About Us" 
+        description="Learn more about AroundU, your trusted partner for finding reliable local service professionals. We connect you with verified experts."
+      />
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT — CONTENT */}

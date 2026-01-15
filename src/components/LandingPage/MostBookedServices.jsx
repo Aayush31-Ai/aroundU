@@ -102,7 +102,7 @@ const MostBookedServices = React.memo(() => {
               <SwiperSlide key={service.providerId} className="h-auto">
                 <div 
                   className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col h-full"
-                  onClick={() => navigate(`/service/${service.providerId}`)}  
+                  onClick={() => navigate(`/services/${service.providerId}`)}  
                 >
                   {/* Image Container */}
                   <div className="relative w-full h-48 sm:h-52 md:h-56 overflow-hidden">
@@ -137,7 +137,7 @@ const MostBookedServices = React.memo(() => {
                       <button 
                         onClick={(e) => {
                           e.stopPropagation();
-                          navigate(`/service/${service.providerId}`);
+                          navigate(`/services/${service.providerId}`);
                         }}
                         className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30"
                       >

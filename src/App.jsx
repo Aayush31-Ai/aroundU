@@ -13,7 +13,7 @@ function App() {
       <MainRouter/>
 <Footer />
 <ToastContainer 
-        position="bottom-right"
+        position="top`-right"
         autoClose={3000}
         theme="colored"
       />

@@ -1,220 +1,291 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   Star,
   ShieldCheck,
-  Clock,
   CheckCircle,
-  MessageCircle,
-  Heart,
+  Calendar,
+  Clock,
+  MapPin,
 } from "lucide-react";
 import { useParams } from "react-router";
 import { toast } from "react-toastify";
 import useServices from "@/hooks/useServices";
+import SimilarServices from "@/components/SimilarServices";
+import SEO from "@/components/Common/SEO";
 
 const ServiceDetailPage = () => {
-  const [data, setData] = useState(null);
-  const [formData, setFormData] = useState({
-    dateTime: "",
-    frequency: "One-time service",
-  });
-  const [error, setError] = useState("");
-
+  const { providerId } = useParams();
   const { services, loading } = useServices();
 
+  const [data, setData] = useState(null);
+  const [showMobileBooking, setShowMobileBooking] = useState(false);
+  const [formData, setFormData] = useState({
+    dateTime: "",
+    frequency: "One-time",
+  });
+
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "auto" });
-  }, []);
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setFormData({
+      dateTime: "",
+      frequency: "One-time",
+    });
+    setShowMobileBooking(false);
+  }, [providerId]);
 
-  const { providerId } = useParams();
-
-  useMemo(() => {
-    const foundData = services.find((item) => item.providerId === providerId);
-    setData(foundData);
+  useEffect(() => {
+    if (!services?.length) return;
+    setData(services.find((s) => s.providerId === providerId));
   }, [services, providerId]);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-    setError("");
-  };
+  const similarServices = useMemo(() => {
+    if (!data) return [];
+    return services
+      .filter(
+        (s) =>
+          s.providerId !== data.providerId &&
+          s.service.category === data.service.category
+      )
+      .slice(0, 6);
+  }, [data, services]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!formData.dateTime.trim()) {
-      toast.error("Please select a date and time");
-      return;
-    }
-
-    if (!formData.frequency.trim()) {
-      toast.error("Please select a frequency");
+  const submitBooking = () => {
+    if (!formData.dateTime) {
+      toast.error("Please select date & time");
       return;
     }
     toast.success("Service booked successfully!");
-    setError("");
+    setShowMobileBooking(false);
   };
 
+  if (loading) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center text-gray-500">
+        Loading service…
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="min-h-[60vh] flex items-center justify-center text-red-500">
+        Service not found
+      </div>
+    );
+  }
+
   return (
-    <div className="bg-gray-50 min-h-screen py-10 ">
-      {loading ? (
-        <div className="flex items-center justify-center h-screen">
-          <p className="text-lg text-gray-600">Loading service details...</p>
-        </div>
-      ) : !data ? (
-        <div className="flex items-center justify-center h-screen">
-          <p className="text-lg text-red-600">Service not found</p>
-        </div>
-      ) : (
-        <>
-          {/*  MAIN GRID  */}
-          <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-3 gap-8">
-            {/* left content */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* TITLE */}
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">
-                  {data.service.title}
-                </h1>
+    <div className="bg-gray-50 pb-28 lg:pb-12">
+      <SEO 
+        title={data.service.title}
+        description={data.service.about?.substring(0, 160)}
+        image={data.service.serviceImage}
+        keywords={`${data.service.category}, ${data.service.title}, ${data.name}, local professional`}
+      />
+      <div className="max-w-7xl mx-auto px-4 py-4 lg:py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
 
-                <div className="mt-3 flex items-center pr-6  gap-4 text-sm">
+        {/* ================= LEFT CONTENT ================= */}
+        <div className="lg:col-span-8 space-y-8 min-w-0">
 
-                    <span className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-[#2f5349] fill-[#2f5349]" />
-                      {data.rating}
-                    </span>
+          {/* TITLE */}
+          <div>
+            <span className="inline-block bg-[#2f5349]/10 text-[#2f5349] text-xs font-bold px-3 py-1 rounded-full mb-3">
+              {data.service.category}
+            </span>
 
-                    <span className="flex items-center gap-1 text-green-600">
-                      <ShieldCheck className="w-4 h-4" />
-                      Verified
-                    </span>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              {data.service.title}
+            </h1>
 
+            <div className="mt-3 flex items-center gap-4 text-sm">
+              <span className="flex items-center gap-1 text-[#2f5349] font-semibold">
+                <Star className="w-4 h-4 fill-current" />
+                {data.rating}
+              </span>
+              <span className="flex items-center gap-1 text-green-600">
+                <ShieldCheck className="w-4 h-4" />
+                Verified
+              </span>
+            </div>
+          </div>
 
-                </div>
-              </div>
+          {/* IMAGE */}
+          <div className="w-full aspect-[4/3] sm:aspect-video rounded-2xl overflow-hidden bg-white border">
+            <img
+              src={data.service.serviceImage}
+              alt={data.service.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-              {/* IMAGE GRID */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="sm:col-span-2 rounded-2xl overflow-hidden shadow-md border border-gray-200">
-                  <img
-                    src={data.service.serviceImage}
-                    alt={data.service.title}
-                    className="w-full h-80 object-cover  hover:scale-103 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+          {/* PROVIDER */}
+          <div className="bg-white rounded-xl p-5 border flex items-center gap-4">
+            <img
+              src={data.profileImage}
+              alt={data.name}
+              className="w-16 h-16 rounded-full object-cover"
+            />
+            <div>
+              <p className="font-semibold text-gray-900">{data.name}</p>
+              <p className="text-sm text-gray-500 flex items-center gap-3">
+                <span className="flex items-center gap-1">
+                  <Clock size={14} /> 1 hr
+                </span>
+                <span className="flex items-center gap-1">
+                  <MapPin size={14} /> Nearby
+                </span>
+              </p>
+            </div>
+          </div>
 
-              {/* PROVIDER CARD */}
-              <div className="bg-white rounded-xl p-5 flex items-center justify-between border">
-                <div className="flex items-center gap-4">
-                  <img
-                    src={data.profileImage}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
+          {/* ABOUT */}
+          <div className="bg-white rounded-xl p-6 border">
+            <h2 className="text-xl font-bold mb-3">About the service</h2>
+            <p className="text-gray-600 leading-relaxed">
+              {data.service.about}
+            </p>
+          </div>
+
+          {/* INCLUDED */}
+          <div className="bg-white rounded-xl p-6 border">
+            <h2 className="text-xl font-bold mb-4">What’s included</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {data.service.whatIncluded.map((item, i) => (
+                <div key={i} className="flex gap-3">
+                  <CheckCircle className="w-5 h-5 text-[#2f5349]" />
                   <div>
-                    <p className="font-semibold">{data.name}</p>
+                    <p className="font-semibold">{item.title}</p>
                     <p className="text-sm text-gray-500">
-                      Responds in &lt; 1 hr
+                      {item.description}
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* ABOUT */}
-              <div className="bg-white rounded-xl p-6 border">
-                <h2 className="text-xl font-semibold">About the service</h2>
-                <p className="mt-4 text-gray-600 leading-relaxed">
-                  {data.service.about}
-                </p>
-              </div>
-
-              {/* WHAT'S INCLUDED */}
-              <div className="bg-white rounded-xl p-6 border">
-                <h2 className="text-xl font-semibold">What’s included</h2>
-
-                <div className="mt-6 grid sm:grid-cols-2 gap-4">
-                  {data.service.whatIncluded.map((item, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-[#2f5349]" />
-
-                      <div className="text-gray-700">
-                        <p className="font-medium">{item.title}</p>
-                        <p className="text-sm text-gray-500">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* ================= RIGHT SIDEBAR ================= */}
-            <div className="sticky top-24 h-fit">
-              <div className="bg-white rounded-xl border p-6 space-y-5">
-                {/* PRICE */}
-                <div>
-                  <p className="text-sm text-gray-500">Starting from</p>
-                  <p className="text-3xl font-bold">
-                    ₹{data.price}{" "}
-                    <span className="text-sm font-normal">/ visit</span>
-                  </p>
-                </div>
-
-                {/* DATE */}
-                <div>
-                  <label className="text-sm font-medium">Date & Time</label>
-                  <input
-                    type="datetime-local"
-                    name="dateTime"
-                    value={formData.dateTime}
-                    onChange={handleInputChange}
-                    className="mt-2 w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2f5349]"
-                    required
-                  />
-                </div>
-
-                {/* FREQUENCY */}
-                <div>
-                  <label className="text-sm font-medium">Frequency</label>
-                  <select
-                    name="frequency"
-                    value={formData.frequency}
-                    onChange={handleInputChange}
-                    className="mt-2 w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2f5349]"
-                    required
-                  >
-                    <option value="One-time service">One-time service</option>
-                    <option value="Weekly">Weekly</option>
-                    <option value="Monthly">Monthly</option>
-                  </select>
-                </div>
-
-                {/* ERROR MESSAGE */}
-                {error && (
-                  <div className="bg-red-50 border border-red-200 text-red-700 text-sm p-3 rounded-lg">
-                    {error}
-                  </div>
-                )}
-
-                {/* CTA */}
-                <button
-                  onClick={handleSubmit}
-                  disabled={!formData.dateTime}
-                  className="w-full bg-[#2f5349] text-white py-3 rounded-xl font-medium hover:bg-[#2f5349]/90 disabled:bg-gray-300 disabled:cursor-not-allowed transition"
-                >
-                  Book Service
-                </button>
-
-                <p className="text-xs text-gray-500 text-center">
-                  You won’t be charged yet
-                </p>
-              </div>
+              ))}
             </div>
           </div>
-        </>
+
+          <SimilarServices similarServices={similarServices} />
+        </div>
+
+        {/* ================= DESKTOP SIDEBAR ================= */}
+        <div className="hidden lg:block lg:col-span-4">
+          <div className="sticky top-24 bg-white rounded-xl border p-6 space-y-6">
+            <div>
+              <p className="text-sm text-gray-500">Starting from</p>
+              <p className="text-3xl font-bold text-[#2f5349]">
+                ₹{data.price} <span className="text-sm">/ visit</span>
+              </p>
+            </div>
+
+            <div>
+              <label className="text-sm font-bold flex items-center gap-2">
+                <Calendar size={16} /> Date & Time
+              </label>
+              <input
+                type="datetime-local"
+                className="mt-2 w-full border rounded-lg px-3 py-2"
+                value={formData.dateTime}
+                onChange={(e) =>
+                  setFormData({ ...formData, dateTime: e.target.value })
+                }
+              />
+            </div>
+
+            <div>
+              <label className="text-sm font-bold">Frequency</label>
+              <div className="grid grid-cols-3 gap-2 mt-2">
+                {["One-time", "Weekly", "Monthly"].map((f) => (
+                  <button
+                    key={f}
+                    onClick={() =>
+                      setFormData({ ...formData, frequency: f })
+                    }
+                    className={`py-2 rounded-lg text-sm font-semibold border ${
+                      formData.frequency === f
+                        ? "bg-[#2f5349] text-white border-[#2f5349]"
+                        : "bg-white text-gray-600"
+                    }`}
+                  >
+                    {f}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button
+              onClick={submitBooking}
+              className="w-full bg-[#2f5349] text-white py-3 rounded-xl font-bold"
+            >
+              Book Service
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* ================= MOBILE BAR ================= */}
+      <div className="fixed bottom-0 left-0 right-0 lg:hidden bg-white border-t p-4 flex items-center justify-between z-50">
+        <div>
+          <p className="text-xs text-gray-500">Price</p>
+          <p className="text-xl font-bold text-[#2f5349]">
+            ₹{data.price}
+          </p>
+        </div>
+        <button
+          onClick={() => setShowMobileBooking(true)}
+          className="bg-[#2f5349] text-white px-6 py-3 rounded-xl font-bold"
+        >
+          Book Now
+        </button>
+      </div>
+
+      {/* ================= MOBILE MODAL ================= */}
+      {showMobileBooking && (
+        <div className="fixed inset-0 bg-black/40 z-[60] flex items-end">
+          <div className="bg-white w-full rounded-t-2xl p-6 space-y-4">
+            <h3 className="text-lg font-bold">Book Service</h3>
+
+            <input
+              type="datetime-local"
+              className="w-full border rounded-lg px-3 py-2"
+              value={formData.dateTime}
+              onChange={(e) =>
+                setFormData({ ...formData, dateTime: e.target.value })
+              }
+            />
+
+            <div className="grid grid-cols-3 gap-2">
+              {["One-time", "Weekly", "Monthly"].map((f) => (
+                <button
+                  key={f}
+                  onClick={() =>
+                    setFormData({ ...formData, frequency: f })
+                  }
+                  className={`py-2 rounded-lg text-sm font-semibold border ${
+                    formData.frequency === f
+                      ? "bg-[#2f5349] text-white"
+                      : "bg-white text-gray-600"
+                  }`}
+                >
+                  {f}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={submitBooking}
+              className="w-full bg-[#2f5349] text-white py-3 rounded-xl font-bold"
+            >
+              Confirm Booking
+            </button>
+
+            <button
+              onClick={() => setShowMobileBooking(false)}
+              className="w-full text-sm text-gray-500"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
       )}
     </div>
   );
