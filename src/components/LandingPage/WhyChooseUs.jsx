@@ -12,7 +12,7 @@ import {
 const features = [
   {
     icon: ShieldCheck,
-    image: "http://www.elitecarecheshire.co.uk/wp-content/uploads/2015/07/Professional-Domestic-Services-Cheshire.jpg",
+    image: "/3.jpg",
     title: "Verified Professionals",
     desc: "Every expert is identity-checked and quality-reviewed before they meet you.",
     tag: "Safety first",
