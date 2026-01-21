@@ -277,16 +277,6 @@ const AdminDashboard = () => {
             </div>
           )}
 
-          {activeTab === "providers" && (
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-800">Providers Management</h2>
-              <DataTable
-                title="All Providers"
-                columns={providerColumns}
-                data={services}
-              />
-            </div>
-          )}
         </div>
       </div>
     </>

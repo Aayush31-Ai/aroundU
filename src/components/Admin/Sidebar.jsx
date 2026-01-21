@@ -7,8 +7,8 @@ const AdminSidebar = ({ activeTab, onTabChange, onLogout }) => {
   const tabs = [
     { id: "overview", label: "Overview", icon: BarChart3 },
     { id: "verification", label: "Verification", icon: Users },
-    { id: "services", label: "Services", icon: Briefcase },
-    { id: "providers", label: "Providers", icon: Users },
+    { id: "services", label: "Service Providers", icon: Briefcase },
+
   ];
 
   return (
@@ -57,15 +57,6 @@ const AdminSidebar = ({ activeTab, onTabChange, onLogout }) => {
           </nav>
         </div>
 
-        <div className="absolute bottom-6 left-6 right-6">
-          <button
-            onClick={onLogout}
-            className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600 transition"
-          >
-            <LogOut className="w-5 h-5" />
-            Logout
-          </button>
-        </div>
       </div>
 
       {/* Mobile Overlay */}
