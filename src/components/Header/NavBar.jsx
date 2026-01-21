@@ -35,10 +35,9 @@ function NavBar() {
           <NavLink
             to="/services"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -48,10 +47,9 @@ function NavBar() {
           <NavLink
             to="/saved"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -61,10 +59,9 @@ function NavBar() {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -91,16 +88,16 @@ function NavBar() {
             <ChevronDown size={14} />
           </button>
           {/* <div>Roles</div> */}
-          <div className="hidden md:flex justify-center gap-6 lg:gap-8 text-lg px-3 py-1.5 border border-gray-200
+          <div className="hidden md:flex justify-center gap-6 lg:gap-8 text-lg px-5 py-1.5 border border-gray-200
             text-sm text-gray-700  rounded-full ">
             <li className="relative group list-none flex items-center">
-              <div className="flex items-center hover:text-[#7bbfae]">
-                <span className="cursor-pointer hover:text-[#7bbfae]">
+              <div className="flex items-center hover:text-black">
+                <span className="cursor-pointer hover:text-black">
                   Roles
                 </span>
-                <div className="">
+                <div className="gap-2">
                   <svg
-                    className="w-5 h-5 transition-transform duration-300 group-hover:rotate-180"
+                    className="w-3 h-5 transition-transform duration-300 group-hover:rotate-180"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
@@ -110,12 +107,12 @@ function NavBar() {
                   </svg>
                 </div>
               </div>
-              <div className="absolute left-0 top-full pt-2 hidden group-hover:block z-50">
-                <div className="p-[2px] rounded-md bg-gradient-to-r z-50 from-[#b2ecdd] via-[#b2ecdd] to-[#b2ecdd]">
-                  <ul className="w-56 bg-[#7bbfae] rounded-md shadow-lg z-50">
-                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-[#B19EEF]"><Link to="/user">User</Link></li>
-                    <li className="px-4 py-3 hover:bg-[#f0f7f5] cursor-pointer hover:text-[#B19EEF]"><Link to="/admin">Admin</Link></li>
-                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-[#B19EEF]"><Link to="/serviceprovider">ServiceProvider</Link></li>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 hidden group-hover:block z-50">
+                <div className="p-[2px] rounded-md bg-gradient-to-r z-50">
+                  <ul className="w-56 bg-white rounded-md shadow-lg z-50">
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/user">User</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] cursor-pointer hover:text-black"><Link to="/admin">Admin</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/serviceprovider">ServiceProvider</Link></li>
                   </ul>
                 </div>
               </div>

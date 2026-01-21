@@ -23,11 +23,10 @@ const AdminSidebar = ({ activeTab, onTabChange, onLogout }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-blue-700 to-blue-900 text-white transform transition-transform duration-300 z-40 ${
-          isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-        }`}
+        className={`fixed left-0 top-0 h-full w-64 bg-gradient-to-b from-[#2f5349] to-[#2f5349] text-white transform transition-transform duration-300 z-40 ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+          }`}
       >
-        <div className="p-6">
+        <div className="p-6 mt-10">
           <h1 className="text-2xl font-bold mb-8 flex items-center gap-2">
             <BarChart3 className="w-8 h-8" />
             AroundU Admin
@@ -43,11 +42,10 @@ const AdminSidebar = ({ activeTab, onTabChange, onLogout }) => {
                     onTabChange(tab.id);
                     setIsOpen(false);
                   }}
-                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition ${
-                    activeTab === tab.id
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition ${activeTab === tab.id
                       ? "bg-white text-blue-700 font-semibold"
                       : "hover:bg-blue-600"
-                  }`}
+                    }`}
                 >
                   <Icon className="w-5 h-5" />
                   {tab.label}
