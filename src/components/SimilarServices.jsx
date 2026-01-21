@@ -1,8 +1,16 @@
 import { Star, ArrowRight } from "lucide-react";
 import React from "react";
-import { Link } from "react-router"; // Fixed import based on v6/v7
+import { Link, useNavigate } from "react-router"; // Fixed import based on v6/v7
 
 const SimilarServices = ({ similarServices }) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (providerId, e) => {
+    e.preventDefault();
+
+    navigate(`/services/${providerId}`);
+  };
+
   if (!similarServices?.length) return null;
 
   return (
@@ -19,9 +27,9 @@ const SimilarServices = ({ similarServices }) => {
       {/* HORIZONTAL SCROLL CONTAINER */}
     <div className="flex gap-5 pb-6 overflow-x-auto snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0">
   {similarServices.map((item) => (
-    <Link
+    <button
       key={item.providerId}
-      to={`/services/${item.providerId}`}
+      onClick={(e) => handleCardClick(item.providerId, e)}
       className="
         snap-start
         w-[260px] flex-shrink-0
@@ -31,6 +39,8 @@ const SimilarServices = ({ similarServices }) => {
         overflow-hidden
         lg:hover:shadow-xl
         transition-shadow
+        cursor-pointer
+        text-left
       "
     >
       <div className="aspect-[4/3] w-full overflow-hidden">
@@ -48,7 +58,7 @@ const SimilarServices = ({ similarServices }) => {
           ₹{item.price}
         </p>
       </div>
-    </Link>
+    </button>
   ))}
 </div>
 
