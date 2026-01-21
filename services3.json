@@ -48,6 +48,7 @@
       "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
       "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
       "whatIncluded": [
+        
         {
           "title": "Basic Service",
           "description": "Standard service included",
