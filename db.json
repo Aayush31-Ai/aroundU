@@ -9,7 +9,7 @@
         "serviceId": "svc_001",
         "title": "Bathroom Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning.jpg",
+        "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
         "about": "Deep bathroom cleaning of tiles, fixtures, mirrors and grout using safe disinfectants for a fresh, hygienic finish.",
         "whatIncluded": [
           {
@@ -67,7 +67,7 @@
         "serviceId": "svc_002",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths2.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -180,7 +180,7 @@
         "serviceId": "svc_004",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/home.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -340,7 +340,7 @@
         "serviceId": "svc_008",
         "title": "Bathroom Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/bath-cleaning.jpg",
         "about": "Deep bathroom cleaning of tiles, fixtures, mirrors and grout using safe disinfectants for a fresh, hygienic finish.",
         "whatIncluded": [
           {
@@ -458,10 +458,10 @@
       "profileImage": "/assets/people/p-11.jpg",
       "service": {
         "serviceId": "svc_011",
-        "title": "AC Repair",
+        "title": "Washing Machine Repair",
         "category": "Appliance Repair",
-        "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
-        "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+        "serviceImage": "/assets/Repair-maintain/app-repair/washing-machine.jpg",
+        "about": "washing machine inspection and repair including washing diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
             "title": "Basic Service",
@@ -500,7 +500,7 @@
         "serviceId": "svc_012",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths1.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -780,7 +780,7 @@
         "serviceId": "svc_019",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths2.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -860,7 +860,7 @@
         "serviceId": "svc_021",
         "title": "Kitchen Services",
         "category": "Kitchen",
-        "serviceImage": "/assets/home-help/cook.jpg",
+        "serviceImage": "/assets/home-help/cook-3.jpg",
         "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
         "whatIncluded": [
           {
@@ -980,7 +980,7 @@
         "serviceId": "svc_024",
         "title": "Plumbing Service",
         "category": "Plumbing",
-        "serviceImage": "/assets/Repair-maintain/plumbing/p-2.jpg",
+        "serviceImage": "/assets/Repair-maintain/plumbing/plumber2.jpg",
         "about": "Expert plumbing solutions including tap repairs, pipe leakage fixes, bathroom fittings installation and maintenance.",
         "whatIncluded": [
           {
@@ -1060,7 +1060,7 @@
         "serviceId": "svc_026",
         "title": "Plumbing Service",
         "category": "Plumbing",
-        "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
+        "serviceImage": "/assets/Repair-maintain/plumbing/plumber3.jpg",
         "about": "Expert plumbing solutions including tap repairs, pipe leakage fixes, bathroom fittings installation and maintenance.",
         "whatIncluded": [
           {
@@ -1140,7 +1140,7 @@
         "serviceId": "svc_028",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning.jpg",
+        "serviceImage": "/assets/clean/home-cleaning3.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -1180,7 +1180,7 @@
         "serviceId": "svc_029",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths3.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -1260,7 +1260,7 @@
         "serviceId": "svc_031",
         "title": "Plumbing Service",
         "category": "Plumbing",
-        "serviceImage": "/assets/Repair-maintain/plumbing/p-2.jpg",
+        "serviceImage": "/assets/Repair-maintain/plumbing/plumber5.jpg",
         "about": "Expert plumbing solutions including tap repairs, pipe leakage fixes, bathroom fittings installation and maintenance.",
         "whatIncluded": [
           {
@@ -1378,10 +1378,10 @@
       "profileImage": "/assets/people/p-34.jpg",
       "service": {
         "serviceId": "svc_034",
-        "title": "AC Repair",
+        "title": "Geyser Repair",
         "category": "Appliance Repair",
-        "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
-        "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+        "serviceImage": "/assets/Repair-maintain/app-repair/geyser.jpg",
+        "about": "Geyser inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
             "title": "Basic Service",
@@ -1420,7 +1420,7 @@
         "serviceId": "svc_035",
         "title": "AC Repair",
         "category": "Appliance Repair",
-        "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
+        "serviceImage": "/assets/Repair-maintain/app-repair/ac-2.jpg",
         "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
@@ -1460,7 +1460,7 @@
         "serviceId": "svc_036",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/home-clean3.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -1500,7 +1500,7 @@
         "serviceId": "svc_037",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/home-clean3.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -1540,7 +1540,7 @@
         "serviceId": "svc_038",
         "title": "Plumbing Service",
         "category": "Plumbing",
-        "serviceImage": "/assets/Repair-maintain/plumbing/p-1.jpg",
+        "serviceImage": "/assets/Repair-maintain/plumbing/plumber4.jpg",
         "about": "Expert plumbing solutions including tap repairs, pipe leakage fixes, bathroom fittings installation and maintenance.",
         "whatIncluded": [
           {
@@ -1580,7 +1580,7 @@
         "serviceId": "svc_039",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths2.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -1660,7 +1660,7 @@
         "serviceId": "svc_041",
         "title": "Home Cleaning",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/home.jpg",
+        "serviceImage": "/assets/clean/home-clean3.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -1740,7 +1740,7 @@
         "serviceId": "svc_43",
         "title": "Kitchen Services",
         "category": "Kitchen",
-        "serviceImage": "/assets/home-help/cook.jpg",
+        "serviceImage": "/assets/home-help/cook-3.jpg",
         "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
         "whatIncluded": [
           {
@@ -1780,7 +1780,7 @@
         "serviceId": "svc_44",
         "title": "Kitchen Services",
         "category": "Kitchen",
-        "serviceImage": "/assets/home-help/cook-2.jpg",
+        "serviceImage": "/assets/home-help/cook-4.jpg",
         "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
         "whatIncluded": [
           {
@@ -1820,7 +1820,7 @@
         "serviceId": "svc_045",
         "title": "Maths Tutor",
         "category": "Tutor",
-        "serviceImage": "/assets/tutor/math.jpg",
+        "serviceImage": "/assets/tutor/maths3.jpg",
         "about": "Personalized math lessons covering fundamentals to advanced topics with practice sheets, doubt clearing and exam preparation support.",
         "whatIncluded": [
           {
@@ -1858,10 +1858,10 @@
       "profileImage": "/assets/people/p-46.jpg",
       "service": {
         "serviceId": "svc_046",
-        "title": "AC Repair",
+        "title": "PC Repair",
         "category": "Appliance Repair",
-        "serviceImage": "/assets/Repair-maintain/app-repair/ac.jpg",
-        "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+        "serviceImage": "/assets/Repair-maintain/app-repair/computer_repair.jpg",
+        "about": "PC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
             "title": "Basic Service",
@@ -1940,7 +1940,7 @@
         "serviceId": "svc_048",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning.jpg",
+        "serviceImage": "/assets/clean/home-cleaning4.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -1978,10 +1978,10 @@
       "profileImage": "/assets/people/p-49.jpg",
       "service": {
         "serviceId": "svc_049",
-        "title": "bed Repair",
+        "title": "Washing Machine Repair",
         "category": "Appliance Repair",
-        "serviceImage": "/assets/Repair-maintain/app-repair/bed.jpg",
-        "about": "Bed inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+        "serviceImage": "/assets/Repair-maintain/app-repair/washing-machine.jpg",
+        "about": "washing machine inspection and repair including washing diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
             "title": "Basic Service",
@@ -2060,7 +2060,7 @@
         "serviceId": "svc_051",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/home-clean4.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -2100,7 +2100,7 @@
         "serviceId": "svc_052",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/home-cleaning4.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -2340,7 +2340,7 @@
         "serviceId": "svc_058",
         "title": "Bathroom Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/bath-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/bath-cleaning.jpg",
         "about": "Deep bathroom cleaning of tiles, fixtures, mirrors and grout using safe disinfectants for a fresh, hygienic finish.",
         "whatIncluded": [
           {
@@ -2420,7 +2420,7 @@
         "serviceId": "svc_060",
         "title": "Home Cleaning",
         "category": "Cleaning",
-        "serviceImage": "/assets/clean/home-cleaning-2.jpg",
+        "serviceImage": "/assets/clean/home-cleaning3.jpg",
         "about": "Complete home cleaning: dusting, sweeping, mopping, kitchen and bedroom tidying, and surface sanitization tailored to your space.",
         "whatIncluded": [
           {
@@ -2581,7 +2581,7 @@
         "title": "Fridge Repair",
         "category": "Appliance Repair",
         "serviceImage": "/assets/Repair-maintain/app-repair/fridge.jpg",
-        "about": "AC inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
+        "about": "Fridge inspection and repair including cooling diagnostics, gas top-up, leak checks and preventive servicing for efficient performance.",
         "whatIncluded": [
           {
             "title": "Basic Service",
@@ -2620,7 +2620,7 @@
         "serviceId": "svc_065",
         "title": "Kitchen Services",
         "category": "Kitchen",
-        "serviceImage": "/assets/home-help/cook.jpg",
+        "serviceImage": "/assets/home-help/cook-2.jpg",
         "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
         "whatIncluded": [
           {
@@ -2660,7 +2660,7 @@
         "serviceId": "svc_066",
         "title": "Kitchen Services",
         "category": "Kitchen",
-        "serviceImage": "/assets/home-help/cook-2.jpg",
+        "serviceImage": "/assets/home-help/cook-4.jpg",
         "about": "Professional kitchen services including meal preparation, cooking, kitchen organization, and maintenance to keep your kitchen clean and functional.",
         "whatIncluded": [
           {
