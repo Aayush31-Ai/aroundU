@@ -11,6 +11,8 @@ const ServiceVerification = ({ services, onUpdate, API_BASE_URL }) => {
   const [actionType, setActionType] = useState(null);
   const [rejectionReason, setRejectionReason] = useState("");
   const [flagIssue, setFlagIssue] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const filteredServices = services.filter((service) => {
     const matchesSearch =
@@ -22,6 +24,22 @@ const ServiceVerification = ({ services, onUpdate, API_BASE_URL }) => {
       (statusFilter === "flagged" && service.flaggedIssues?.length > 0);
     return matchesSearch && matchesStatus;
   });
+
+  // Pagination calculations
+  const totalPages = Math.ceil(filteredServices.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedServices = filteredServices.slice(startIndex, endIndex);
+
+  // Reset to page 1 when filters change
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, statusFilter]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleAction = async (service, type) => {
     setSelectedService(service);
@@ -198,7 +216,7 @@ const ServiceVerification = ({ services, onUpdate, API_BASE_URL }) => {
         <div className="p-6 border-b border-gray-200">
           <h3 className="text-lg font-bold">Service Verification</h3>
           <p className="text-sm text-gray-500 mt-1">
-            {filteredServices.length} services found
+            {filteredServices.length} services found | Showing {startIndex + 1}-{Math.min(endIndex, filteredServices.length)} of {filteredServices.length}
           </p>
         </div>
 
@@ -230,8 +248,8 @@ const ServiceVerification = ({ services, onUpdate, API_BASE_URL }) => {
               </tr>
             </thead>
             <tbody>
-              {filteredServices.length > 0 ? (
-                filteredServices.map((service, idx) => (
+              {paginatedServices.length > 0 ? (
+                paginatedServices.map((service, idx) => (
                   <tr
                     key={idx}
                     className="border-b border-gray-200 hover:bg-gray-50 transition"
@@ -352,6 +370,86 @@ const ServiceVerification = ({ services, onUpdate, API_BASE_URL }) => {
             </tbody>
           </table>
         </div>
+
+        {/* Pagination Controls */}
+        {filteredServices.length > itemsPerPage && (
+          <div className="flex justify-between items-center mt-6 px-6">
+            {/* Items per page selector */}
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-gray-700">Show</span>
+              <select
+                value={itemsPerPage}
+                onChange={(e) => {
+                  setItemsPerPage(Number(e.target.value));
+                  setCurrentPage(1);
+                }}
+                className="border border-gray-300 rounded-lg px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+              <span className="text-sm text-gray-700">per page</span>
+            </div>
+
+            {/* Page navigation */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="px-3 py-1 border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm font-medium text-gray-700"
+              >
+                Previous
+              </button>
+
+              {/* Page numbers */}
+              <div className="flex gap-1">
+                {[...Array(totalPages)].map((_, index) => {
+                  const page = index + 1;
+                  // Show first page, last page, current page, and pages around current
+                  if (
+                    page === 1 ||
+                    page === totalPages ||
+                    (page >= currentPage - 1 && page <= currentPage + 1)
+                  ) {
+                    return (
+                      <button
+                        key={page}
+                        onClick={() => handlePageChange(page)}
+                        className={`px-3 py-1 rounded-lg text-sm font-medium transition ${
+                          currentPage === page
+                            ? "bg-blue-600 text-white"
+                            : "border border-gray-300 hover:bg-gray-50 text-gray-700"
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    );
+                  } else if (
+                    page === currentPage - 2 ||
+                    page === currentPage + 2
+                  ) {
+                    return (
+                      <span key={page} className="px-2 py-1 text-gray-500">
+                        ...
+                      </span>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="px-3 py-1 border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm font-medium text-gray-700"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Modal */}
