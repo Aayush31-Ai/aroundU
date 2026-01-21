@@ -4,15 +4,17 @@ import LandingPage from './pages/LandingPage'
 import Services from './pages/Services'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import About from './pages/About'
+import Saved from './components/service/Saved'
 
 const MainRouter = () => {
   return (
-   <Routes>
-    <Route path="/" element={<LandingPage />} />
-    <Route path="/services" element={<Services/>} />
-    <Route path="/services/:providerId" element={<ServiceDetailPage />} />
-    <Route path="/about" element={<About />} />
-   </Routes>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/services/:providerId" element={<ServiceDetailPage />} />
+      <Route path="/about" element={<About />} />
+      <Route path='/saved' element={<Saved />} />
+    </Routes>
   )
 }
 
