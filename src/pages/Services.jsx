@@ -1,85 +1,87 @@
-import React, { useState, useMemo, useEffect } from "react";
-import { Sliders } from "lucide-react";
-import { useLocation } from "react-router";
-import useServices from "@/hooks/useServices";
-import { LazyServiceCard } from "@/components/service/LazyServiceCard";
-import ServiceCardSkeleton from "@/components/service/LazyServiceCard";
-import FilterSidebar from "@/components/service/FilterSidebar";
-import MobileFilters from "@/components/service/MobileFilters";
-import Pagination from "@/components/service/Pagination";
-import EmptyState from "@/components/service/EmptyState";
-import SEO from "@/components/Common/SEO"; 
+import React, { useState, useMemo, useEffect } from 'react';
+import { Sliders } from 'lucide-react';
+import useServices from '@/hooks/useServices';
+import ServiceCard from '@/components/service/ServiceCard';
+import FilterSidebar from '@/components/service/FilterSidebar';
+import MobileFilters from '@/components/service/MobileFilters';
+import Pagination from '@/components/service/Pagination';
+import EmptyState from '@/components/service/EmptyState';
+import ServiceCardSkeleton from '@/components/service/LazyServiceCard';
 
 const Services = () => {
-  const { services: allServices, loading } = useServices();
-  const location = useLocation();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [sortBy, setSortBy] = useState("popular");
-  const [showMobileFilters, setShowMobileFilters] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [priceRange, setPriceRange] = useState([0, 2500]);
-  const itemsPerPage = 12;
+  const { services, loading } = useServices();
+  const [allServices, setAllServices] = useState([]);
 
-useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "auto" });
-  // Set category from navigation state if provided
-  if (location.state?.category) {
-    setSelectedCategory(location.state.category);
-  }
-}, [location.state?.category]);
+  useEffect(() => {
+    setAllServices(services || []);
+  }, [services]);
+
+useEffect(()=>{
+window.scrollTo({top:0,behavior:"smooth"})
+},[])
 
   // Get unique categories
   const categories = useMemo(() => {
     const cats = new Set(allServices.map((s) => s.service.category));
-    return ["All", ...Array.from(cats).sort()];
+    return ['All', ...Array.from(cats).sort()];
   }, [allServices]);
+
+  // State for filters and pagination
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [priceRange, setPriceRange] = useState([0, 0]);
+  const [sortBy, setSortBy] = useState('popular');
+  const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+
+  useEffect(() => {
+    if (allServices.length === 0) return;
+    const max = Math.max(...allServices.map((s) => s.price || 0));
+    if (priceRange[1] === 0 && max > 0) {
+      setPriceRange([0, max]);
+    }
+  }, [allServices, priceRange]);
 
   // Get price range from all services
   const maxPrice = useMemo(() => {
     if (allServices.length === 0) return 2500;
-    const prices = allServices.map((s) => s.price);
-    return Math.max(...prices);
+    return Math.max(...allServices.map(s => s.price));
   }, [allServices]);
-
-  useEffect(() => {
-    if (maxPrice > 0) {
-      setPriceRange([0, maxPrice]);
-    }
-  }, [maxPrice]);
 
   // Filter and sort services
   const filteredServices = useMemo(() => {
-    let filtered = allServices;
+    let filtered = [...allServices];
 
+    // Filter by search term
     if (searchTerm) {
-      filtered = filtered.filter((service) =>
+      filtered = filtered.filter(service =>
         service.service.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
-    if (selectedCategory !== "All") {
-      filtered = filtered.filter(
-        (service) => service.service.category === selectedCategory
-      );
+    // Filter by category
+    if (selectedCategory !== 'All') {
+      filtered = filtered.filter(service => service.service.category === selectedCategory);
     }
 
+    // Filter by price range
     filtered = filtered.filter(
-      (service) =>
-        service.price >= priceRange[0] && service.price <= priceRange[1]
+      service => service.price >= priceRange[0] && service.price <= priceRange[1]
     );
 
+    // Sort services
     switch (sortBy) {
-      case "price-low":
+      case 'price-low':
         filtered.sort((a, b) => a.price - b.price);
         break;
-      case "price-high":
+      case 'price-high':
         filtered.sort((a, b) => b.price - a.price);
         break;
-      case "rating":
+      case 'rating':
         filtered.sort((a, b) => b.rating - a.rating);
         break;
-      case "popular":
+      case 'popular':
       default:
         filtered.sort((a, b) => a.providerId.localeCompare(b.providerId));
         break;
@@ -87,19 +89,6 @@ useEffect(() => {
 
     return filtered;
   }, [allServices, searchTerm, selectedCategory, priceRange, sortBy]);
-
-  // Pagination
-  const totalPages = Math.ceil(filteredServices.length / itemsPerPage);
-  const paginatedServices = useMemo(() => {
-    const startIdx = (currentPage - 1) * itemsPerPage;
-    const endIdx = startIdx + itemsPerPage;
-    return filteredServices.slice(startIdx, endIdx);
-  }, [filteredServices, currentPage, itemsPerPage]);
-
-  const handlePageChange = (page) => {
-    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   const handlePriceChange = (e) => {
     const newValue = parseInt(e.target.value);
@@ -115,48 +104,38 @@ useEffect(() => {
     }
   };
 
+  // Pagination
+  const totalPages = Math.ceil(filteredServices.length / itemsPerPage);
+  const paginatedServices = useMemo(() => {
+    const startIdx = (currentPage - 1) * itemsPerPage;
+    const endIdx = startIdx + itemsPerPage;
+    return filteredServices.slice(startIdx, endIdx);
+  }, [filteredServices, currentPage, itemsPerPage]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const clearFilters = () => {
-    setSearchTerm("");
-    setSelectedCategory("All");
+    setSearchTerm('');
+    setSelectedCategory('All');
     setPriceRange([0, maxPrice]);
-    setSortBy("popular");
+    setSortBy('popular');
     setCurrentPage(1);
   };
 
   const isFilterActive =
-    searchTerm !== "" ||
-    selectedCategory !== "All" ||
+    searchTerm !== '' ||
+    selectedCategory !== 'All' ||
     priceRange[0] !== 0 ||
     priceRange[1] !== maxPrice;
 
-  const filterData = {
-    searchTerm: searchTerm,
-    setSearchTerm: setSearchTerm,
-    selectedCategory: selectedCategory,
-    setSelectedCategory: setSelectedCategory,
-    categories: categories,
-    priceRange: priceRange,
-    handlePriceChange: handlePriceChange,
-    handleMaxPriceChange: handleMaxPriceChange,
-    maxPrice: maxPrice,
-    sortBy: sortBy,
-    setSortBy: setSortBy,
-    setCurrentPage: setCurrentPage,
-    isFilterActive: isFilterActive,
-    clearFilters: clearFilters,
-    showMobileFilters: showMobileFilters,
-    setShowMobileFilters: setShowMobileFilters,
-  };
-
   return (
     <div className="min-h-screen bg-gray-50 py-8 sm:py-12">
-      <SEO 
-        title="Explore Services" 
-        description="Browse our wide range of professional services including cleaning, plumbing, electrical, and more. Compare prices and book instantly."
-      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-8 text-center sm:text-left">
+        <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-[#1f2f2a] mb-2">
             Services
           </h1>
@@ -168,7 +147,24 @@ useEffect(() => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar Filters - Desktop */}
           <div className="hidden lg:block">
-            <FilterSidebar filterData={filterData} />
+            <FilterSidebar
+              filterData={{
+                searchTerm,
+                setSearchTerm,
+                selectedCategory,
+                setSelectedCategory,
+                priceRange,
+                handlePriceChange,
+                handleMaxPriceChange,
+                maxPrice,
+                sortBy,
+                setSortBy,
+                setCurrentPage,
+                categories,
+                isFilterActive,
+                clearFilters,
+              }}
+            />
           </div>
 
           {/* Main Content */}
@@ -184,39 +180,50 @@ useEffect(() => {
               </button>
             </div>
 
-            {/* Mobile Filters Modal */}
-            <MobileFilters filterData={filterData} />
+            <MobileFilters
+              filterData={{
+                showMobileFilters,
+                setShowMobileFilters,
+                searchTerm,
+                setSearchTerm,
+                selectedCategory,
+                setSelectedCategory,
+                categories,
+                priceRange,
+                handlePriceChange,
+                handleMaxPriceChange,
+                maxPrice,
+                sortBy,
+                setSortBy,
+                isFilterActive,
+                clearFilters,
+              }}
+            />
 
             {/* Results Info */}
-            <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mb-6 flex items-center justify-between">
               {loading ? (
-                <p className="text-gray-600 font-medium animate-pulse">
-                  Loading services...
-                </p>
+                <p className="text-gray-600 font-medium animate-pulse">Loading services...</p>
               ) : (
                 <p className="text-gray-600 font-medium">
-                  Showing {paginatedServices.length} of{" "}
-                  {filteredServices.length} service
-                  {filteredServices.length !== 1 ? "s" : ""}
+                  Showing {paginatedServices.length} of {filteredServices.length} service
+                  {filteredServices.length !== 1 ? 's' : ''}
                 </p>
               )}
             </div>
 
             {/* Services Grid */}
             {loading ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {Array.from({ length: 12 }).map((_, i) => (
                   <ServiceCardSkeleton key={i} />
                 ))}
               </div>
             ) : filteredServices.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {paginatedServices.map((service) => (
-                    <LazyServiceCard
-                      key={service.providerId}
-                      service={service}
-                    />
+                    <ServiceCard key={service.providerId} service={service} />
                   ))}
                 </div>
 

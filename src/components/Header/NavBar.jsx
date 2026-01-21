@@ -35,9 +35,10 @@ function NavBar() {
           <NavLink
             to="/services"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${isActive
-                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${
+                isActive
+                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                  : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -45,27 +46,29 @@ function NavBar() {
           </NavLink>
 
           <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `relative text-sm font-medium transition ${isActive
-                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                : "text-gray-600 hover:text-gray-900"
-              }`
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
             to="/saved"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${isActive
-                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${
+                isActive
+                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                  : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
             Saved
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `relative text-sm font-medium transition ${
+                isActive
+                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                  : "text-gray-600 hover:text-gray-900"
+              }`
+            }
+          >
+            About
           </NavLink>
         </div>
 
@@ -130,6 +133,12 @@ function NavBar() {
               className="block text-sm font-medium text-gray-700"
             >
               Services
+            </NavLink>
+            <NavLink
+              to="/saved"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Saved
             </NavLink>
             <NavLink
               to="/about"
