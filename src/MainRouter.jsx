@@ -4,7 +4,7 @@ import LandingPage from './pages/LandingPage'
 import Services from './pages/Services'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import About from './pages/About'
-import Saved from './pages/Saved'
+import Saved from './components/service/Saved'
 
 const MainRouter = () => {
   return (
