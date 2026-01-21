@@ -5,6 +5,8 @@ import Services from './pages/Services'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import About from './pages/About'
 import Saved from './pages/Saved'
+import AdminDashboard from './pages/AdminDashboard'
+import ProviderDetailPage from './pages/ProviderDetailPage'
 
 const MainRouter = () => {
   return (
@@ -14,6 +16,8 @@ const MainRouter = () => {
     <Route path="/services/:providerId" element={<ServiceDetailPage />} />
     <Route path="/about" element={<About />} />
     <Route path="/saved" element={<Saved />} />
+    <Route path="/admin" element={<AdminDashboard />} />
+    <Route path="/providers/:providerId" element={<ProviderDetailPage />} />
    </Routes>
   )
 }

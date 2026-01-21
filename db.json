@@ -1,6 +1,7 @@
 {
   "services": [
     {
+      "savelist": false,
       "id": "1",
       "providerId": "sp_001",
       "name": "Mahesh kulkarni",
@@ -45,6 +46,14 @@
           "rating": 4,
           "review": "Great work, would recommend.",
           "date": "2024-01-14"
+        },
+        {
+          "userId": "user_1768977205698",
+          "name": "Sushant",
+          "image": "/assets/people/p-1.jpg",
+          "rating": 5,
+          "review": "best provider i have ever seen\n",
+          "date": "2026-01-21"
         }
       ],
       "location": {
@@ -55,7 +64,16 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "status": "approved",
+      "verified": true,
+      "rejectionReason": "",
+      "flaggedIssues": [
+        {
+          "issue": "great\n",
+          "date": "2026-01-21T07:23:06.046Z",
+          "resolved": false
+        }
+      ]
     },
     {
       "savelist": false,
@@ -112,9 +130,14 @@
         "city": "Mumbai",
         "latitude": 19.0748,
         "longitude": 72.8856
-      }
+      },
+      "status": "approved",
+      "verified": true,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
+      "savelist": false,
       "id": "3",
       "providerId": "sp_003",
       "name": "Vikram Reddy",
@@ -159,6 +182,14 @@
           "rating": 5,
           "review": "Highly satisfied with the cleaning quality!",
           "date": "2024-01-11"
+        },
+        {
+          "userId": "user_1768980113093",
+          "name": "Priyanshu",
+          "image": "/assets/people/p-1.jpg",
+          "rating": 5,
+          "review": "i love this service",
+          "date": "2026-01-21"
         }
       ],
       "location": {
@@ -169,7 +200,10 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "status": "approved",
+      "verified": true,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "4",
@@ -209,7 +243,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "approved",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "5",
@@ -249,7 +287,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "approved",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "6",
@@ -289,7 +331,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "7",
@@ -329,7 +375,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "8",
@@ -369,7 +419,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "9",
@@ -409,7 +463,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "10",
@@ -449,7 +507,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "11",
@@ -489,7 +551,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "12",
@@ -529,7 +595,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "13",
@@ -569,7 +639,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "14",
@@ -609,7 +683,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "15",
@@ -649,7 +727,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "16",
@@ -689,7 +771,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "17",
@@ -729,7 +815,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "18",
@@ -769,7 +859,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "19",
@@ -809,7 +903,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "20",
@@ -849,7 +947,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "21",
@@ -889,7 +991,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "22",
@@ -929,7 +1035,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "23",
@@ -969,7 +1079,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "24",
@@ -1009,7 +1123,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "25",
@@ -1049,7 +1167,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "26",
@@ -1089,7 +1211,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "27",
@@ -1129,7 +1255,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "28",
@@ -1169,7 +1299,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "29",
@@ -1209,7 +1343,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "30",
@@ -1249,7 +1387,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "31",
@@ -1289,7 +1431,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "32",
@@ -1329,7 +1475,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "33",
@@ -1369,7 +1519,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "34",
@@ -1409,7 +1563,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "35",
@@ -1449,7 +1607,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "36",
@@ -1489,7 +1651,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "37",
@@ -1529,7 +1695,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "38",
@@ -1569,7 +1739,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "39",
@@ -1609,7 +1783,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "40",
@@ -1649,7 +1827,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "41",
@@ -1689,7 +1871,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "42",
@@ -1729,7 +1915,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "43",
@@ -1769,7 +1959,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "44",
@@ -1809,7 +2003,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "45",
@@ -1849,7 +2047,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "46",
@@ -1889,7 +2091,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "47",
@@ -1929,7 +2135,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "48",
@@ -1969,7 +2179,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "49",
@@ -2009,7 +2223,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "50",
@@ -2049,7 +2267,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "51",
@@ -2089,7 +2311,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "52",
@@ -2129,7 +2355,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "53",
@@ -2169,7 +2399,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "54",
@@ -2209,7 +2443,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "55",
@@ -2249,7 +2487,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "56",
@@ -2289,7 +2531,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "57",
@@ -2329,7 +2575,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "58",
@@ -2369,7 +2619,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "59",
@@ -2409,7 +2663,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "60",
@@ -2449,7 +2707,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "61",
@@ -2489,7 +2751,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "62",
@@ -2529,7 +2795,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "63",
@@ -2569,7 +2839,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "64",
@@ -2609,7 +2883,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "65",
@@ -2649,7 +2927,11 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
     },
     {
       "id": "66",
@@ -2689,7 +2971,204 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false
+      "savelist": false,
+      "status": "pending",
+      "verified": false,
+      "rejectionReason": "",
+      "flaggedIssues": []
+    }
+  ],
+  "admin": [
+    {
+      "admin": {
+        "name": "Super Admin",
+        "commissionPercent": 20,
+        "appStatus": "ON",
+        "acceptingBookings": true
+      },
+      "users": [
+        {
+          "id": "U1",
+          "name": "Aman Sharma",
+          "phone": "9876543210",
+          "city": "Mumbai",
+          "blocked": false,
+          "totalBookings": 3
+        },
+        {
+          "id": "U2",
+          "name": "Riya Verma",
+          "phone": "9123456780",
+          "city": "Delhi",
+          "blocked": false,
+          "totalBookings": 1
+        }
+      ],
+      "providers": [
+        {
+          "id": "P1",
+          "name": "Ramesh Electrician",
+          "service": "Electrician",
+          "status": "Approved",
+          "rating": 4.5,
+          "completedJobs": 12,
+          "city": "Mumbai"
+        },
+        {
+          "id": "P2",
+          "name": "Suresh Plumber",
+          "service": "Plumber",
+          "status": "Pending",
+          "rating": 0,
+          "completedJobs": 0,
+          "city": "Delhi"
+        }
+      ],
+      "services": [
+        {
+          "id": "S1",
+          "name": "Electrician",
+          "category": "Home Repair",
+          "enabled": true
+        },
+        {
+          "id": "S2",
+          "name": "Plumber",
+          "category": "Home Repair",
+          "enabled": true
+        },
+        {
+          "id": "S3",
+          "name": "AC Repair",
+          "category": "Appliance",
+          "enabled": false
+        }
+      ],
+      "bookings": [
+        {
+          "id": "B1",
+          "userId": "U1",
+          "providerId": "P1",
+          "service": "Electrician",
+          "status": "Completed",
+          "amount": 500,
+          "rating": 5,
+          "date": "2026-01-20"
+        },
+        {
+          "id": "B2",
+          "userId": "U1",
+          "providerId": "P1",
+          "service": "Electrician",
+          "status": "Completed",
+          "amount": 700,
+          "rating": 4,
+          "date": "2026-01-21"
+        },
+        {
+          "id": "B3",
+          "userId": "U2",
+          "providerId": null,
+          "service": "Plumber",
+          "status": "Pending",
+          "amount": 600,
+          "rating": null,
+          "date": "2026-01-21"
+        }
+      ],
+      "revenue": {
+        "totalRevenue": 1800,
+        "adminEarning": 360,
+        "providerEarning": 1440
+      },
+      "analytics": {
+        "bookingsByStatus": {
+          "Pending": 1,
+          "Assigned": 0,
+          "Completed": 2,
+          "Cancelled": 0
+        },
+        "providersByStatus": {
+          "Approved": 1,
+          "Pending": 1,
+          "Rejected": 0
+        },
+        "mostBookedService": "Electrician"
+      },
+      "notifications": [
+        {
+          "id": "N1",
+          "message": "New provider registration request",
+          "type": "Provider",
+          "date": "2026-01-21"
+        },
+        {
+          "id": "N2",
+          "message": "New booking created",
+          "type": "Booking",
+          "date": "2026-01-21"
+        }
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "id": "p1",
+      "name": "Ramesh Kumar",
+      "serviceCategory": "Electrician",
+      "servicesOffered": [
+        "Fan Repair",
+        "Switch Board Fix",
+        "Light Installation"
+      ],
+      "primaryService": "Fan Repair",
+      "shortDescription": "Certified electrician with 5+ years of experience in home electrical services.",
+      "profileImage": "/assets/people/p-1.jpg",
+      "status": "Approved",
+      "availability": "Available",
+      "availabilityDescription": "Provider is online and ready to accept new service requests",
+      "maxJobsPerDay": 5,
+      "activeJobs": 2,
+      "completedJobs": 12,
+      "remainingCapacity": 3,
+      "rating": 4.5,
+      "city": "Mumbai",
+      "todayEarnings": 1200,
+      "totalEarnings": 18500,
+      "location": {
+        "ipAddress": "152.58.43.150",
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Mumbai",
+        "latitude": 19.0748,
+        "longitude": 72.8856
+      },
+      "verified": true,
+      "joinedDate": "2024-06-15",
+      "reviews": [
+        {
+          "userId": "user_1",
+          "name": "Amit Patel",
+          "image": "/assets/people/p-2.jpg",
+          "rating": 5,
+          "review": "Excellent electrical work. Very professional and punctual.",
+          "date": "2026-01-20"
+        },
+        {
+          "userId": "user_3",
+          "name": "Neha Sharma",
+          "image": "/assets/people/p-3.jpg",
+          "rating": 4,
+          "review": "Quick service, fair pricing.",
+          "date": "2026-01-18"
+        }
+      ],
+      "bankDetails": {
+        "accountHolder": "Ramesh Kumar",
+        "accountNumber": "XXXX1234",
+        "ifscCode": "HDFC0000001",
+        "verified": true
+      }
     }
   ]
 }

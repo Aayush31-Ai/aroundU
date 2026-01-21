@@ -35,10 +35,9 @@ function NavBar() {
           <NavLink
             to="/services"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -48,10 +47,9 @@ function NavBar() {
           <NavLink
             to="/saved"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -61,10 +59,9 @@ function NavBar() {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `relative text-sm font-medium transition ${
-                isActive
-                  ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
-                  : "text-gray-600 hover:text-gray-900"
+              `relative text-sm font-medium transition ${isActive
+                ? "text-[#1f2f2a] after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-[#2f5349] after:rounded-full"
+                : "text-gray-600 hover:text-gray-900"
               }`
             }
           >
@@ -73,8 +70,9 @@ function NavBar() {
         </div>
 
         {/* RIGHT — LOCATION */}
-        <button
-          className="
+        <div className="flex justify-around items-center gap-8">
+          <button
+            className="
             hidden md:flex items-center gap-2
             px-3 py-1.5
             rounded-full
@@ -82,13 +80,45 @@ function NavBar() {
             text-sm text-gray-700
             hover:bg-gray-100 transition
           "
-        >
-          <MapPin size={16} className="text-[#2f5349]" />
-          <span className="max-w-[160px] truncate">
-            Mumbai, Maharashtra
-          </span>
-          <ChevronDown size={14} />
-        </button>
+          >
+            <MapPin size={16} className="text-[#2f5349]" />
+            <span className="max-w-[160px] truncate">
+              Mumbai, Maharashtra
+            </span>
+            <ChevronDown size={14} />
+          </button>
+          {/* <div>Roles</div> */}
+          <div className="hidden md:flex justify-center gap-6 lg:gap-8 text-lg px-5 py-1.5 border border-gray-200
+            text-sm text-gray-700  rounded-full ">
+            <li className="relative group list-none flex items-center">
+              <div className="flex items-center hover:text-black">
+                <span className="cursor-pointer hover:text-black">
+                  Roles
+                </span>
+                <div className="">
+                  <svg
+                    className="w-3 h-5 transition-transform duration-300 group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="-2 -3 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </div>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 hidden group-hover:block z-50">
+                <div className="p-[2px] rounded-md bg-gradient-to-r z-50">
+                  <ul className="w-56 bg-white rounded-md shadow-lg z-50">
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/">User</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] cursor-pointer hover:text-black"><Link to="/admin">Admin</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/providers/p1">Service Provider</Link></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
       </nav>
 
       {/* MOBILE MENU */}
