@@ -95,7 +95,7 @@ function NavBar() {
                 <span className="cursor-pointer hover:text-black">
                   Roles
                 </span>
-                <div className="gap-2">
+                <div className="">
                   <svg
                     className="w-3 h-5 transition-transform duration-300 group-hover:rotate-180"
                     fill="none"
