@@ -110,9 +110,9 @@ function NavBar() {
               <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 hidden group-hover:block z-50">
                 <div className="p-[2px] rounded-md bg-gradient-to-r z-50">
                   <ul className="w-56 bg-white rounded-md shadow-lg z-50">
-                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/user">User</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/">User</Link></li>
                     <li className="px-4 py-3 hover:bg-[#f0f7f5] cursor-pointer hover:text-black"><Link to="/admin">Admin</Link></li>
-                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/serviceprovider">ServiceProvider</Link></li>
+                    <li className="px-4 py-3 hover:bg-[#f0f7f5] hover:text-black"><Link to="/providers/p1">Service Provider</Link></li>
                   </ul>
                 </div>
               </div>

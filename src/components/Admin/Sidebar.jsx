@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X, BarChart3, Users, Briefcase, LogOut } from "lucide-react";
+import { Menu, X, BarChart3, Users, Briefcase } from "lucide-react";
 
 const AdminSidebar = ({ activeTab, onTabChange, onLogout }) => {
   const [isOpen, setIsOpen] = useState(false);
