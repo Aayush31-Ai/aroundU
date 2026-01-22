@@ -1746,6 +1746,7 @@
       "flaggedIssues": []
     },
     {
+      "savelist": false,
       "id": "39",
       "providerId": "sp_039",
       "name": "Rishi Agarwal",
@@ -1774,7 +1775,16 @@
         "status": "Available"
       },
       "rating": 4.5,
-      "reviews": [],
+      "reviews": [
+        {
+          "userId": "user_1768990565017",
+          "name": "bygb",
+          "image": "/assets/people/p-1.jpg",
+          "rating": 5,
+          "review": "hunhunhun",
+          "date": "2026-01-21"
+        }
+      ],
       "location": {
         "ipAddress": "152.58.43.129",
         "country": "India",
@@ -1783,7 +1793,6 @@
         "latitude": 19.0748,
         "longitude": 72.8856
       },
-      "savelist": false,
       "status": "pending",
       "verified": false,
       "rejectionReason": "",
@@ -3108,7 +3117,8 @@
           "type": "Booking",
           "date": "2026-01-21"
         }
-      ]
+      ],
+      "id": "1778"
     }
   ],
   "providers": [
