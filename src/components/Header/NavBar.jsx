@@ -151,6 +151,26 @@ function NavBar() {
               </span>
               <ChevronDown size={16} />
             </button>
+
+            <div className="mt-4 pt-4 border-t">
+              <details className="w-full">
+                <summary className="flex items-center justify-between px-4 py-2 cursor-pointer hover:bg-gray-100 rounded-lg text-sm font-medium">
+                  <span>Roles</span>
+                  <ChevronDown size={16} />
+                </summary>
+                <ul className="mt-2 space-y-2 ml-2">
+                  <li className="px-4 py-2 hover:bg-[#f0f7f5] rounded-lg text-sm">
+                    <Link to="/">User</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-[#f0f7f5] rounded-lg text-sm">
+                    <Link to="/admin">Admin</Link>
+                  </li>
+                  <li className="px-4 py-2 hover:bg-[#f0f7f5] rounded-lg text-sm">
+                    <Link to="/providers/p1">Service Provider</Link>
+                  </li>
+                </ul>
+              </details>
+            </div>
           </div>
         </div>
       )}
