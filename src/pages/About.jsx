@@ -75,7 +75,7 @@ const About = () => {
 
         {/* RIGHT — VISUAL BLOCK (NO IMAGE, PURE UI) */}
         <div className="relative">
-          <div className="rounded-[2.5rem] border bg-gradient-to-br from-[#f6faf8] via-white to-[#eef5f2] p-10 shadow-sm">
+          <div className="rounded-[2.5rem] border bg-linear-to-br from-[#f6faf8] via-white to-[#eef5f2] p-10 shadow-sm">
             <h3 className="text-xl font-bold text-[#1f2f2a]">
               Why people trust AroundU
             </h3>

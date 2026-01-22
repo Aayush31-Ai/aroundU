@@ -9,19 +9,27 @@ import SEO from "@/components/Common/SEO";
 import axios from "axios";
 
 const LandingPage = () => {
-useEffect(()=>{
-const fetch=async()=>{
-  const res=await axios.get("http://localhost:3000/posts");
-  console.log(res.data);
-}
-fetch()
-},[])
+useEffect(() => {
+  const fetchPosts = async () => {
+    const API_BASE_URL = (
+      import.meta.env.VITE_API_URL ||
+      import.meta.env.API_URL ||
+      "http://localhost:3000"
+    ).replace(/\/+$/, "");
+
+    const res = await axios.get(`${API_BASE_URL}/posts`);
+    console.log(res.data);
+  };
+
+  fetchPosts();
+}, []);
 
   return (
     <div>
       <SEO 
-        title="Home" 
-        description="Find trusted local professionals for cleaning, repairs, and home services. Book verified experts near you instantly."
+        title="Home Services Platform"
+        description="Affordable home services platform for daily needs—trusted service providers, personal tutor near me, repairs, and maintenance with instant booking and notifications."
+        keywords="home services platform, affordable home services, daily home services, personal tutor near me, trusted service providers, on-demand home services"
       />
       <Hero />
       <HowItWorks />

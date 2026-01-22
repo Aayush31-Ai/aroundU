@@ -18,7 +18,11 @@ import SimilarServices from "@/components/SimilarServices";
 import SEO from "@/components/Common/SEO";
 
 const STORAGE_KEY = "aroundu-saved-services";
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_BASE_URL = (
+  import.meta.env.VITE_API_URL ||
+  import.meta.env.API_URL ||
+  "http://localhost:3000"
+).replace(/\/+$/, "");
 
 const ServiceDetailPage = () => {
   const { providerId } = useParams();
@@ -169,7 +173,7 @@ const ServiceDetailPage = () => {
         title={data.service.title}
         description={data.service.about?.substring(0, 160)}
         image={data.service.serviceImage}
-        keywords={`${data.service.category}, ${data.service.title}, ${data.name}, local professional`}
+        keywords={`${data.service.category}, ${data.service.title}, ${data.name}, local professional, home services platform, affordable home services, trusted service providers, on-demand home services`}
       />
       <div className="max-w-7xl mx-auto px-4 py-4 lg:py-6 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
 
@@ -199,7 +203,7 @@ const ServiceDetailPage = () => {
           </div>
 
           {/* IMAGE */}
-          <div className="w-full aspect-[4/3] sm:aspect-video rounded-2xl overflow-hidden bg-white border">
+          <div className="w-full aspect-4/3 sm:aspect-video rounded-2xl overflow-hidden bg-white border">
             <img
               src={data.service.serviceImage}
               alt={data.service.title}
@@ -405,7 +409,7 @@ const ServiceDetailPage = () => {
 
       {/* ================= MOBILE MODAL ================= */}
       {showMobileBooking && (
-        <div className="fixed inset-0 bg-black/40 z-[60] flex items-end">
+        <div className="fixed inset-0 bg-black/40 z-60 flex items-end">
           <div className="bg-white w-full rounded-t-2xl p-6 space-y-4">
             <h3 className="text-lg font-bold">Book Service</h3>
 
@@ -455,7 +459,7 @@ const ServiceDetailPage = () => {
 
       {/* ================= REVIEW MODAL ================= */}
       {showReviewModal && (
-        <div className="fixed inset-0 bg-black/40 z-[70] flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/40 z-70 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-md w-full p-6 space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-bold">Write a Review</h3>

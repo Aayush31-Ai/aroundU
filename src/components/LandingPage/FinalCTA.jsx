@@ -23,26 +23,26 @@ const FinalCTA = React.memo(() => {
             <div className="text-left space-y-6">
               <div className="inline-block px-4 py-2 bg-[#7bbfae]/10 rounded-full">
                 <span className="text-sm font-semibold text-[#2f5349] uppercase tracking-wide">
-                  Get Started Today
+                  Home services made easy
                 </span>
               </div>
 
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-                Find Your Perfect
-                <span className="block text-[#417869]">Service Provider</span>
+                Book trusted, affordable
+                <span className="block text-[#417869]">home services today</span>
               </h2>
 
               <p className="text-lg text-slate-600 leading-relaxed">
-                Connect with verified professionals in your area. Quality service, competitive prices, and trusted reviews all in one place.
+                Verified experts, budget-friendly pricing, notifications, and reviews—plus saved providers for quick rebooking.
               </p>
 
               {/* Benefits List */}
               <div className="space-y-3 pt-4">
                 {[
-                  'Verified service providers',
-                  'Transparent pricing',
-                  'Secure booking system',
-                  '24/7 customer support'
+                  'Trusted service providers with verification and reviews',
+                  'Transparent, affordable pricing for daily home services',
+                  'Instant booking with notifications and reminders',
+                  'Save favorites and reorder in one tap'
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#7bbfae] flex-shrink-0" />
@@ -52,12 +52,20 @@ const FinalCTA = React.memo(() => {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-6">
+              <div className="pt-6 flex flex-wrap gap-3">
                 <button
                   onClick={() => navigate('/services')}
                   className="group inline-flex items-center gap-3 px-8 py-4 bg-[#2f5349] text-white font-semibold rounded-lg shadow-lg shadow-[#7bbfae]/20 hover:bg-[#2f5349] hover:shadow-xl hover:shadow-[#2f5349]/30 transition-all duration-300 hover:-translate-y-1"
                 >
-                  Browse All Services
+                  Book a Service
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </button>
+
+                <button
+                  onClick={() => navigate('/?join-provider=true')}
+                  className="group inline-flex items-center gap-3 px-8 py-4 border-2 border-[#2f5349] text-[#2f5349] font-semibold rounded-lg hover:bg-[#2f5349] hover:text-white transition-all duration-300"
+                >
+                  Join as Provider
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
               </div>

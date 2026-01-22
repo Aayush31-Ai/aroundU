@@ -6,7 +6,11 @@ import axios from "axios";
 let cachedServices = null;
 let cachePromise = null;
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_BASE_URL = (
+  import.meta.env.VITE_API_URL ||
+  import.meta.env.API_URL ||
+  "http://localhost:3000"
+).replace(/\/+$/, "");
 const SERVICES_ENDPOINT = `${API_BASE_URL}/services`;
 
 const normalizeServices = (payload) => {

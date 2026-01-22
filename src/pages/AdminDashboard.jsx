@@ -20,7 +20,11 @@ import DataTable from "@/components/Admin/DataTable";
 import ServiceVerification from "@/components/Admin/ServiceVerification";
 import SEO from "@/components/Common/SEO";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_BASE_URL = (
+  import.meta.env.VITE_API_URL ||
+  import.meta.env.API_URL ||
+  "http://localhost:3000"
+).replace(/\/+$/, "");
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
@@ -147,7 +151,11 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <SEO title="Admin Dashboard" description="Manage services and providers" />
+      <SEO 
+        title="Admin Dashboard" 
+        description="Admin controls for trusted service providers: verify pros, monitor quality, and keep daily home services affordable and reliable."
+        keywords="home services platform admin, trusted service providers, quality assurance, affordable home services"
+      />
       <div className="flex min-h-screen bg-gray-100">
         <AdminSidebar
           activeTab={activeTab}

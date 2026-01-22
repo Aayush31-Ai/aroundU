@@ -34,7 +34,7 @@ const HowItWorks = React.memo(() => {
           <Sparkle
             size={20}
             strokeWidth={1}
-            className="absolute -left-2 sm:-left-6 top-2 sm:top-2 rotate-12 text-[#ffc800] hidden sm:block sm:-left-12 md:top-6"
+            className="absolute -left-2 sm:-left-12 top-2 sm:top-2 rotate-12 text-[#ffc800] hidden sm:block md:top-6"
           />
 
           <Sparkle

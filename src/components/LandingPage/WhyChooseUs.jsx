@@ -12,32 +12,32 @@ import {
 const features = [
   {
     icon: ShieldCheck,
-    title: "Verified Professionals",
-    desc: "Every expert is identity-checked and quality-reviewed before they meet you.",
+    title: "Verified professionals",
+    desc: "Background checks, ID verification, and recurring quality reviews for trusted service providers.",
     tag: "Safety first",
     gradient: "from-emerald-50 to-teal-50",
     iconBg: "bg-emerald-600",
   },
   {
     icon: MapPin,
-    title: "Services Near You",
-    desc: "Pinpoint nearby pros and get responses that match your schedule.",
-    tag: "2 km avg",
+    title: "Built for daily needs",
+    desc: "Plumbing, cleaning, personal tutor near me, and more—optimized for quick, everyday bookings.",
+    tag: "Same day",
     gradient: "from-blue-50 to-cyan-50",
     iconBg: "bg-blue-600",
   },
   {
     icon: CalendarCheck,
-    title: "Simple Booking",
-    desc: "Pick a slot, confirm, and track updates in one place.",
+    title: "Smooth booking & alerts",
+    desc: "Pick a slot, get notifications, track arrival, and rate your experience in one place.",
     tag: "2 min",
     gradient: "from-violet-50 to-purple-50",
     iconBg: "bg-violet-600",
   },
   {
     icon: IndianRupee,
-    title: "Fair Pricing",
-    desc: "Clear estimates upfront with no hidden charges.",
+    title: "Budget-first pricing",
+    desc: "Affordable home services with upfront estimates, no hidden fees, and savings for repeat bookings.",
     tag: "Transparent",
     gradient: "from-amber-50 to-orange-50",
     iconBg: "bg-amber-600",
@@ -63,11 +63,11 @@ const WhyChooseUs = () => {
           </span>
 
           <h2 className="mt-5 text-3xl lg:text-5xl font-extrabold text-[#1f2f2a] leading-tight">
-            Why neighbors keep choosing AroundU
+            Why people trust our home services platform
           </h2>
 
           <p className="mt-4 text-lg text-gray-600">
-            Vetted experts, nearby matches, and pricing that stays honest.
+            Trusted service providers, daily coverage, and honest prices—backed by admin oversight and community reviews.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
                 Trusted by 12,000+ Customers
               </h3>
               <p className="text-white/90 text-base mb-6 max-w-2xl mx-auto">
-                Join thousands of satisfied customers who trust AroundU for reliable, professional home services.
+                Join thousands who rely on vetted pros, provider tools for availability and earnings, and admin quality assurance that keeps every service consistent.
               </p>
               <div className="flex items-center justify-center gap-2 text-[#ffc800] font-bold text-lg">
                 <span className="text-3xl">★★★★★</span>

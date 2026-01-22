@@ -7,6 +7,7 @@ import MobileFilters from '@/components/service/MobileFilters';
 import Pagination from '@/components/service/Pagination';
 import EmptyState from '@/components/service/EmptyState';
 import ServiceCardSkeleton from '@/components/service/LazyServiceCard';
+import SEO from '@/components/Common/SEO';
 
 const Services = () => {
   const { services, loading } = useServices();
@@ -133,6 +134,11 @@ window.scrollTo({top:0,behavior:"smooth"})
 
   return (
     <div className="min-h-screen bg-gray-50 py-8 sm:py-12">
+      <SEO
+        title="Services"
+        description="Browse affordable home services, personal tutors, and trusted service providers near you with instant booking and transparent pricing."
+        keywords="home services platform, affordable home services, daily home services, personal tutor near me, trusted service providers, on-demand home services"
+      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">

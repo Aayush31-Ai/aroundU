@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 
 const SEO = ({ title, description, keywords, image, url }) => {
   const siteTitle = "AroundU";
-  const defaultDescription = "Find trusted local professionals for cleaning, repairs, and home services. Connect with verified experts near you instantly.";
+  const defaultDescription = "Home services platform for affordable daily home services, trusted service providers, personal tutor near me, and on-demand home help.";
   const defaultImage = "/assets/logo/Logo.jpeg";
   const defaultUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   const metaTitle = title ? `${title} | ${siteTitle}` : siteTitle;
   const metaDescription = description || defaultDescription;
-  const metaKeywords = keywords || "local services, home services, professionals, cleaners, plumbers, electricians";
+  const metaKeywords = keywords || "home services platform, affordable home services, daily home services, personal tutor near me, trusted service providers, on-demand home services";
   const metaImage = image || defaultImage;
   const metaUrl = url || defaultUrl;
 

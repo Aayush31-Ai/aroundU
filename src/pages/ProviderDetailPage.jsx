@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import ProviderProfile from "../components/ServiceProvider/ProviderProfile";
 import Loader from "../components/Loader/Loader";
+import SEO from "@/components/Common/SEO";
 
 const ProviderDetailPage = () => {
   const { providerId } = useParams();
@@ -11,7 +12,14 @@ const ProviderDetailPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+  const providerTitle = provider?.name || "Provider Detail";
+  const providerDescription = provider?.service?.about || "Trusted service provider for daily home services with verified experience.";
+
+  const API_BASE_URL = (
+    import.meta.env.VITE_API_URL ||
+    import.meta.env.API_URL ||
+    "http://localhost:3000"
+  ).replace(/\/+$/, "");
 
   useEffect(() => {
     fetchProviderDetails();
@@ -39,34 +47,53 @@ const ProviderDetailPage = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-screen">
-        <Loader />
-      </div>
+      <>
+        <SEO
+          title={`${providerTitle} | Trusted Service Provider`}
+          description={providerDescription}
+          keywords="trusted service providers, home services platform, daily home services, affordable home services"
+        />
+        <div className="flex justify-center items-center min-h-screen">
+          <Loader />
+        </div>
+      </>
     );
   }
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="bg-white rounded-lg shadow-lg p-8 text-center max-w-md">
-          <div className="text-6xl mb-4">❌</div>
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Provider Not Found
-          </h1>
-          <p className="text-gray-600 mb-6">{error}</p>
-          <button
-            onClick={() => navigate("/")}
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Back to Home
-          </button>
+      <>
+        <SEO
+          title={`${providerTitle} | Trusted Service Provider`}
+          description={providerDescription}
+          keywords="trusted service providers, home services platform, daily home services, affordable home services"
+        />
+        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+          <div className="bg-white rounded-lg shadow-lg p-8 text-center max-w-md">
+            <div className="text-6xl mb-4">❌</div>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2">
+              Provider Not Found
+            </h1>
+            <p className="text-gray-600 mb-6">{error}</p>
+            <button
+              onClick={() => navigate("/")}
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            >
+              Back to Home
+            </button>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title={`${providerTitle} | Trusted Service Provider`}
+        description={providerDescription}
+        keywords="trusted service providers, home services platform, daily home services, affordable home services"
+      />
       {/* Back Button */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-4">

@@ -35,12 +35,12 @@ const MostBookedServices = React.memo(() => {
   // Shimmer Skeleton Card
   const ShimmerCard = () => (
     <div className="bg-white rounded-xl shadow-md overflow-hidden animate-pulse">
-      <div className="h-48 sm:h-52 md:h-56 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 bg-[length:200%_100%] animate-shimmer" />
+      <div className="h-48 sm:h-52 md:h-56 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 bg-size-[200%_100%] animate-shimmer" />
       <div className="p-4 sm:p-5 md:p-6">
-        <div className="h-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-20 mb-3" />
-        <div className="h-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-3/4 mb-3" />
-        <div className="h-4 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-16 mb-4" />
-        <div className="h-10 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded-xl w-full" />
+        <div className="h-4 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-20 mb-3" />
+        <div className="h-6 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-3/4 mb-3" />
+        <div className="h-4 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-16 mb-4" />
+        <div className="h-10 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded-xl w-full" />
       </div>
     </div>
   );
@@ -51,8 +51,8 @@ const MostBookedServices = React.memo(() => {
         <div className="max-w-7xl mx-auto">
           {/* Header Skeleton */}
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
-            <div className="h-10 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-64 mx-auto mb-3" />
-            <div className="h-6 bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-96 mx-auto" />
+            <div className="h-10 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-64 mx-auto mb-3" />
+            <div className="h-6 bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 rounded w-96 mx-auto" />
           </div>
 
           {/* Cards Grid Skeleton */}
@@ -151,7 +151,7 @@ const MostBookedServices = React.memo(() => {
                     />
                   </div>
                   {/* Content */}
-                  <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
+                  <div className="p-4 sm:p-5 md:p-6 grow flex flex-col">
                     <div className="mb-2 sm:mb-3">
                       <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2 sm:px-3 py-1 rounded-full">
                         {service.domain}
@@ -177,7 +177,7 @@ const MostBookedServices = React.memo(() => {
                           e.stopPropagation();
                           navigate(`/services/${service.providerId}`);
                         }}
-                        className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-[1px] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30"
+                        className="relative group w-full overflow-hidden rounded-xl bg-linear-to-br from-[#2f5349] via-[#3a695d] to-[#5da897] p-px transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-[#2f5349]/30"
                       >
                         <div className="relative bg-linear-to-r from-[#2f5349] to-[#468275] px-6 sm:px-8 py-3 rounded-[11px] transition-all duration-300 group-hover:bg-opacity-90 flex items-center justify-center gap-2">
                           <span className="text-white font-bold tracking-wide text-xs sm:text-sm uppercase">
